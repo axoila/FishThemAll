@@ -8,7 +8,7 @@ canvas {
   top: 0%;
   width: auto;
   height: auto;
-  background-image: url("images/field.png");
+  background-color: black;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
