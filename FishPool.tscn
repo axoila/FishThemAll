@@ -1,4 +1,4 @@
-[gd_scene load_steps=201 format=1]
+[gd_scene load_steps=220 format=1]
 
 [ext_resource path="res://FishPool.gd" type="Script" id=1]
 [ext_resource path="res://Fish.gd" type="Script" id=2]
@@ -23,11 +23,12 @@
 [ext_resource path="res://fish/krabbe/doufeelitnowmrkrabs2.png" type="Texture" id=21]
 [ext_resource path="res://things/Stiefel.png" type="Texture" id=22]
 [ext_resource path="res://things/algen.png" type="Texture" id=23]
-[ext_resource path="res://things/book.png" type="Texture" id=24]
+[ext_resource path="res://things/vermisst.png" type="Texture" id=24]
 [ext_resource path="res://things/kristall.png" type="Texture" id=25]
 [ext_resource path="res://things/reifen.png" type="Texture" id=26]
 [ext_resource path="res://things/treasure.png" type="Texture" id=27]
 [ext_resource path="res://things/drownDude.png" type="Texture" id=28]
+[ext_resource path="res://eldricht/1/silhoutte12.png" type="Texture" id=29]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 
@@ -61,7 +62,7 @@ points = Vector2Array( 18, -28, -24, -16, -23, -20, -21, -24, -17.9901, -28.0064
 
 [sub_resource type="SpriteFrames" id=7]
 
-animations = [ { "frames":[ ExtResource( 4 ), ExtResource( 5 ) ], "loop":true, "name":"default", "speed":1.5 } ]
+animations = [ { "frames":[ ExtResource( 4 ), ExtResource( 5 ) ], "loop":true, "name":"default", "speed":2.01 } ]
 
 [sub_resource type="ConvexPolygonShape2D" id=8]
 
@@ -104,7 +105,7 @@ points = Vector2Array( 13.9242, -15.3729, 16.8208, -9.57437, 22.3491, 6.50229, 1
 
 [sub_resource type="SpriteFrames" id=16]
 
-animations = [ { "frames":[ ExtResource( 8 ), ExtResource( 9 ) ], "loop":true, "name":"default", "speed":1.75 } ]
+animations = [ { "frames":[ ExtResource( 8 ), ExtResource( 9 ) ], "loop":true, "name":"default", "speed":2.95 } ]
 
 [sub_resource type="ConvexPolygonShape2D" id=17]
 
@@ -123,7 +124,7 @@ points = Vector2Array( 12.7802, -125.252, 33.1321, -110.875, -31.5314, -110.898,
 
 [sub_resource type="SpriteFrames" id=20]
 
-animations = [ { "frames":[ ExtResource( 10 ), ExtResource( 11 ) ], "loop":true, "name":"default", "speed":1.75 } ]
+animations = [ { "frames":[ ExtResource( 10 ), ExtResource( 11 ) ], "loop":true, "name":"default", "speed":2.34 } ]
 
 [sub_resource type="ConvexPolygonShape2D" id=21]
 
@@ -182,7 +183,7 @@ points = Vector2Array( -30.767, 24.5527, -4.60123, 43.5144, -24.4539, 37.1899 )
 
 [sub_resource type="SpriteFrames" id=32]
 
-animations = [ { "frames":[ ExtResource( 12 ), ExtResource( 13 ) ], "loop":true, "name":"default", "speed":1.75 } ]
+animations = [ { "frames":[ ExtResource( 12 ), ExtResource( 13 ) ], "loop":true, "name":"default", "speed":1.19 } ]
 
 [sub_resource type="ConvexPolygonShape2D" id=33]
 
@@ -221,7 +222,7 @@ points = Vector2Array( 14.8647, 35.2463, 2.85591, 60.242, -6.14374, 59.2388, -16
 
 [sub_resource type="SpriteFrames" id=40]
 
-animations = [ { "frames":[ ExtResource( 14 ), ExtResource( 15 ) ], "loop":true, "name":"default", "speed":1.75 } ]
+animations = [ { "frames":[ ExtResource( 14 ), ExtResource( 15 ) ], "loop":true, "name":"default", "speed":3.08 } ]
 
 [sub_resource type="ConvexPolygonShape2D" id=41]
 
@@ -505,7 +506,7 @@ points = Vector2Array( -4.90872, -8.10153, -5.58087, -0.171356, -7.34885, -3.225
 
 [sub_resource type="SpriteFrames" id=97]
 
-animations = [ { "frames":[ ExtResource( 16 ), ExtResource( 17 ) ], "loop":true, "name":"default", "speed":1.75 } ]
+animations = [ { "frames":[ ExtResource( 16 ), ExtResource( 17 ) ], "loop":true, "name":"default", "speed":2.5 } ]
 
 [sub_resource type="ConvexPolygonShape2D" id=98]
 
@@ -599,7 +600,7 @@ points = Vector2Array( 5.48093, -22.0222, 5.9995, 1.95834, 4.67995, 7.49182, -4.
 
 [sub_resource type="SpriteFrames" id=116]
 
-animations = [ { "frames":[ ExtResource( 18 ), ExtResource( 19 ) ], "loop":true, "name":"default", "speed":1.75 } ]
+animations = [ { "frames":[ ExtResource( 18 ), ExtResource( 19 ) ], "loop":true, "name":"default", "speed":2.61 } ]
 
 [sub_resource type="ConvexPolygonShape2D" id=117]
 
@@ -673,7 +674,7 @@ points = Vector2Array( -42.9675, 2.62628, -42.3345, 42.0975, -47.8223, 7.47742 )
 
 [sub_resource type="SpriteFrames" id=131]
 
-animations = [ { "frames":[ ExtResource( 20 ), ExtResource( 21 ) ], "loop":true, "name":"default", "speed":1.75 } ]
+animations = [ { "frames":[ ExtResource( 20 ), ExtResource( 21 ) ], "loop":true, "name":"default", "speed":2.6 } ]
 
 [sub_resource type="ConvexPolygonShape2D" id=132]
 
@@ -766,6 +767,16 @@ points = Vector2Array( 39.7158, 11.9518, 25.3377, 35.8962, 1.98029, 54.4488, -21
 [sub_resource type="SpriteFrames" id=150]
 
 animations = [ { "frames":[ ExtResource( 24 ) ], "loop":true, "name":"default", "speed":1.75 } ]
+
+[sub_resource type="ConvexPolygonShape2D" id=189]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 45.8369, -44.1238, 47.8025, 13.8702, 49.3727, 66.7003, 11.2435, 57.1536, -44.7443, 2.31833, -44.3295, -47.7305 )
+
+[sub_resource type="ConvexPolygonShape2D" id=190]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -44.7443, 2.31833, 11.2435, 57.1536, -40.3958, 61.1076 )
 
 [sub_resource type="ConvexPolygonShape2D" id=151]
 
@@ -873,6 +884,85 @@ points = Vector2Array( 43.3624, -17.8331, 49.0515, 17.1926, 50.6742, 35.1124, 13
 
 animations = [ { "frames":[ ExtResource( 28 ) ], "loop":true, "name":"default", "speed":1.75 } ]
 
+[sub_resource type="ConvexPolygonShape2D" id=173]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -144.748, -132.401, -119.865, -164.579, -129.147, -119.716, -141.354, -75.3423 )
+
+[sub_resource type="ConvexPolygonShape2D" id=174]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 111.526, 112.045, 70.5269, 116.463, 100.496, 82.718 )
+
+[sub_resource type="ConvexPolygonShape2D" id=175]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 120.417, 36.7021, 111.526, 112.045, 100.496, 82.718, 102.299, 62.3614 )
+
+[sub_resource type="ConvexPolygonShape2D" id=176]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -141.354, -75.3423, -129.147, -119.716, -116.969, -79.7228, -121.855, -53.8777 )
+
+[sub_resource type="ConvexPolygonShape2D" id=177]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 143.056, -44.2806, 154.803, -68.549, 166.982, -43.0598, 147.032, -27.5545 )
+
+[sub_resource type="ConvexPolygonShape2D" id=178]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -96.4119, 65.8086, -97.515, 70.4879, -120.033, 54.3456, -137.741, -3.27832, -121.855, -53.8777 )
+
+[sub_resource type="ConvexPolygonShape2D" id=179]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 81.1005, -121.856, 129.216, -64.6482, 120.417, 36.7021, 102.299, 62.3614, 90.4946, 51.0959, 69.9817, -130.995 )
+
+[sub_resource type="ConvexPolygonShape2D" id=180]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 8.29608, 102.701, -32.4327, 112.461, -34.056, 96.1704, -16.9473, 84.7734, 40.6237, 77.6711 )
+
+[sub_resource type="ConvexPolygonShape2D" id=181]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 55.5478, 73.3959, 40.6237, 77.6711, -80.8648, -125.551, -64.7581, -163.585, -40.8615, -165.039, -25.2611, -150.403, 90.4946, 51.0959 )
+
+[sub_resource type="ConvexPolygonShape2D" id=182]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 81.1005, -121.856, 102.746, -128.401, 128.224, -108.448, 129.216, -64.6482 )
+
+[sub_resource type="ConvexPolygonShape2D" id=183]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -16.9473, 84.7734, -58.5095, 94.3978, -83.4741, 72.0872, -121.855, -53.8777 )
+
+[sub_resource type="ConvexPolygonShape2D" id=184]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -83.4741, 72.0872, -96.4119, 65.8086, -121.855, -53.8777 )
+
+[sub_resource type="ConvexPolygonShape2D" id=185]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 40.6237, 77.6711, -16.9473, 84.7734, -121.855, -53.8777, -116.969, -79.7228, -99.402, -109.952, -80.8648, -125.551 )
+
+[sub_resource type="ConvexPolygonShape2D" id=186]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 90.4946, 51.0959, -25.2611, -150.403, -11.1613, -154.69, 14.244, -160.143, 36.8958, -157.931, 52.5108, -149.273, 69.9817, -130.995 )
+
+[sub_resource type="ConvexPolygonShape2D" id=187]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 147.032, -27.5545, 145.371, 3.76227, 120.417, 36.7021, 129.216, -64.6482, 143.056, -44.2806 )
+
+[sub_resource type="SpriteFrames" id=188]
+
+animations = [ { "frames":[ ExtResource( 29 ) ], "loop":true, "name":"default", "speed":1.75 } ]
+
 [node name="FishPool" type="Node"]
 
 script/script = ExtResource( 1 )
@@ -915,7 +1005,6 @@ material/material = ExtResource( 3 )
 transform/rot = -90.0
 frames = SubResource( 7 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="blobfisch"]
@@ -959,6 +1048,7 @@ material/material = ExtResource( 3 )
 transform/rot = -90.0
 frames = SubResource( 12 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="barsch"]
@@ -999,6 +1089,7 @@ material/material = ExtResource( 3 )
 transform/rot = -90.0
 frames = SubResource( 16 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="anglerfisch"]
@@ -1039,7 +1130,6 @@ material/material = ExtResource( 3 )
 transform/rot = -90.0
 frames = SubResource( 20 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="rochen"]
@@ -1369,7 +1459,6 @@ transform/rot = -90.0202
 transform/scale = Vector2( 1, 1 )
 frames = SubResource( 97 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D1" type="CollisionPolygon2D" parent="clownfisch"]
@@ -1391,6 +1480,7 @@ transform/rot = -90.0202
 transform/scale = Vector2( 1, 1 )
 frames = SubResource( 97 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D2" type="CollisionPolygon2D" parent="clownfisch"]
@@ -1412,7 +1502,6 @@ transform/rot = -90.0202
 transform/scale = Vector2( 1, 1 )
 frames = SubResource( 97 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D3" type="CollisionPolygon2D" parent="clownfisch"]
@@ -1456,6 +1545,7 @@ transform/rot = -90.0202
 transform/scale = Vector2( 1, 1 )
 frames = SubResource( 97 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D6" type="CollisionPolygon2D" parent="clownfisch"]
@@ -1477,7 +1567,6 @@ transform/rot = -90.0202
 transform/scale = Vector2( 1, 1 )
 frames = SubResource( 97 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D7" type="CollisionPolygon2D" parent="clownfisch"]
@@ -1499,6 +1588,7 @@ transform/rot = -90.0202
 transform/scale = Vector2( 1, 1 )
 frames = SubResource( 97 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D4" type="CollisionPolygon2D" parent="clownfisch"]
@@ -1520,6 +1610,7 @@ transform/rot = -90.0202
 transform/scale = Vector2( 1, 1 )
 frames = SubResource( 97 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="aal" type="Area2D" parent="."]
@@ -1722,6 +1813,7 @@ playing = true
 
 [node name="crab" type="Area2D" parent="."]
 
+editor/display_folded = true
 transform/pos = Vector2( -184.423, 597.043 )
 input/pickable = true
 shapes/0/shape = SubResource( 117 )
@@ -1779,10 +1871,10 @@ name = "Fish"
 [node name="AnimatedSprite" type="AnimatedSprite" parent="crab"]
 
 material/material = ExtResource( 3 )
+transform/pos = Vector2( -1.50742, -6.58912e-08 )
 transform/rot = -90.0
 frames = SubResource( 131 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="crab"]
@@ -1938,6 +2030,45 @@ transform/scale = Vector2( 1, 1 )
 build_mode = 0
 polygon = Vector2Array( 39.7158, 11.9518, 25.3377, 35.8962, 1.98029, 54.4488, -21.9583, 23.9047, 5.60413, -34.1631, 22.3679, -31.7622, 54.4446, -21.8986 )
 shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="buch1" type="Area2D" parent="."]
+
+transform/pos = Vector2( -665.337, 377.871 )
+input/pickable = true
+shapes/0/shape = SubResource( 189 )
+shapes/0/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 17.6848, -0.391317 )
+shapes/0/trigger = false
+shapes/1/shape = SubResource( 190 )
+shapes/1/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 17.6848, -0.391317 )
+shapes/1/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 2 )
+__meta__ = { "_edit_group_":true }
+common_depth = Vector2( 140, 180 )
+speed = 80.0
+name = "Fish"
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="buch1"]
+
+material/material = ExtResource( 3 )
+transform/pos = Vector2( 19.4529, 8.64579 )
+transform/rot = -0.0865118
+frames = SubResource( 150 )
+animation = "default"
+playing = true
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="buch1"]
+
+transform/pos = Vector2( 17.6848, -0.391317 )
+transform/rot = 0.0202374
+transform/scale = Vector2( 1, 1 )
+build_mode = 0
+polygon = Vector2Array( 47.8025, 13.8702, 49.3727, 66.7003, 11.2435, 57.1536, -40.3958, 61.1076, -44.7443, 2.31833, -44.3295, -47.7305, 45.8369, -44.1238 )
+shape_range = Vector2( 0, 1 )
 trigger = false
 
 [node name="kristall" type="Area2D" parent="."]
@@ -2121,6 +2252,84 @@ transform/rot = 0.0202374
 build_mode = 0
 polygon = Vector2Array( 15.7169, -153.051, 36.8958, -157.931, 62.9557, -145.704, 44.2174, -132.678, 44.2117, -116.388, 40.3311, -117.156, 34.4296, -93.5854, 62.1064, -47.1487, 43.3624, -17.8331, 49.0515, 17.1926, 50.6742, 35.1124, 55.5478, 73.3959, 72.6414, 104.353, 71.0078, 117.385, 61.2338, 117.381, 39.247, 103.527, 27.8539, 75.0151, 13.2153, 11.4784, 15.6501, 35.9144, 8.29608, 102.701, -32.4327, 112.461, -34.056, 96.1704, -16.9473, 84.7734, -13.6453, -39.8449, -31.584, 15.5351, -42.9854, 10.644, -36.4529, -35.7805, -28.3035, -47.9952, 0.219666, -91.9684, -12.8029, -118.852, -27.4568, -139.22, -11.1613, -154.69 )
 shape_range = Vector2( 0, 11 )
+trigger = false
+
+[node name="leiche1" type="Area2D" parent="."]
+
+transform/pos = Vector2( 137.204, 767.768 )
+input/pickable = true
+shapes/0/shape = SubResource( 173 )
+shapes/0/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 1.79595, 25.2594 )
+shapes/0/trigger = false
+shapes/1/shape = SubResource( 174 )
+shapes/1/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 1.79595, 25.2594 )
+shapes/1/trigger = false
+shapes/2/shape = SubResource( 175 )
+shapes/2/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 1.79595, 25.2594 )
+shapes/2/trigger = false
+shapes/3/shape = SubResource( 176 )
+shapes/3/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 1.79595, 25.2594 )
+shapes/3/trigger = false
+shapes/4/shape = SubResource( 177 )
+shapes/4/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 1.79595, 25.2594 )
+shapes/4/trigger = false
+shapes/5/shape = SubResource( 178 )
+shapes/5/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 1.79595, 25.2594 )
+shapes/5/trigger = false
+shapes/6/shape = SubResource( 179 )
+shapes/6/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 1.79595, 25.2594 )
+shapes/6/trigger = false
+shapes/7/shape = SubResource( 180 )
+shapes/7/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 1.79595, 25.2594 )
+shapes/7/trigger = false
+shapes/8/shape = SubResource( 181 )
+shapes/8/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 1.79595, 25.2594 )
+shapes/8/trigger = false
+shapes/9/shape = SubResource( 182 )
+shapes/9/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 1.79595, 25.2594 )
+shapes/9/trigger = false
+shapes/10/shape = SubResource( 183 )
+shapes/10/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 1.79595, 25.2594 )
+shapes/10/trigger = false
+shapes/11/shape = SubResource( 184 )
+shapes/11/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 1.79595, 25.2594 )
+shapes/11/trigger = false
+shapes/12/shape = SubResource( 185 )
+shapes/12/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 1.79595, 25.2594 )
+shapes/12/trigger = false
+shapes/13/shape = SubResource( 186 )
+shapes/13/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 1.79595, 25.2594 )
+shapes/13/trigger = false
+shapes/14/shape = SubResource( 187 )
+shapes/14/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 1.79595, 25.2594 )
+shapes/14/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 2 )
+__meta__ = { "_edit_group_":true }
+common_depth = Vector2( 60, 90 )
+speed = 80.0
+name = "Fish"
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="leiche1"]
+
+material/material = ExtResource( 3 )
+transform/pos = Vector2( 19.4529, 8.64579 )
+transform/rot = -0.0865118
+frames = SubResource( 188 )
+animation = "default"
+playing = true
+modulate = Color( 0.996094, 0.996094, 0.996094, 1 )
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="leiche1"]
+
+transform/pos = Vector2( 1.79595, 25.2594 )
+transform/rot = 0.0202374
+build_mode = 0
+polygon = Vector2Array( 14.244, -160.143, 36.8958, -157.931, 52.5108, -149.273, 69.9817, -130.995, 81.1005, -121.856, 102.746, -128.401, 128.224, -108.448, 129.216, -64.6482, 143.056, -44.2806, 154.803, -68.549, 166.982, -43.0598, 147.032, -27.5545, 145.371, 3.76227, 120.417, 36.7021, 111.526, 112.045, 70.5269, 116.463, 100.496, 82.718, 102.299, 62.3614, 90.4946, 51.0959, 55.5478, 73.3959, 40.6237, 77.6711, 8.29608, 102.701, -32.4327, 112.461, -34.056, 96.1704, -16.9473, 84.7734, -58.5095, 94.3978, -83.4741, 72.0872, -96.4119, 65.8086, -97.515, 70.4879, -120.033, 54.3456, -137.741, -3.27832, -121.855, -53.8777, -141.354, -75.3423, -144.748, -132.401, -119.865, -164.579, -129.147, -119.716, -116.969, -79.7228, -99.402, -109.952, -80.8648, -125.551, -64.7581, -163.585, -40.8615, -165.039, -25.2611, -150.403, -11.1613, -154.69 )
+shape_range = Vector2( 0, 14 )
 trigger = false
 
 
