@@ -1,0 +1,137 @@
+[gd_scene load_steps=15 format=1]
+
+[ext_resource path="res://backgrounds/hintergrundWasser/01.png" type="Texture" id=1]
+[ext_resource path="res://water_color.gd" type="Script" id=2]
+[ext_resource path="res://static_object.gd" type="Script" id=3]
+[ext_resource path="res://transparent_pink_shader.tres" type="CanvasItemMaterial" id=4]
+[ext_resource path="res://backgrounds/schimmern/01.png" type="Texture" id=5]
+[ext_resource path="res://backgrounds/schimmern/03.png" type="Texture" id=6]
+[ext_resource path="res://backgrounds/schimmern/02.png" type="Texture" id=7]
+[ext_resource path="res://ship/boot.png" type="Texture" id=8]
+[ext_resource path="res://book/smolBuch.png" type="Texture" id=9]
+[ext_resource path="res://Cursor.gd" type="Script" id=10]
+[ext_resource path="res://cursor/cursor.png" type="Texture" id=11]
+[ext_resource path="res://FishSpawner.gd" type="Script" id=12]
+
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ { "frames":[ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ) ], "loop":true, "name":"default", "speed":2.0 } ]
+
+[sub_resource type="CircleShape2D" id=2]
+
+custom_solver_bias = 0.0
+radius = 10.0
+
+[node name="Node" type="Node"]
+
+[node name="Water" type="Sprite" parent="."]
+
+texture = ExtResource( 1 )
+centered = false
+script/script = ExtResource( 2 )
+depths = FloatArray(  )
+images = [  ]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+anchor_mode = 0
+rotating = false
+current = true
+zoom = Vector2( 1, 1 )
+limit/left = -10000000
+limit/top = -10000000
+limit/right = 10000000
+limit/bottom = 10000000
+drag_margin/h_enabled = true
+drag_margin/v_enabled = true
+smoothing/enable = false
+smoothing/speed = 5.0
+drag_margin/left = 0.2
+drag_margin/top = 0.2
+drag_margin/right = 0.2
+drag_margin/bottom = 0.2
+
+[node name="Surface" type="Node2D" parent="."]
+
+script/script = ExtResource( 3 )
+depth = 0
+
+[node name="Shimmer" type="AnimatedSprite" parent="Surface"]
+
+material/material = ExtResource( 4 )
+frames = SubResource( 1 )
+animation = "default"
+frame = 2
+playing = true
+centered = false
+
+[node name="boot_shadow" type="Sprite" parent="Surface"]
+
+visibility/self_opacity = 0.5
+material/material = ExtResource( 4 )
+transform/pos = Vector2( 240, 125 )
+transform/rot = -90.0
+texture = ExtResource( 8 )
+modulate = Color( 0, 0, 0, 1 )
+
+[node name="boot" type="Sprite" parent="Surface/boot_shadow"]
+
+material/material = ExtResource( 4 )
+transform/pos = Vector2( -17, -12 )
+texture = ExtResource( 8 )
+
+[node name="smolBuch" type="Sprite" parent="Surface/boot_shadow/boot"]
+
+transform/pos = Vector2( -1.95503, 87.3451 )
+transform/rot = 69.7481
+texture = ExtResource( 9 )
+
+[node name="Player" type="Area2D" parent="."]
+
+material/material = ExtResource( 4 )
+transform/pos = Vector2( 166, 183 )
+input/pickable = true
+shapes/0/shape = SubResource( 2 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 10 )
+
+[node name="Sprite" type="Sprite" parent="Player"]
+
+material/material = ExtResource( 4 )
+texture = ExtResource( 11 )
+flip_v = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+
+shape = SubResource( 2 )
+trigger = false
+_update_shape_index = 0
+
+[node name="FishSpawner" type="Node" parent="."]
+
+script/script = ExtResource( 12 )
+pool = null
+fish_delay = 1
+
+[node name="Label" type="Label" parent="."]
+
+rect/scale = Vector2( 2, 2 )
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 210.0
+margin/bottom = 80.0
+text = "output"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+

@@ -1,0 +1,11 @@
+[gd_resource type="CanvasItemMaterial" load_steps=2 format=1]
+
+[sub_resource type="CanvasItemShader" id=1]
+
+_code = { "fragment":"vec4 col = tex(TEXTURE, UV);\nif(col.r == 1 && col.g == 0 && col.b == 1){\n\tCOLOR = vec4(0, 0, 0, 0);\n} else {\n\tCOLOR = col * SRC_COLOR;\n}", "fragment_ofs":0, "light":"", "light_ofs":0, "vertex":"", "vertex_ofs":0 }
+
+[resource]
+
+shader/shader = SubResource( 1 )
+shader/shading_mode = 0
+
