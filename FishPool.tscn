@@ -99,6 +99,7 @@ angular_damp = 1.0
 script/script = ExtResource( 2 )
 common_depth = Vector2( 0, 1000 )
 speed = 25
+name = "Fish"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Blobfish"]
 
@@ -106,6 +107,7 @@ material/material = ExtResource( 3 )
 transform/rot = -90.0
 frames = SubResource( 7 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="Blobfish"]
@@ -140,6 +142,7 @@ angular_damp = 1.0
 script/script = ExtResource( 2 )
 common_depth = Vector2( 0, 1000 )
 speed = 25
+name = "Fish"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="barsch"]
 

@@ -27,4 +27,3 @@ func _process(delta):
 		
 		
 		timer = 0
-	get_node("../Label").set_text(str(timer))
