@@ -19,6 +19,12 @@ func _process(delta):
 	diff /= 3
 	if diff < 1:
 		set_opacity(1 - diff)
+<<<<<<< HEAD
+=======
+		show()
+	else:
+		hide()
+>>>>>>> 115afb121f05ef96d258ee3aa70ba6e59d5002e0
 	
 	if get_pos().distance_to(Vector2(210, 210)) > 450:
 		queue_free()
