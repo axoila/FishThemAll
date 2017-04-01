@@ -1,7 +1,9 @@
 extends Area2D
 
-export(Vector2) var depth = Vector2(0, 1000)
+export(Vector2) var common_depth = Vector2(0, 1000)
 export(float) var speed = 25
+
+onready var player = get_node("../Player")
 
 var depth = 0
 
@@ -16,3 +18,6 @@ func _process(delta):
 	diff /= 3
 	if diff < 1:
 		set_opacity(1 - diff)
+	
+	if get_pos().distance_to(Vector2(210, 210)) > 450:
+		queue_free()

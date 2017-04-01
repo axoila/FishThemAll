@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=1]
+[gd_scene load_steps=16 format=1]
 
 [ext_resource path="res://backgrounds/hintergrundWasser/01.png" type="Texture" id=1]
 [ext_resource path="res://water_color.gd" type="Script" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://Cursor.gd" type="Script" id=10]
 [ext_resource path="res://cursor/cursor.png" type="Texture" id=11]
 [ext_resource path="res://FishSpawner.gd" type="Script" id=12]
+[ext_resource path="res://FishPool.tscn" type="PackedScene" id=13]
 
 [sub_resource type="SpriteFrames" id=1]
 
@@ -115,23 +116,7 @@ _update_shape_index = 0
 [node name="FishSpawner" type="Node" parent="."]
 
 script/script = ExtResource( 12 )
-pool = null
+pool = ExtResource( 13 )
 fish_delay = 1
-
-[node name="Label" type="Label" parent="."]
-
-rect/scale = Vector2( 2, 2 )
-focus/ignore_mouse = true
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 0
-margin/left = 0.0
-margin/top = 0.0
-margin/right = 210.0
-margin/bottom = 80.0
-text = "output"
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
 
 

@@ -7,6 +7,7 @@ func _ready():
 
 func get_fish(depth):
 	var index = floor(rand_range(0, get_child_count()))
+
 	var new_fish = get_child(index).duplicate()
-	remove_child(new_fish)
+#	remove_child(new_fish)
 	return new_fish
