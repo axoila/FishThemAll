@@ -22,8 +22,15 @@ func _process(delta):
 	update()
 
 func _draw():
-	var index = fmod(floor(player.depth / 3), 21)
-	var ratio = fmod(player.depth, 3) / 3
+	var index = clamp(floor(player.depth / 3), 0, 19)
+	var ratio = (player.depth - index*3) / 3
 	
 	draw_texture(images[index], Vector2())
-	draw_texture(images[index + 1], Vector2(), Color(1, 1, 1, ratio))
+	draw_texture(images[index + 1], Vector2(), \
+		Color(1, 1, 1, pingpong(ratio)))
+
+func pingpong(tmp):
+	tmp = fmod(tmp, 1)
+	if fmod(tmp,2)>1:
+		tmp = 1-tmp
+	return tmp

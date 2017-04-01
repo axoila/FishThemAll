@@ -1,22 +1,39 @@
-[gd_scene load_steps=16 format=1]
+[gd_scene load_steps=30 format=1]
 
 [ext_resource path="res://backgrounds/hintergrundWasser/01.png" type="Texture" id=1]
 [ext_resource path="res://water_color.gd" type="Script" id=2]
-[ext_resource path="res://static_object.gd" type="Script" id=3]
-[ext_resource path="res://transparent_pink_shader.tres" type="CanvasItemMaterial" id=4]
-[ext_resource path="res://backgrounds/schimmern/01.png" type="Texture" id=5]
-[ext_resource path="res://backgrounds/schimmern/03.png" type="Texture" id=6]
-[ext_resource path="res://backgrounds/schimmern/02.png" type="Texture" id=7]
-[ext_resource path="res://ship/boot.png" type="Texture" id=8]
-[ext_resource path="res://book/smolBuch.png" type="Texture" id=9]
-[ext_resource path="res://Cursor.gd" type="Script" id=10]
-[ext_resource path="res://cursor/cursor.png" type="Texture" id=11]
-[ext_resource path="res://FishSpawner.gd" type="Script" id=12]
-[ext_resource path="res://FishPool.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Camera.gd" type="Script" id=3]
+[ext_resource path="res://static_object.gd" type="Script" id=4]
+[ext_resource path="res://transparent_pink_shader.tres" type="CanvasItemMaterial" id=5]
+[ext_resource path="res://backgrounds/schimmern/01.png" type="Texture" id=6]
+[ext_resource path="res://backgrounds/schimmern/03.png" type="Texture" id=7]
+[ext_resource path="res://backgrounds/schimmern/02.png" type="Texture" id=8]
+[ext_resource path="res://cursor/kreis.png" type="Texture" id=9]
+[ext_resource path="res://start.gd" type="Script" id=10]
+[ext_resource path="res://ship/boot.png" type="Texture" id=11]
+[ext_resource path="res://book/smolBuch.png" type="Texture" id=12]
+[ext_resource path="res://open_book.gd" type="Script" id=13]
+[ext_resource path="res://book/bigBuch.png" type="Texture" id=14]
+[ext_resource path="res://Book.gd" type="Script" id=15]
+[ext_resource path="res://book/seiteAnderes.png" type="Texture" id=16]
+[ext_resource path="res://book/umblaettern/andereBlätter/01.png" type="Texture" id=17]
+[ext_resource path="res://book/umblaettern/andereBlätter/02.png" type="Texture" id=18]
+[ext_resource path="res://book/umblaettern/andereBlätter/03.png" type="Texture" id=19]
+[ext_resource path="res://book/umblaettern/andereBlätter/04.png" type="Texture" id=20]
+[ext_resource path="res://book/umblaettern/andereBlätter/05.png" type="Texture" id=21]
+[ext_resource path="res://book/umblaettern/andereBlätter/06.png" type="Texture" id=22]
+[ext_resource path="res://Cursor.gd" type="Script" id=23]
+[ext_resource path="res://cursor/cursor.png" type="Texture" id=24]
+[ext_resource path="res://FishSpawner.gd" type="Script" id=25]
+[ext_resource path="res://FishPool.tscn" type="PackedScene" id=26]
 
 [sub_resource type="SpriteFrames" id=1]
 
-animations = [ { "frames":[ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ) ], "loop":true, "name":"default", "speed":2.0 } ]
+animations = [ { "frames":[ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ) ], "loop":true, "name":"default", "speed":2.0 } ]
+
+[sub_resource type="SpriteFrames" id=3]
+
+animations = [ { "frames":[ ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ) ], "loop":true, "name":"default", "speed":5.0 } ]
 
 [sub_resource type="CircleShape2D" id=2]
 
@@ -32,74 +49,152 @@ centered = false
 script/script = ExtResource( 2 )
 water_directory = "res://backgrounds/hintergrundWasser"
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Camera2D" type="Camera2D" parent="." groups=[ "Camera" ]]
 
-anchor_mode = 0
-rotating = false
+editor/display_folded = true
+transform/pos = Vector2( 210, 210 )
+anchor_mode = 1
+rotating = true
 current = true
 zoom = Vector2( 1, 1 )
 limit/left = -10000000
 limit/top = -10000000
 limit/right = 10000000
 limit/bottom = 10000000
-drag_margin/h_enabled = true
-drag_margin/v_enabled = true
+drag_margin/h_enabled = false
+drag_margin/v_enabled = false
 smoothing/enable = false
 smoothing/speed = 5.0
 drag_margin/left = 0.2
 drag_margin/top = 0.2
 drag_margin/right = 0.2
 drag_margin/bottom = 0.2
+script/script = ExtResource( 3 )
+
+[node name="Tween" type="Tween" parent="Camera2D"]
+
+playback/process_mode = 1
+playback/active = false
+playback/repeat = false
+playback/speed = 1.0
 
 [node name="Surface" type="Node2D" parent="."]
 
-script/script = ExtResource( 3 )
+z/z = 1
+script/script = ExtResource( 4 )
 depth = 0
 
 [node name="Shimmer" type="AnimatedSprite" parent="Surface"]
 
-material/material = ExtResource( 4 )
+material/material = ExtResource( 5 )
 frames = SubResource( 1 )
 animation = "default"
-frame = 1
 playing = true
 centered = false
+
+[node name="dive" type="Sprite" parent="Surface"]
+
+material/material = ExtResource( 5 )
+transform/pos = Vector2( 216.3, 234.168 )
+texture = ExtResource( 9 )
+script/script = ExtResource( 10 )
 
 [node name="boot_shadow" type="Sprite" parent="Surface"]
 
 visibility/self_opacity = 0.5
-material/material = ExtResource( 4 )
+material/material = ExtResource( 5 )
 transform/pos = Vector2( 240, 125 )
 transform/rot = -90.0
-texture = ExtResource( 8 )
+texture = ExtResource( 11 )
 modulate = Color( 0, 0, 0, 1 )
 
 [node name="boot" type="Sprite" parent="Surface/boot_shadow"]
 
-material/material = ExtResource( 4 )
+material/material = ExtResource( 5 )
 transform/pos = Vector2( -17, -12 )
-texture = ExtResource( 8 )
+texture = ExtResource( 11 )
 
 [node name="smolBuch_shadow" type="Sprite" parent="Surface/boot_shadow/boot"]
 
-visibility/opacity = 0.42
+editor/display_folded = true
+visibility/self_opacity = 0.42
 transform/pos = Vector2( 0.206429, 91.668 )
 transform/rot = 69.7481
 transform/scale = Vector2( 1, 1 )
-texture = ExtResource( 9 )
+texture = ExtResource( 12 )
 modulate = Color( 0, 0, 0, 1 )
+script/script = ExtResource( 13 )
 
-[node name="smolBuch" type="Sprite" parent="Surface/boot_shadow/boot"]
+[node name="smolBuch" type="Sprite" parent="Surface/boot_shadow/boot/smolBuch_shadow"]
 
-transform/pos = Vector2( -1.95503, 87.3451 )
-transform/rot = 69.7481
-texture = ExtResource( 9 )
+transform/pos = Vector2( 3.30748, -3.5242 )
+transform/scale = Vector2( 1, 1 )
+texture = ExtResource( 12 )
+
+[node name="catched_fish_root" type="Position2D" parent="Surface/boot_shadow/boot"]
+
+transform/pos = Vector2( -2.00001, -102 )
+
+[node name="Book" type="Sprite" parent="Surface"]
+
+material/material = ExtResource( 5 )
+transform/pos = Vector2( 0, 420 )
+transform/scale = Vector2( 1, 1 )
+texture = ExtResource( 14 )
+centered = false
+script/script = ExtResource( 15 )
+
+[node name="seiteNormal" type="Sprite" parent="Surface/Book"]
+
+visibility/visible = false
+material/material = ExtResource( 5 )
+texture = ExtResource( 16 )
+centered = false
+
+[node name="Label" type="RichTextLabel" parent="Surface/Book/seiteNormal"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 60.0
+margin/top = 70.0
+margin/right = 323.0
+margin/bottom = 381.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode/enabled = true
+bbcode/bbcode = "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet"
+visible_characters = -1
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Surface/Book"]
+
+visibility/visible = false
+material/material = ExtResource( 5 )
+frames = SubResource( 3 )
+animation = "default"
+frame = 5
+centered = false
+
+[node name="Tween" type="Tween" parent="Surface/Book"]
+
+playback/process_mode = 1
+playback/active = false
+playback/repeat = false
+playback/speed = 1.0
+
+[node name="Timer" type="Timer" parent="Surface/Book"]
+
+process_mode = 1
+wait_time = 0.6
+one_shot = true
+autostart = false
 
 [node name="Player" type="Area2D" parent="."]
 
-material/material = ExtResource( 4 )
+editor/display_folded = true
+material/material = ExtResource( 5 )
 transform/pos = Vector2( 166, 183 )
-z/z = 1
+z/z = 2
 input/pickable = true
 shapes/0/shape = SubResource( 2 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
@@ -108,12 +203,12 @@ gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
 linear_damp = 0.1
 angular_damp = 1.0
-script/script = ExtResource( 10 )
+script/script = ExtResource( 23 )
 
 [node name="Sprite" type="Sprite" parent="Player"]
 
-material/material = ExtResource( 4 )
-texture = ExtResource( 11 )
+material/material = ExtResource( 5 )
+texture = ExtResource( 24 )
 flip_v = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
@@ -124,8 +219,8 @@ _update_shape_index = 0
 
 [node name="FishSpawner" type="Node" parent="."]
 
-script/script = ExtResource( 12 )
-pool = ExtResource( 13 )
+script/script = ExtResource( 25 )
+pool = ExtResource( 26 )
 fish_delay = 1
 
 

@@ -2,13 +2,20 @@ extends Node2D
 
 var depth = 0
 
+var falling = false
+
 func _ready():
 	set_process(true)
 	set_process_input(true)
-
-func _input(event):
-	if event.type == InputEvent.MOUSE_MOTION:
-		set_pos(event.pos)
+	
+	game_manager.connect("start", self, "set", ["falling", true])
+	game_manager.connect("reset", self, "reset")
 
 func _process(delta):
-	depth += delta
+	set_pos(game_manager.mouse_pos)
+	if falling:
+		depth += delta
+
+func reset():
+	depth = 0
+	falling = false
