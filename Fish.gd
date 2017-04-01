@@ -15,18 +15,14 @@ func _process(delta):
 	var forward = get_transform().basis_xform(Vector2(0, -1))
 	set_pos(get_pos() + forward * delta * speed)
 	
-	var abs_diff = abs(player.depth - depth)
-	var diff = abs_diff / 3
+	var diff = abs(player.depth - depth)
+	diff /= 3
 	if diff < 1:
 		set_opacity(1 - diff)
-	else:
-		set_opacity(0)
 	
 	if get_pos().distance_to(Vector2(210, 210)) > 450:
 		queue_free()
-	
-	if abs_diff < 1 && overlaps_area(player):
-		game_manager.hit_fish(self)
+
 
 
 
