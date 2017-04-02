@@ -6,7 +6,7 @@ export var name = "Fish"
 export(String, MULTILINE) var description
 export(float) var captive_scale = 1
 
-onready var player = get_node("../Player")
+onready var player = get_tree().get_nodes_in_group("Player")[0]
 
 var catched = false #flag that's set so the fish can't kill itself in captivity
 
@@ -24,8 +24,12 @@ func _process(delta):
 		hide()
 	
 	if catched:
+		depth = 0
 		set_scale(Vector2(captive_scale, captive_scale))
 		return #captive fishes can't move, kill or die
+	
+	if catched:
+		print("HELP")
 	
 	var forward = get_transform().basis_xform(Vector2(0, -1))
 	set_pos(get_pos() + forward * delta * speed)

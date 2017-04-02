@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=1]
+[gd_scene load_steps=34 format=1]
 
 [ext_resource path="res://backgrounds/hintergrundWasser/01.png" type="Texture" id=1]
 [ext_resource path="res://water_color.gd" type="Script" id=2]
@@ -13,22 +13,23 @@
 [ext_resource path="res://ship/boot.png" type="Texture" id=11]
 [ext_resource path="res://book/smolBuch.png" type="Texture" id=12]
 [ext_resource path="res://open_book.gd" type="Script" id=13]
-[ext_resource path="res://book/bigBuch.png" type="Texture" id=14]
-[ext_resource path="res://Book.gd" type="Script" id=15]
-[ext_resource path="res://book/seiteNormal.png" type="Texture" id=16]
-[ext_resource path="res://open_link.gd" type="Script" id=17]
-[ext_resource path="res://cursor/pfeil_rechts.png" type="Texture" id=18]
-[ext_resource path="res://cursor/pfeil_links.png" type="Texture" id=19]
-[ext_resource path="res://book/umblaettern/normalBlaetter/01.png" type="Texture" id=20]
-[ext_resource path="res://book/umblaettern/normalBlaetter/02.png" type="Texture" id=21]
-[ext_resource path="res://book/umblaettern/normalBlaetter/03.png" type="Texture" id=22]
-[ext_resource path="res://book/umblaettern/normalBlaetter/04.png" type="Texture" id=23]
-[ext_resource path="res://book/umblaettern/normalBlaetter/05.png" type="Texture" id=24]
-[ext_resource path="res://book/umblaettern/normalBlaetter/06.png" type="Texture" id=25]
-[ext_resource path="res://Cursor.gd" type="Script" id=26]
-[ext_resource path="res://cursor/cursor.png" type="Texture" id=27]
-[ext_resource path="res://FishSpawner.gd" type="Script" id=28]
-[ext_resource path="res://FishPool.tscn" type="PackedScene" id=29]
+[ext_resource path="res://catched_display.gd" type="Script" id=14]
+[ext_resource path="res://book/bigBuch.png" type="Texture" id=15]
+[ext_resource path="res://Book.gd" type="Script" id=16]
+[ext_resource path="res://book/seiteNormal.png" type="Texture" id=17]
+[ext_resource path="res://open_link.gd" type="Script" id=18]
+[ext_resource path="res://cursor/pfeil_rechts.png" type="Texture" id=19]
+[ext_resource path="res://cursor/pfeil_links.png" type="Texture" id=20]
+[ext_resource path="res://book/umblaettern/normalBlaetter/01.png" type="Texture" id=21]
+[ext_resource path="res://book/umblaettern/normalBlaetter/02.png" type="Texture" id=22]
+[ext_resource path="res://book/umblaettern/normalBlaetter/03.png" type="Texture" id=23]
+[ext_resource path="res://book/umblaettern/normalBlaetter/04.png" type="Texture" id=24]
+[ext_resource path="res://book/umblaettern/normalBlaetter/05.png" type="Texture" id=25]
+[ext_resource path="res://book/umblaettern/normalBlaetter/06.png" type="Texture" id=26]
+[ext_resource path="res://Cursor.gd" type="Script" id=27]
+[ext_resource path="res://cursor/cursor.png" type="Texture" id=28]
+[ext_resource path="res://FishSpawner.gd" type="Script" id=29]
+[ext_resource path="res://FishPool.tscn" type="PackedScene" id=30]
 
 [sub_resource type="SpriteFrames" id=1]
 
@@ -36,7 +37,7 @@ animations = [ { "frames":[ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 )
 
 [sub_resource type="SpriteFrames" id=3]
 
-animations = [ { "frames":[ ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ) ], "loop":true, "name":"default", "speed":5.0 } ]
+animations = [ { "frames":[ ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ) ], "loop":true, "name":"default", "speed":5.0 } ]
 
 [sub_resource type="CircleShape2D" id=2]
 
@@ -47,6 +48,7 @@ radius = 10.0
 
 [node name="Water" type="Sprite" parent="."]
 
+z/z = -10
 texture = ExtResource( 1 )
 centered = false
 script/script = ExtResource( 2 )
@@ -92,7 +94,6 @@ depth = 0
 material/material = ExtResource( 5 )
 frames = SubResource( 1 )
 animation = "default"
-frame = 2
 playing = true
 centered = false
 
@@ -135,22 +136,24 @@ texture = ExtResource( 12 )
 
 [node name="catched_fish_root" type="Position2D" parent="Surface/boot_shadow/boot"]
 
-transform/pos = Vector2( -2.00001, -102 )
+transform/pos = Vector2( -6.00001, -56 )
+z/z = 1
+script/script = ExtResource( 14 )
 
 [node name="Book" type="Sprite" parent="Surface"]
 
 material/material = ExtResource( 5 )
 transform/pos = Vector2( 0, 70 )
-texture = ExtResource( 14 )
+texture = ExtResource( 15 )
 centered = false
-script/script = ExtResource( 15 )
+script/script = ExtResource( 16 )
 credits = "[center][b][u]Credits[/u][/b][/center]\n\n[color=blue][url=http://www.twitter.com/thatchrisone][img]res://credit_graphics/chris.png[/img] Christoph Reitmeier [img]res://credit_graphics/twitter.png[/img][/url][/color]\n[color=blue][url=http://www.facebook.com/therealjollygoodday][img]res://credit_graphics/karo.png[/img] Karolin Hoffmann [img]res://credit_graphics/facebook.png[/img][/url][/color]\n[color=blue][url=http://www.facebook.com/Leibi97sartandstuff][img]res://credit_graphics/leibi.png[/img] Sophie Liebisch [img]res://credit_graphics/facebook.png[/img][/url][/color]\n[color=blue][url=http://www.twitter.com/daunenpuschel][img]res://credit_graphics/mandy.png[/img] Mandy Anders [img]res://credit_graphics/twitter.png[/img][/url][/color]\n[color=blue][url=http://www.twitter.com/axoila][img]res://credit_graphics/ronja.png[/img] Ronja Böhringer [img]res://credit_graphics/twitter.png[/img][/url][/color]"
 
 [node name="seiteNormal" type="Sprite" parent="Surface/Book"]
 
 visibility/visible = false
 material/material = ExtResource( 5 )
-texture = ExtResource( 16 )
+texture = ExtResource( 17 )
 centered = false
 
 [node name="Label" type="RichTextLabel" parent="Surface/Book/seiteNormal"]
@@ -172,7 +175,7 @@ custom_colors/font_color_selected = Color( 0, 0, 0, 1 )
 bbcode/enabled = true
 bbcode/bbcode = "Lorem Ipsum"
 visible_characters = -1
-script/script = ExtResource( 17 )
+script/script = ExtResource( 18 )
 
 [node name="Tween" type="Tween" parent="Surface/Book"]
 
@@ -192,13 +195,13 @@ autostart = false
 
 material/material = ExtResource( 5 )
 transform/pos = Vector2( 380, 200 )
-texture = ExtResource( 18 )
+texture = ExtResource( 19 )
 
 [node name="pfeil_links" type="Sprite" parent="Surface/Book"]
 
 material/material = ExtResource( 5 )
 transform/pos = Vector2( 40, 200 )
-texture = ExtResource( 19 )
+texture = ExtResource( 20 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Surface/Book"]
 
@@ -208,7 +211,7 @@ frames = SubResource( 3 )
 animation = "default"
 centered = false
 
-[node name="Player" type="Area2D" parent="."]
+[node name="Player" type="Area2D" parent="." groups=[ "Player" ]]
 
 editor/display_folded = true
 material/material = ExtResource( 5 )
@@ -222,7 +225,7 @@ gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
 linear_damp = 0.1
 angular_damp = 1.0
-script/script = ExtResource( 26 )
+script/script = ExtResource( 27 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 
@@ -233,13 +236,13 @@ _update_shape_index = 0
 [node name="Sprite" type="Sprite" parent="Player"]
 
 material/material = ExtResource( 5 )
-texture = ExtResource( 27 )
+texture = ExtResource( 28 )
 flip_v = true
 
 [node name="FishSpawner" type="Node" parent="."]
 
-script/script = ExtResource( 28 )
-pool = ExtResource( 29 )
+script/script = ExtResource( 29 )
+pool = ExtResource( 30 )
 fish_delay = 0.2
 
 
