@@ -54,12 +54,16 @@ func change_site(direction):
 
 func load_page():
 	if page < 1:
+		#first page
 		get_node("seiteNormal").hide()
 		return
 	get_node("seiteNormal").show()
 	if page > game_manager.catched_fishes.size():
+		# last page
 		content.set_bbcode(credits)
+		return
 	
+	content.set_bbcode(game_manager.catched_fishes[page-1].description)
 	
 
 func hide_anim(foo, bar):

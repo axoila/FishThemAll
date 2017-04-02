@@ -15,4 +15,4 @@ func update_display():
 		add_child(new_fish)
 		new_fish.catched = true
 		new_fish.set_pos(get_pos())
-		new_fish.set_rot(rand_range(-PI/4, PI/4))
+		new_fish.set_rot(rand_range(PI/4, 3*PI/4))

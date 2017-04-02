@@ -28,9 +28,6 @@ func _process(delta):
 		set_scale(Vector2(captive_scale, captive_scale))
 		return #captive fishes can't move, kill or die
 	
-	if catched:
-		print("HELP")
-	
 	var forward = get_transform().basis_xform(Vector2(0, -1))
 	set_pos(get_pos() + forward * delta * speed)
 	
