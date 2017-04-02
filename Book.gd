@@ -5,6 +5,7 @@ var page = 0
 var flip_page = 0
 
 onready var tween = get_node("Tween")
+onready var content = get_node("seiteNormal/Label")
 
 export(String, MULTILINE) var credits
 
@@ -39,10 +40,12 @@ func change_site(direction):
 		if page <= 0:
 			return
 		tween.interpolate_property(get_node("AnimatedSprite"), "frame", \
-		0, 6, 1.1, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-	elif page < 10: #todo replace with MAX_PAGE
+		6, 0, 0.6, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+	else:
+		if page > game_manager.catched_fishes.size(): 
+			return
 		tween.interpolate_property(get_node("AnimatedSprite"), "frame", \
-		6, 0, 1.1, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+		0, 6, 0.6, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
 	
 	page += sign(direction)
 	get_node("AnimatedSprite").show()
@@ -50,12 +53,14 @@ func change_site(direction):
 	get_node("Timer").start()
 
 func load_page():
-	if page > 0:
-		get_node("seiteNormal").show()
-	else:
+	if page < 1:
 		get_node("seiteNormal").hide()
+		return
+	get_node("seiteNormal").show()
+	if page > game_manager.catched_fishes.size():
+		content.set_bbcode(credits)
 	
-	#TODO load fish information
+	
 
 func hide_anim(foo, bar):
 	get_node("AnimatedSprite").hide()

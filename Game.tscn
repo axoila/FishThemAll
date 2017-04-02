@@ -92,6 +92,7 @@ depth = 0
 material/material = ExtResource( 5 )
 frames = SubResource( 1 )
 animation = "default"
+frame = 2
 playing = true
 centered = false
 
@@ -143,7 +144,7 @@ transform/pos = Vector2( 0, 70 )
 texture = ExtResource( 14 )
 centered = false
 script/script = ExtResource( 15 )
-credits = "[center][b]Credits[/b][/center]\n\n"
+credits = "[center][b][u]Credits[/u][/b][/center]\n\n[color=blue][url=http://www.twitter.com/thatchrisone][img]res://credit_graphics/chris.png[/img] Christoph Reitmeier [img]res://credit_graphics/twitter.png[/img][/url][/color]\n[color=blue][url=http://www.facebook.com/therealjollygoodday][img]res://credit_graphics/karo.png[/img] Karolin Hoffmann [img]res://credit_graphics/facebook.png[/img][/url][/color]\n[color=blue][url=http://www.facebook.com/Leibi97sartandstuff][img]res://credit_graphics/leibi.png[/img] Sophie Liebisch [img]res://credit_graphics/facebook.png[/img][/url][/color]\n[color=blue][url=http://www.twitter.com/daunenpuschel][img]res://credit_graphics/mandy.png[/img] Mandy Anders [img]res://credit_graphics/twitter.png[/img][/url][/color]\n[color=blue][url=http://www.twitter.com/axoila][img]res://credit_graphics/ronja.png[/img] Ronja Böhringer [img]res://credit_graphics/twitter.png[/img][/url][/color]"
 
 [node name="seiteNormal" type="Sprite" parent="Surface/Book"]
 
@@ -169,7 +170,7 @@ custom_colors/default_color = Color( 0, 0, 0, 1 )
 custom_colors/selection_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_selected = Color( 0, 0, 0, 1 )
 bbcode/enabled = true
-bbcode/bbcode = "[center][b][u]Credits[/u][/b][/center]\n\n[color=blue][url=http://www.twitter.com/thatchrisone][img]res://credit_graphics/chris.png[/img] Christoph Reitmeier [img]res://credit_graphics/twitter.png[/img][/url][/color]\n[color=blue][url=http://www.facebook.com/therealjollygoodday][img]res://credit_graphics/karo.png[/img] Karolin Hoffmann [img]res://credit_graphics/facebook.png[/img][/url][/color]\n[color=blue][url=http://www.facebook.com/Leibi97sartandstuff][img]res://credit_graphics/leibi.png[/img] Sophie Liebisch [img]res://credit_graphics/facebook.png[/img][/url][/color]\n[color=blue][url=http://www.twitter.com/daunenpuschel][img]res://credit_graphics/mandy.png[/img] Mandy Anders [img]res://credit_graphics/twitter.png[/img][/url][/color]\n[color=blue][url=http://www.twitter.com/axoila][img]res://credit_graphics/ronja.png[/img] Ronja Böhringer [img]res://credit_graphics/twitter.png[/img][/url][/color]"
+bbcode/bbcode = "Lorem Ipsum"
 visible_characters = -1
 script/script = ExtResource( 17 )
 
@@ -183,7 +184,7 @@ playback/speed = 1.0
 [node name="Timer" type="Timer" parent="Surface/Book"]
 
 process_mode = 1
-wait_time = 0.6
+wait_time = 0.3
 one_shot = true
 autostart = false
 
@@ -239,6 +240,6 @@ flip_v = true
 
 script/script = ExtResource( 28 )
 pool = ExtResource( 29 )
-fish_delay = 1
+fish_delay = 0.2
 
 
