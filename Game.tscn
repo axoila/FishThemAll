@@ -92,7 +92,6 @@ depth = 0
 material/material = ExtResource( 5 )
 frames = SubResource( 1 )
 animation = "default"
-frame = 1
 playing = true
 centered = false
 
@@ -148,6 +147,7 @@ credits = "[center][b]Credits[/b][/center]\n\n"
 
 [node name="seiteNormal" type="Sprite" parent="Surface/Book"]
 
+visibility/visible = false
 material/material = ExtResource( 5 )
 texture = ExtResource( 16 )
 centered = false
