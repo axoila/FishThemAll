@@ -19,3 +19,5 @@ func _process(delta):
 func reset():
 	depth = 0
 	falling = false
+
+

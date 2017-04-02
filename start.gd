@@ -1,8 +1,8 @@
-extends Sprite
+extends Node2D
 
 onready var player = get_node("../../Player")
 
-var size = 0.2
+var size = 0.7
 
 func _ready():
 	set_process(true)
@@ -11,14 +11,14 @@ func _ready():
 
 func _process(delta):
 	if (game_manager.mouse_pos - get_global_pos()).length() < 50 * size:
-		size = clamp(size + delta/5, 0.2, 1)
+		size = clamp(size + delta/3, 0.7, 1.4)
 		set_scale(Vector2(size, size))
 	else:
-		size = clamp(size - delta/2, 0.2, 1)
+		size = clamp(size - delta/2, 0.7, 1.4)
 		set_scale(Vector2(size, size))
 	
-	if size == 1:
-		size = 0.2
+	if size == 1.4:
+		size = 0.7
 		hide()
 		game_manager.start()
 
