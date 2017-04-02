@@ -111,7 +111,6 @@ depth = 0
 material/material = ExtResource( 5 )
 frames = SubResource( 1 )
 animation = "default"
-frame = 2
 playing = true
 centered = false
 
@@ -121,13 +120,11 @@ material/material = ExtResource( 5 )
 transform/pos = Vector2( 216.3, 234.168 )
 frames = SubResource( 4 )
 animation = "default"
-frame = 1
 playing = true
 script/script = ExtResource( 11 )
 
 [node name="boot_shadow" type="Sprite" parent="Surface"]
 
-editor/display_folded = true
 visibility/self_opacity = 0.5
 material/material = ExtResource( 5 )
 transform/pos = Vector2( 240, 125 )
@@ -174,6 +171,7 @@ script/script = ExtResource( 15 )
 
 [node name="Book" type="Sprite" parent="Surface"]
 
+editor/display_folded = true
 material/material = ExtResource( 5 )
 transform/pos = Vector2( 0, 70 )
 z/z = 2
@@ -184,6 +182,7 @@ credits = "[center][b][u]Credits[/u][/b][/center]\n\n[color=blue][url=http://www
 
 [node name="seiteNormal" type="Sprite" parent="Surface/Book"]
 
+visibility/visible = false
 material/material = ExtResource( 5 )
 texture = ExtResource( 18 )
 centered = false
