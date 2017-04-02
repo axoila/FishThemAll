@@ -72,6 +72,9 @@ func load_page():
 	+ ("\n[img]%s[/img]" % \
 	game_manager.catched_fishes[page-1].image))
 	
+	if game_manager.catched_fishes.size() >= game_manager.fish_amount:
+		get_node("siegel").show()
+	
 
 func hide_anim(foo, bar):
 	get_node("AnimatedSprite").hide()

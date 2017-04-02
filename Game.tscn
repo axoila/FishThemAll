@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=1]
+[gd_scene load_steps=44 format=1]
 
 [ext_resource path="res://backgrounds/hintergrundWasser/01.png" type="Texture" id=1]
 [ext_resource path="res://water_color.gd" type="Script" id=2]
@@ -15,22 +15,27 @@
 [ext_resource path="res://book/smolBuch.png" type="Texture" id=13]
 [ext_resource path="res://open_book.gd" type="Script" id=14]
 [ext_resource path="res://catched_display.gd" type="Script" id=15]
-[ext_resource path="res://book/bigBuch.png" type="Texture" id=16]
-[ext_resource path="res://Book.gd" type="Script" id=17]
-[ext_resource path="res://book/seiteNormal.png" type="Texture" id=18]
-[ext_resource path="res://open_link.gd" type="Script" id=19]
-[ext_resource path="res://cursor/pfeil_rechts.png" type="Texture" id=20]
-[ext_resource path="res://cursor/pfeil_links.png" type="Texture" id=21]
-[ext_resource path="res://book/umblaettern/normalBlaetter/01.png" type="Texture" id=22]
-[ext_resource path="res://book/umblaettern/normalBlaetter/02.png" type="Texture" id=23]
-[ext_resource path="res://book/umblaettern/normalBlaetter/03.png" type="Texture" id=24]
-[ext_resource path="res://book/umblaettern/normalBlaetter/04.png" type="Texture" id=25]
-[ext_resource path="res://book/umblaettern/normalBlaetter/05.png" type="Texture" id=26]
-[ext_resource path="res://book/umblaettern/normalBlaetter/06.png" type="Texture" id=27]
-[ext_resource path="res://Cursor.gd" type="Script" id=28]
-[ext_resource path="res://cursor/cursorneu.png" type="Texture" id=29]
-[ext_resource path="res://FishSpawner.gd" type="Script" id=30]
-[ext_resource path="res://FishPool.tscn" type="PackedScene" id=31]
+[ext_resource path="res://progress.gd" type="Script" id=16]
+[ext_resource path="res://angler/anglerVonOben.png" type="Texture" id=17]
+[ext_resource path="res://book/bigBuch.png" type="Texture" id=18]
+[ext_resource path="res://Book.gd" type="Script" id=19]
+[ext_resource path="res://completeSiegel/siegel.png" type="Texture" id=20]
+[ext_resource path="res://book/seiteNormal.png" type="Texture" id=21]
+[ext_resource path="res://fonts/font_20p.fnt" type="BitmapFont" id=22]
+[ext_resource path="res://open_link.gd" type="Script" id=23]
+[ext_resource path="res://cursor/pfeil_rechts.png" type="Texture" id=24]
+[ext_resource path="res://cursor/pfeil_links.png" type="Texture" id=25]
+[ext_resource path="res://book/umblaettern/normalBlaetter/01.png" type="Texture" id=26]
+[ext_resource path="res://book/umblaettern/normalBlaetter/02.png" type="Texture" id=27]
+[ext_resource path="res://book/umblaettern/normalBlaetter/03.png" type="Texture" id=28]
+[ext_resource path="res://book/umblaettern/normalBlaetter/04.png" type="Texture" id=29]
+[ext_resource path="res://book/umblaettern/normalBlaetter/05.png" type="Texture" id=30]
+[ext_resource path="res://book/umblaettern/normalBlaetter/06.png" type="Texture" id=31]
+[ext_resource path="res://Cursor.gd" type="Script" id=32]
+[ext_resource path="res://cursor/cursorneu.png" type="Texture" id=33]
+[ext_resource path="res://FishSpawner.gd" type="Script" id=34]
+[ext_resource path="res://FishPool.tscn" type="PackedScene" id=35]
+[ext_resource path="res://deepness.gd" type="Script" id=36]
 
 [sub_resource type="SpriteFrames" id=1]
 
@@ -52,9 +57,35 @@ tracks/0/interp = 2
 tracks/0/imported = false
 tracks/0/keys = { "times":FloatArray( 0, 1.5, 3 ), "transitions":FloatArray( 1, 1, 1 ), "update":0, "values":[ Vector2( 0.206429, 91.668 ), Vector2( -3.95501, 89.3451 ), Vector2( 0.206429, 91.668 ) ] }
 
+[sub_resource type="StyleBoxFlat" id=6]
+
+content_margin/left = -1.0
+content_margin/right = -1.0
+content_margin/top = -1.0
+content_margin/bottom = -1.0
+bg_color = Color( 0.823529, 0.0666667, 0.105882, 1 )
+light_color = Color( 0.8, 0.8, 0.8, 0 )
+dark_color = Color( 0.8, 0.8, 0.8, 0 )
+border_size = 4
+border_blend = false
+draw_bg = true
+
+[sub_resource type="StyleBoxFlat" id=7]
+
+content_margin/left = -1.0
+content_margin/right = -1.0
+content_margin/top = -1.0
+content_margin/bottom = -1.0
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+light_color = Color( 0.984314, 0.94902, 0.8, 1 )
+dark_color = Color( 0.984314, 0.94902, 0.8, 1 )
+border_size = 4
+border_blend = false
+draw_bg = true
+
 [sub_resource type="SpriteFrames" id=3]
 
-animations = [ { "frames":[ ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ) ], "loop":true, "name":"default", "speed":5.0 } ]
+animations = [ { "frames":[ ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ) ], "loop":true, "name":"default", "speed":5.0 } ]
 
 [sub_resource type="CircleShape2D" id=2]
 
@@ -111,6 +142,7 @@ depth = 0
 material/material = ExtResource( 5 )
 frames = SubResource( 1 )
 animation = "default"
+frame = 2
 playing = true
 centered = false
 
@@ -125,10 +157,9 @@ script/script = ExtResource( 11 )
 
 [node name="boot_shadow" type="Sprite" parent="Surface"]
 
-editor/display_folded = true
 visibility/self_opacity = 0.5
 material/material = ExtResource( 5 )
-transform/pos = Vector2( 240, 125 )
+transform/pos = Vector2( 225, 125 )
 transform/rot = -90.0
 texture = ExtResource( 12 )
 modulate = Color( 0, 0, 0, 1 )
@@ -136,11 +167,12 @@ modulate = Color( 0, 0, 0, 1 )
 [node name="boot" type="Sprite" parent="Surface/boot_shadow"]
 
 material/material = ExtResource( 5 )
-transform/pos = Vector2( -17, -12 )
+transform/pos = Vector2( -10, -27 )
 texture = ExtResource( 12 )
 
 [node name="smolBuch_shadow" type="Sprite" parent="Surface/boot_shadow/boot"]
 
+editor/display_folded = true
 visibility/self_opacity = 0.42
 transform/pos = Vector2( 0.206429, 91.668 )
 transform/rot = 69.7481
@@ -170,22 +202,62 @@ transform/pos = Vector2( -6.00001, -56 )
 z/z = 1
 script/script = ExtResource( 15 )
 
+[node name="ProgressBar" type="ProgressBar" parent="Surface/boot_shadow/boot"]
+
+rect/rotation = 180.0
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 75.0
+margin/top = -148.0
+margin/right = 228.0
+margin/bottom = -128.0
+custom_styles/fg = SubResource( 6 )
+custom_styles/bg = SubResource( 7 )
+range/min = 0.0
+range/max = 100.0
+range/step = 1.0
+range/page = 0.0
+range/value = 50.0
+range/exp_edit = false
+range/rounded = false
+percent/visible = false
+script/script = ExtResource( 16 )
+
+[node name="anglerVonOben" type="Sprite" parent="Surface/boot_shadow/boot"]
+
+material/material = ExtResource( 5 )
+transform/pos = Vector2( 26.5688, 0.668303 )
+transform/rot = -27.4137
+texture = ExtResource( 17 )
+
 [node name="Book" type="Sprite" parent="Surface"]
 
 editor/display_folded = true
 material/material = ExtResource( 5 )
-transform/pos = Vector2( 0, 70 )
+transform/pos = Vector2( 0, 420 )
 z/z = 2
-texture = ExtResource( 16 )
+texture = ExtResource( 18 )
 centered = false
-script/script = ExtResource( 17 )
-credits = "[center][b][u]Credits[/u][/b][/center]\n\n[color=blue][url=http://www.twitter.com/thatchrisone][img]res://credit_graphics/chris.png[/img] Christoph Reitmeier [img]res://credit_graphics/twitter.png[/img][/url][/color]\n[color=blue][url=http://www.facebook.com/therealjollygoodday][img]res://credit_graphics/karo.png[/img] Karolin Hoffmann [img]res://credit_graphics/facebook.png[/img][/url][/color]\n[color=blue][url=http://www.facebook.com/Leibi97sartandstuff][img]res://credit_graphics/leibi.png[/img] Sophie Liebisch [img]res://credit_graphics/facebook.png[/img][/url][/color]\n[color=blue][url=http://www.twitter.com/daunenpuschel][img]res://credit_graphics/mandy.png[/img] Mandy Anders [img]res://credit_graphics/twitter.png[/img][/url][/color]\n[color=blue][url=http://www.twitter.com/axoila][img]res://credit_graphics/ronja.png[/img] Ronja Böhringer [img]res://credit_graphics/twitter.png[/img][/url][/color]"
+script/script = ExtResource( 19 )
+credits = "[center][b][u]Credits[/u][/b][/center]\n\n[color=blue][url=http://www.twitter.com/thatchrisone][img]res://credit_graphics/chris.png[/img] Christoph Reitmeier [img]res://credit_graphics/twitter.png[/img][/url][/color]\n[color=blue][url=http://www.facebook.com/therealjollygoodday][img]res://credit_graphics/karo.png[/img] Karolin Hoffmann [img]res://credit_graphics/facebook.png[/img][/url][/color]\n[color=blue][url=http://www.facebook.com/Leibi97sartandstuff][img]res://credit_graphics/leibi.png[/img] Sophie Liebisch [img]res://credit_graphics/facebook.png[/img][/url][/color]\n[color=blue][url=http://www.twitter.com/daunenpuschel][img]res://credit_graphics/mandy.png[/img] Mandy Anders [img]res://credit_graphics/twitter.png[/img][/url][/color]\n[color=blue][url=http://www.twitter.com/axoila][img]res://credit_graphics/ronja.png[/img] Ronja Boehringer [img]res://credit_graphics/twitter.png[/img][/url][/color]"
 
-[node name="seiteNormal" type="Sprite" parent="Surface/Book"]
+[node name="siegel" type="Sprite" parent="Surface/Book"]
 
 visibility/visible = false
 material/material = ExtResource( 5 )
-texture = ExtResource( 18 )
+transform/pos = Vector2( 308.131, 70.8806 )
+transform/rot = -15.1857
+transform/scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 20 )
+
+[node name="seiteNormal" type="Sprite" parent="Surface/Book"]
+
+editor/display_folded = true
+visibility/visible = false
+material/material = ExtResource( 5 )
+texture = ExtResource( 21 )
 centered = false
 
 [node name="Label" type="RichTextLabel" parent="Surface/Book/seiteNormal"]
@@ -197,17 +269,22 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 82.0
-margin/top = 44.0
-margin/right = 95.0
+margin/left = 70.0
+margin/top = 20.0
+margin/right = 70.0
 margin/bottom = 72.0
+custom_fonts/mono_font = ExtResource( 22 )
+custom_fonts/bold_italics_font = ExtResource( 22 )
+custom_fonts/italics_font = ExtResource( 22 )
+custom_fonts/bold_font = ExtResource( 22 )
+custom_fonts/normal_font = ExtResource( 22 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 custom_colors/selection_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_selected = Color( 0, 0, 0, 1 )
 bbcode/enabled = true
-bbcode/bbcode = "Lorem Ipsum"
+bbcode/bbcode = "[center][b][u]Credits[/u][/b][/center]\n\n[color=blue][url=http://www.twitter.com/thatchrisone][img]res://credit_graphics/chris.png[/img] Christoph Reitmeier [img]res://credit_graphics/twitter.png[/img][/url][/color]\n[color=blue][url=http://www.facebook.com/therealjollygoodday][img]res://credit_graphics/karo.png[/img] Karolin Hofmann [img]res://credit_graphics/facebook.png[/img][/url][/color]\n[color=blue][url=http://www.facebook.com/Leibi97sartandstuff][img]res://credit_graphics/leibi.png[/img] Sophie Liebisch [img]res://credit_graphics/facebook.png[/img][/url][/color]\n[color=blue][url=http://www.twitter.com/daunenpuschel][img]res://credit_graphics/mandy.png[/img] Mandy Anders [img]res://credit_graphics/twitter.png[/img][/url][/color]\n[color=blue][url=http://www.twitter.com/axoila][img]res://credit_graphics/ronja.png[/img] Ronja Boehringer [img]res://credit_graphics/twitter.png[/img][/url][/color]"
 visible_characters = -1
-script/script = ExtResource( 19 )
+script/script = ExtResource( 23 )
 
 [node name="Tween" type="Tween" parent="Surface/Book"]
 
@@ -227,13 +304,13 @@ autostart = false
 
 material/material = ExtResource( 5 )
 transform/pos = Vector2( 380, 200 )
-texture = ExtResource( 20 )
+texture = ExtResource( 24 )
 
 [node name="pfeil_links" type="Sprite" parent="Surface/Book"]
 
 material/material = ExtResource( 5 )
 transform/pos = Vector2( 40, 200 )
-texture = ExtResource( 21 )
+texture = ExtResource( 25 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Surface/Book"]
 
@@ -247,7 +324,7 @@ centered = false
 
 editor/display_folded = true
 material/material = ExtResource( 5 )
-transform/pos = Vector2( 166, 183 )
+transform/pos = Vector2( 275, 165 )
 z/z = 3
 input/pickable = true
 shapes/0/shape = SubResource( 2 )
@@ -257,7 +334,8 @@ gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
 linear_damp = 0.1
 angular_damp = 1.0
-script/script = ExtResource( 28 )
+script/script = ExtResource( 32 )
+speed = 210.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 
@@ -269,13 +347,32 @@ _update_shape_index = 0
 
 material/material = ExtResource( 5 )
 transform/pos = Vector2( 4, -11 )
-texture = ExtResource( 29 )
+texture = ExtResource( 33 )
 flip_v = true
 
 [node name="FishSpawner" type="Node" parent="."]
 
-script/script = ExtResource( 30 )
-pool = ExtResource( 31 )
-fish_delay = 0.2
+script/script = ExtResource( 34 )
+pool = ExtResource( 35 )
+fish_delay = 0.1
+progress = NodePath("../Surface/boot_shadow/boot/ProgressBar")
+
+[node name="Label" type="Label" parent="."]
+
+rect/scale = Vector2( 2, 2 )
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 110.0
+margin/bottom = 30.0
+custom_fonts/font = ExtResource( 22 )
+text = "Deepness"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+script/script = ExtResource( 36 )
 
 

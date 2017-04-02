@@ -1,7 +1,8 @@
 extends Node2D
 
-var depth = 0
+export(float) var speed
 
+var depth = 0
 var falling = false
 
 func _ready():
@@ -12,7 +13,14 @@ func _ready():
 	game_manager.connect("reset", self, "reset")
 
 func _process(delta):
-	set_pos(game_manager.mouse_pos)
+	var difference = game_manager.real_mouse_pos - get_pos()
+	if difference.length() < delta * speed:
+		set_pos(game_manager.real_mouse_pos)
+	else:
+		difference = difference.normalized() * delta * speed
+		set_pos(get_pos() + difference)
+	game_manager.mouse_pos = get_pos()
+	
 	if falling:
 		depth += delta
 

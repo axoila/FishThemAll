@@ -36,7 +36,8 @@ func _process(delta):
 		game_manager.hit_fish(self)
 		
 	
-	if get_pos().distance_to(Vector2(210, 210)) > 450:
+	if get_pos().distance_to(Vector2(210, 210)) > 450 || \
+			depth < player.depth - 5:
 		queue_free()
 
 

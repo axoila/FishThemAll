@@ -4,8 +4,6 @@ export(String, DIR) var water_directory
 
 onready var player = get_node("../Player")
 
-var dir
-
 var images = []
 
 func _ready():

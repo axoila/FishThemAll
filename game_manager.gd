@@ -6,7 +6,10 @@ signal reset
 signal start
 
 var mouse_pos = Vector2()
+var real_mouse_pos = Vector2(275, 165)
 var catched_fishes = []
+
+var fish_amount = 1000
 
 func _ready():
 	set_process_input(true)
@@ -33,4 +36,4 @@ func start():
 
 func _input(event):
 	if event.type == InputEvent.MOUSE_MOTION:
-		mouse_pos = event.pos
+		real_mouse_pos = event.pos
