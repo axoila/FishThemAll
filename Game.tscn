@@ -142,7 +142,6 @@ depth = 0
 material/material = ExtResource( 5 )
 frames = SubResource( 1 )
 animation = "default"
-frame = 2
 playing = true
 centered = false
 

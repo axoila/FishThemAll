@@ -1299,7 +1299,6 @@ script/script = ExtResource( 1 )
 
 [node name="blobfisch" type="Area2D" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( -3.19812, 284.804 )
 input/pickable = true
 shapes/0/shape = SubResource( 1 )
@@ -1339,6 +1338,7 @@ material/material = ExtResource( 3 )
 transform/rot = -90.0
 frames = SubResource( 7 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="blobfisch"]
@@ -1351,7 +1351,6 @@ trigger = false
 
 [node name="ningen" type="Area2D" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( -817.47, 358.829 )
 input/pickable = true
 shapes/0/shape = SubResource( 8 )
@@ -1415,6 +1414,7 @@ material/material = ExtResource( 3 )
 transform/rot = -90.0
 frames = SubResource( 269 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="ningen"]
@@ -1427,7 +1427,6 @@ trigger = false
 
 [node name="tati'meiw-nesdttu" type="Area2D" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 408.757, 524.923 )
 input/pickable = true
 shapes/0/shape = SubResource( 23 )
@@ -1491,7 +1490,6 @@ material/material = ExtResource( 3 )
 transform/rot = -90.0
 frames = SubResource( 271 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="tati'meiw-nesdttu"]
@@ -1504,7 +1502,6 @@ trigger = false
 
 [node name="barsch" type="Area2D" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 137, 358 )
 input/pickable = true
 shapes/0/shape = SubResource( 272 )
@@ -1551,7 +1548,6 @@ trigger = false
 
 [node name="anglerfisch" type="Area2D" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 283.419, 355.162 )
 input/pickable = true
 shapes/0/shape = SubResource( 277 )
@@ -1595,7 +1591,6 @@ trigger = false
 
 [node name="rochen" type="Area2D" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 215.79, 239.018 )
 input/pickable = true
 shapes/0/shape = SubResource( 281 )
@@ -1639,7 +1634,6 @@ trigger = false
 
 [node name="qualle" type="Area2D" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 444.81, 275 )
 input/pickable = true
 shapes/0/shape = SubResource( 285 )
@@ -1701,7 +1695,6 @@ trigger = false
 
 [node name="hai" type="Area2D" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( -89.19, 124 )
 input/pickable = true
 shapes/0/shape = SubResource( 295 )
@@ -1755,7 +1748,6 @@ trigger = false
 
 [node name="sternengezücht" type="Area2D" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( -403.681, 215.171 )
 input/pickable = true
 shapes/0/shape = SubResource( 302 )
@@ -1809,7 +1801,6 @@ trigger = false
 
 [node name="clownfisch" type="Area2D" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( -243.706, 124 )
 z/z = -1
 input/pickable = true
@@ -2001,6 +1992,7 @@ transform/pos = Vector2( -23.8354, -36.9222 )
 transform/rot = -90.0
 frames = SubResource( 350 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="AnimatedSprite 2" type="AnimatedSprite" parent="clownfisch"]
@@ -2010,7 +2002,6 @@ transform/pos = Vector2( -7.15247, -23.4169 )
 transform/rot = -90.0
 frames = SubResource( 350 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="AnimatedSprite 3" type="AnimatedSprite" parent="clownfisch"]
@@ -2020,7 +2011,6 @@ transform/pos = Vector2( -41.3129, -19.0475 )
 transform/rot = -90.0
 frames = SubResource( 350 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="AnimatedSprite 4" type="AnimatedSprite" parent="clownfisch"]
@@ -2030,6 +2020,7 @@ transform/pos = Vector2( 1.5863, 5.18248 )
 transform/rot = -90.0
 frames = SubResource( 350 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="AnimatedSprite 5" type="AnimatedSprite" parent="clownfisch"]
@@ -2039,7 +2030,6 @@ transform/pos = Vector2( -51.2432, 7.56573 )
 transform/rot = -90.0
 frames = SubResource( 350 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="AnimatedSprite 6" type="AnimatedSprite" parent="clownfisch"]
@@ -2049,6 +2039,7 @@ transform/pos = Vector2( -65.9402, -21.0337 )
 transform/rot = -90.0
 frames = SubResource( 350 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="AnimatedSprite 7" type="AnimatedSprite" parent="clownfisch"]
@@ -2058,7 +2049,6 @@ transform/pos = Vector2( 17.8721, -19.0476 )
 transform/rot = -90.0
 frames = SubResource( 350 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="AnimatedSprite 8" type="AnimatedSprite" parent="clownfisch"]
@@ -2068,7 +2058,6 @@ transform/pos = Vector2( -23.041, 4.78526 )
 transform/rot = -90.0
 frames = SubResource( 350 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="clownfisch"]
@@ -2145,7 +2134,6 @@ trigger = false
 
 [node name="aal" type="Area2D" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( -211, 254 )
 input/pickable = true
 shapes/0/shape = SubResource( 132 )
@@ -2326,7 +2314,6 @@ trigger = false
 
 [node name="crab" type="Area2D" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( -184.423, 597.043 )
 input/pickable = true
 shapes/0/shape = SubResource( 151 )
@@ -2391,7 +2378,6 @@ transform/pos = Vector2( -1.50742, -6.58912e-08 )
 transform/rot = -90.0
 frames = SubResource( 361 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="crab"]
@@ -2405,7 +2391,6 @@ trigger = false
 
 [node name="stiefel" type="Area2D" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( -501.728, 325.002 )
 input/pickable = true
 shapes/0/shape = SubResource( 166 )
@@ -2446,7 +2431,6 @@ trigger = false
 
 [node name="algen" type="Area2D" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( -406.084, 389.845 )
 input/pickable = true
 shapes/0/shape = SubResource( 169 )
@@ -2520,7 +2504,6 @@ trigger = false
 
 [node name="buch" type="Area2D" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( -653.06, 377.871 )
 input/pickable = true
 shapes/0/shape = SubResource( 183 )
@@ -2600,7 +2583,6 @@ trigger = false
 
 [node name="kristall" type="Area2D" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( -662.942, 531.147 )
 input/pickable = true
 shapes/0/shape = SubResource( 366 )
@@ -2626,6 +2608,7 @@ transform/pos = Vector2( 19.4529, 8.64579 )
 transform/rot = -0.0865118
 frames = SubResource( 189 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="kristall"]
@@ -2639,7 +2622,6 @@ trigger = false
 
 [node name="reifen" type="Area2D" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( -614.718, 585.696 )
 input/pickable = true
 shapes/0/shape = SubResource( 367 )
@@ -2678,7 +2660,6 @@ trigger = false
 
 [node name="truhe" type="Area2D" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( -744.778, 650.726 )
 input/pickable = true
 shapes/0/shape = SubResource( 369 )
@@ -2726,7 +2707,6 @@ trigger = false
 
 [node name="leiche" type="Area2D" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( -544.344, 767.768 )
 input/pickable = true
 shapes/0/shape = SubResource( 372 )
@@ -2798,7 +2778,6 @@ trigger = false
 
 [node name="ul'zel" type="Area2D" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 162.986, 750.58 )
 input/pickable = true
 shapes/0/shape = SubResource( 381 )
@@ -2878,7 +2857,6 @@ trigger = false
 
 [node name="karatrik" type="Area2D" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 475.362, 900.118 )
 input/pickable = true
 shapes/0/shape = SubResource( 396 )
@@ -2944,17 +2922,9 @@ build_mode = 0
 polygon = Vector2Array( 1.76871, -110.178, 13.4597, -72.6233, 24.6817, -88.225, 58.3389, -109.671, 73.4506, -92.109, 51.0153, -85.7772, 55.8798, -51.1505, 69.5302, -38.4662, 73.4208, -7.74127, 83.6791, -56.5051, 107.575, -55.0336, 110.492, -29.1859, 103.165, 3.48578, 77.802, 14.2057, 58.2873, 36.1442, 41.7018, 48.8179, 63.1456, 88.3271, 37.2991, 87.3426, 13.9094, 34.6654, -1.22302, 75.6248, -24.1477, 86.8332, -48.0217, 24.4023, -64.1038, -7.30219, -65.0641, -49.7303, -48.9702, -51.6753, -52.3749, -77.0356, -35.2899, -123.359, -14.324, -111.647 )
 shape_range = Vector2( 0, 9 )
 trigger = false
-script/script = ExtResource( 2 )
-common_depth = Vector2( 80, 100 )
-speed = 200.0
-name = "kelaktan"
-description = "Ul\'zel\n\nEin niederes tiefes Wesen. Sie werden geschickt um zu beobachten und zu finden. Ihnen fehlen Gehirn oder ähnliche innere Organe, weshalb davon ausgegangen wird, dass diese Kreaturen von einer höheren Macht erschaffen werden."
-captive_scale = 0.2
-image = "res://eldricht/engelfisch/01.png"
 
 [node name="gl'gbub" type="Area2D" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( -365.424, 1025.86 )
 input/pickable = true
 shapes/0/shape = SubResource( 407 )
@@ -3024,7 +2994,6 @@ trigger = false
 
 [node name="C'thulu" type="Area2D" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 24.9971, 1090.93 )
 input/pickable = true
 shapes/0/shape = SubResource( 258 )
