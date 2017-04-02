@@ -1210,6 +1210,7 @@ speed = 70.0
 name = "blobfisch"
 description = "Psychrolutes marcidus\nBlobfisch\n\nIgitt, als ich diese Monstrosität aus dem Wasser fischte, dachte ich es wäre ein toter Mensch, aber als ich dann den Fisch ins Wasser tauchte, sah er komplett anders aus. Bringt man diese Wesen aus ihrem natürlichen Lebensraum, ändert sich die Betrachtung anderer auf sie extrem. Interessant."
 captive_scale = 0.6
+image = "res://fish/blobfish/blobfish2.png"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="blobfisch"]
 
@@ -1285,6 +1286,7 @@ speed = 70.0
 name = "ningen"
 description = "Ningen\n\nEin merkwürdiges Menschenähnliches Wesen, es hatte keinen Eintrag in diesem Lexikon also hab ich selbst einen geschrieben. Ich habe das Gefühl diese Dinger werden eigentlich größer, aber der hier scheint recht klein zu sein. Ich habe auch mal gehört, dass sie eigentlich in kalten Gebieten leben. Ich habe mich langsam mit meinen merkwürdigen Fängen abgefunden."
 captive_scale = 0.4
+image = "res://fish/ningen/01.png"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="ningen"]
 
@@ -1292,6 +1294,7 @@ material/material = ExtResource( 3 )
 transform/rot = -90.0
 frames = SubResource( 22 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="ningen"]
@@ -1336,6 +1339,7 @@ speed = 70.0
 name = "gllgbub"
 description = "Gl\'lgbub\n\nEine singuläre Kreatur welche nichts sieht, jedoch alles weiß. Es spricht grausame Wahrheiten zu denen die ihm zuhören. Beute bringt es mit einem Schrei um, jedoch wird es durch Luft und Sonne sofort getötet.\n"
 captive_scale = 0.5
+image = "res://eldricht/tentakelviehMitSchnabel/01.png"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="gllgbub"]
 
@@ -1343,7 +1347,6 @@ material/material = ExtResource( 3 )
 transform/rot = -90.0
 frames = SubResource( 29 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="gllgbub"]
@@ -1412,6 +1415,7 @@ speed = 70.0
 name = "ningen"
 description = "Tati\'meiw-Nesdttu\n\nKreaturen auf einer höheren Existenzstufe. Sie projizieren ihre Seele in andere Galaxien und Universen um ihrem Leben auf der Erde zu entfliehen. Dabei hinterlassen sie kaum antwortende Hüllen, welche nur durch höchste Dringlichkeit bewegt werden können.\n\n\n\n"
 captive_scale = 0.5
+image = "res://eldricht/tati/Tati\'meiw2.png"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="tati"]
 
@@ -1419,7 +1423,6 @@ material/material = ExtResource( 3 )
 transform/rot = -90.0
 frames = SubResource( 44 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="tati"]
@@ -1458,6 +1461,7 @@ speed = 85.0
 name = "barsch"
 description = "Dicentrarchus labrax\nSeebarsch\n\nEin äußerst häufiger Salzwasserfisch. So mancher Bürger idyllischer Kleinstädte ist beim Hobbyangeln von ihrer Häufigkeit genervt.\nEs sind räuberische Tiere, welche nur zum Jagen ins Flache Wasser kommen."
 captive_scale = 0.7
+image = "res://fish/seebarsch/seebarsch2.png"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="barsch"]
 
@@ -1465,7 +1469,6 @@ material/material = ExtResource( 3 )
 transform/rot = -90.0
 frames = SubResource( 49 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="barsch"]
@@ -1501,6 +1504,7 @@ speed = 120.0
 name = "anglerfisch"
 description = "Melanocetus johnsonii\nAnglerfisch\n\nIch habe gehört dass sich diese Tiere in der Regel äußerst gut tarnen sollen. Sie sind auch eher Jäger, oder nicht\? Viel weiter unten am Meeresboden sollen sie auch leben. Sie fangen sich die Schwachen, welche auf ihren Köder reagieren und fressen sie, so wie ich es mache."
 captive_scale = 0.7
+image = "res://fish/anglerfisch/anglerfisch2.png"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="anglerfisch"]
 
@@ -1544,6 +1548,7 @@ speed = 190.0
 name = "rochen"
 description = "Gattung Rajidae\nRochen\n\nDa bist du platt, oder\? Ich habe vor meinem Fischerdasein versucht, Witze zu schreiben, aber alles was ich hinbekommen habe waren schlechte Wortspiele die flacher waren als solche Fische, gefühlt genau so giftig wie einige Exemplare ihrer Art."
 captive_scale = 0.4
+image = "res://fish/Rochen/Rochen1.png"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="rochen"]
 
@@ -1605,6 +1610,7 @@ speed = 99.0
 name = "qualle"
 description = "Aurelia Aurita\nQualle\n\nEin äußerst leichtes Tier, es besteht größtenteils aus Wasser, so wie wir Menschen, nur noch...naja, eben viel mehr.\nKomisch dass diese Wesen so leblos wirken, sie treiben nur dorthin, wo die Strömung sie hinträgt... ist vielleicht doch gar nicht so anders wie Menschen."
 captive_scale = 0.6
+image = "res://fish/qualle/qualle2.png"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="qualle"]
 
@@ -1612,7 +1618,6 @@ material/material = ExtResource( 3 )
 transform/rot = -90.0
 frames = SubResource( 67 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="qualle"]
@@ -1658,6 +1663,7 @@ speed = 160.0
 name = "hai"
 description = "Carcharodon carcharias\nHai\n\nAls einziger Mann einen solchen herauszufischen ist ein schon ziemlicher Akt, aber eigentlich sollte meine Angel auch nicht so weit nach unten reichen - was zum Teufel wurde mir hier verkauft\?\nHaie sind übrigens harmloser als einige Leute denken, aber den hier behalte ich als Trophäe."
 captive_scale = 0.6
+image = "res://fish/hai/hai1.png"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="hai"]
 
@@ -1665,7 +1671,6 @@ material/material = ExtResource( 3 )
 transform/rot = -90.0
 frames = SubResource( 74 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="hai"]
@@ -1711,6 +1716,7 @@ speed = 160.0
 name = "sternengezücht"
 description = "Sternengezücht\n\nWesen aus einer anderen Welt. Ob sie Cthulus nachkommen, oder seine innigen Anhänger sind, ist unklar. Obwohl sie nach dem Fall Ry\'lehs gestorben sind, flüstern sie noch immer den Sterblichen der Erde  Prophezeiungen zu, welche zu Wahnvorstellungen führen."
 captive_scale = 0.6
+image = "res://eldricht/2/sternengebilde1.png"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="sternengezücht"]
 
@@ -1914,6 +1920,7 @@ speed = 170.0
 name = "clownfisch"
 description = "Premnas biaculeatus\nClownisch\n\nEin kleiner Niemand. Ist es eigentlich nicht Wert dass aus dem Meer geholt zu werden, ich hab auch ziemliche Angst, dass ich meinen Vater mit diesem Fang verärgere. Sie leben normalerweise in Gruppen zwischen Anemonen."
 captive_scale = 0.8
+image = "res://fish/clownfish/fisch1.png"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="clownfisch"]
 
@@ -2132,6 +2139,7 @@ speed = 160.0
 name = "aal"
 description = "Anguilla anguilla\nAal\n\nEin äußerst langer, vom Aussterben bedrohter Fisch. \nGenau wie einige Menschen kann auch dieses Tier sich einfach durch die engsten Pässe drängen, jedoch ist es bei diesem Vertreter hier eher Wortwörtlich gemeint."
 captive_scale = 0.5
+image = "res://fish/aal/aal1.png"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="aal"]
 
@@ -2140,7 +2148,6 @@ transform/pos = Vector2( -27.3657, -49.0138 )
 transform/rot = -90.0
 frames = SubResource( 157 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="AnimatedSprite 2" type="AnimatedSprite" parent="aal"]
@@ -2150,7 +2157,6 @@ transform/pos = Vector2( -2.8532, -49.0384 )
 transform/rot = -73.1344
 frames = SubResource( 157 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="AnimatedSprite 3" type="AnimatedSprite" parent="aal"]
@@ -2160,7 +2166,6 @@ transform/pos = Vector2( -48.7595, -50.6789 )
 transform/rot = -103.95
 frames = SubResource( 157 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="AnimatedSprite 4" type="AnimatedSprite" parent="aal"]
@@ -2170,6 +2175,7 @@ transform/pos = Vector2( -47.7713, 14.7375 )
 transform/rot = -95.8988
 frames = SubResource( 157 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="AnimatedSprite 5" type="AnimatedSprite" parent="aal"]
@@ -2179,7 +2185,6 @@ transform/pos = Vector2( -9.09616, 16.1361 )
 transform/rot = -86.8947
 frames = SubResource( 157 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="AnimatedSprite 6" type="AnimatedSprite" parent="aal"]
@@ -2189,7 +2194,6 @@ transform/pos = Vector2( -27.7216, 44.4333 )
 transform/rot = -89.3608
 frames = SubResource( 157 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="aal"]
@@ -2304,6 +2308,7 @@ speed = 110.0
 name = "crab"
 description = "Macrocheira kaempferi\nRiesenkrabbe\n\nOho, ein interessanter Fang! Eigentlich leben diese Tiere nur in den Gewässern von Japan und ich hocke hier an deutscher Küste. Aber bei dem Ganzen, was ich bis jetzt gefangen habe, wundert mich fast gar nichts mehr."
 captive_scale = 0.4
+image = "res://fish/krabbe/doufeelitnowmrkrabs.png"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="crab"]
 
@@ -2312,6 +2317,7 @@ transform/pos = Vector2( -1.50742, -6.58912e-08 )
 transform/rot = -90.0
 frames = SubResource( 172 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="crab"]
@@ -2345,6 +2351,7 @@ speed = 80.0
 name = "stiefel"
 description = "Stiefel\n\nEin alter Stiefel, hat bestimmt mal einem anderen Fischer gehört. Ekelhaft, dass Leute so etwas ins Meer schmeißen. Ich finde so etwas ja absolut barbarisch."
 captive_scale = 0.6
+image = "res://things/Stiefel.png"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="stiefel"]
 
@@ -2418,6 +2425,7 @@ speed = 115.0
 name = "algen"
 description = "Algen\n\nDiese komischen Algen haben Wölbungen, welche mich an Augen erinnern, aber sie gehen wohl nur unter Wasser auf also kann ich nicht wirklich etwas bestätigen. Ich weiß nicht warum, aber ich fühle mich als würde ich merkwürdigen Tiefen immer näher kommen."
 captive_scale = 0.5
+image = "res://things/algen.png"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="algen"]
 
@@ -2455,6 +2463,7 @@ speed = 115.0
 name = "buch"
 description = "Die Innschrift ist kaum noch lesbar, ich erkenne nur:\n„Kartoffeln, Karotten und Paprika ...zen und Schneiden, Lachs fileti ...Blech legen. Mit Salz, pfeffer, thym...osmarin würzen ... 45 Minuten im Ofen erh....“"
 captive_scale = 0.7
+image = "res://things/book.png"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="buch"]
 
@@ -2496,6 +2505,7 @@ speed = 115.0
 name = "poster"
 description = "Vermissten-Plakat\n\nEin Poster, welches eine Gruppe Jugendlicher zeigt. Das letzte Mal vor ein paar Jahren gesehen...\? Kann es sein, dass jemand die brillante Idee hatte so etwas einzuschweißen\? Ach ich lasse es einfach hier, vielleicht kann ich das Rätsel anders lösen."
 captive_scale = 0.6
+image = "res://things/vermisst.png"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="poster"]
 
@@ -2534,6 +2544,7 @@ speed = 135.0
 name = "kristall"
 description = "blauer Kristall\n\nEin leuchtendes Kleinod, es schimmert in einer merkwürdigen Farbe. Ich frage mich, ob ich den als Köder verwenden könnte, aber mache es lieber nicht. Ich fühle mich wohl wenn ich ihn anschaue."
 captive_scale = 1.0
+image = "res://things/kristall.png"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="kristall"]
 
@@ -2572,6 +2583,7 @@ speed = 99.0
 name = "reifen"
 description = "Reifen\n\nEin ganz normaler Reifen, scheint noch nicht sehr alt zu sein. Er ist kaum von Pflanzen überzogen. \nOb sich Fische auch irgendwelche Fortbewegungsmittel wünschen\? Ein bequemes Leben\?"
 captive_scale = 0.8
+image = "res://things/reifen.png"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="reifen"]
 
@@ -2619,6 +2631,7 @@ speed = 175.0
 name = "truhe"
 description = "Schatztruhe\n\nScheint wohl mal einem Piraten gehört zu haben. Oder Kindern, die gerne Piraten spielten\? Es war ziemlich schwer herauszufischen aber mit dem ganzen Geld darin sollte ich mir ein schönes Leben machen können, jedenfalls mit dem, was noch davon übrig ist."
 captive_scale = 0.5
+image = "res://things/treasure.png"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="truhe"]
 
@@ -2690,6 +2703,7 @@ speed = 250.0
 name = "leiche"
 description = "Wasserleiche\n\nBin...das ich\? Er trägt meine Kleidung, hat das gleiche Gesicht, den gleichen Körperbau. Bin das ich -  aus einer anderen Dimension\? Oder sterbe ich in naher Zukunft...oder bin ich schon tot\?"
 captive_scale = 0.6
+image = "res://things/drownDude.png"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="leiche"]
 
@@ -2767,6 +2781,7 @@ speed = 190.0
 name = "ulzel"
 description = "Ul\'zel\n\nEin niederes tiefes Wesen. Sie werden geschickt um zu beobachten und zu finden. Ihnen fehlen Gehirn oder ähnliche innere Organe, weshalb davon ausgegangen wird, dass diese Kreaturen von einer höheren Macht erschaffen werden."
 captive_scale = 0.4
+image = "res://eldricht/1/silhoutte12.png"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="ulzel"]
 
