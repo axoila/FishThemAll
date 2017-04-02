@@ -125,6 +125,7 @@ script/script = ExtResource( 11 )
 
 [node name="boot_shadow" type="Sprite" parent="Surface"]
 
+editor/display_folded = true
 visibility/self_opacity = 0.5
 material/material = ExtResource( 5 )
 transform/pos = Vector2( 240, 125 )

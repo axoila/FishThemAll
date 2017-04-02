@@ -6,6 +6,7 @@ var flip_page = 0
 
 onready var tween = get_node("Tween")
 onready var content = get_node("seiteNormal/Label")
+onready var player = get_node("../../Player")
 
 export(String, MULTILINE) var credits
 
@@ -19,6 +20,10 @@ func _process(delta):
 	if game_manager.mouse_pos.y < height:
 		height = clamp(height + delta * 100, 70, 420)
 	else:
+		if player.depth > 1:
+			height = 420
+			page = 0
+			return
 		height = clamp(height - delta * 500, 70, 420)
 		if game_manager.mouse_pos.x < 60 || game_manager.mouse_pos.x > 360:
 			flip_page += delta

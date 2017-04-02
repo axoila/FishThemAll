@@ -1,6 +1,7 @@
 extends Node2D
 
 onready var player = get_node("../../Player")
+onready var book = get_node("../Book")
 
 var size = 0.7
 
@@ -10,7 +11,7 @@ func _ready():
 	game_manager.connect("reset", self, "reset")
 
 func _process(delta):
-	if (game_manager.mouse_pos - get_global_pos()).length() < 50 * size:
+	if (game_manager.mouse_pos - get_global_pos()).length() < 50 * size && book.height > 210:
 		size = clamp(size + delta/3, 0.7, 1.4)
 		set_scale(Vector2(size, size))
 	else:
