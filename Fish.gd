@@ -30,7 +30,7 @@ func _process(delta):
 	var forward = get_transform().basis_xform(Vector2(0, -1))
 	set_pos(get_pos() + forward * delta * speed)
 	
-	if diff < 1 && player.falling && overlaps_area(player):
+	if diff < 2 && player.falling && overlaps_area(player):
 		game_manager.hit_fish(self)
 		
 	
