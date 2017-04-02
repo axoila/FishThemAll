@@ -22,6 +22,7 @@ func hit_fish(fish):
 	if unique:
 		fish.catched = true
 		catched_fishes.append(fish.duplicate())
+		print("catched a " + fish.name + " for the first time")
 	
 	cam.screenshake()
 	emit_signal("reset")

@@ -3,6 +3,7 @@ extends Area2D
 export(Vector2) var common_depth = Vector2(0, 1000)
 export(float) var speed = 25
 export var name = "Fish"
+export(String, MULTILINE) var description
 export(float) var captive_scale = 1
 
 onready var player = get_node("../Player")
