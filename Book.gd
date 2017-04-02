@@ -65,7 +65,7 @@ func load_page():
 	
 	content.set_bbcode(game_manager.catched_fishes[page-1].description\
 	+ ("\n[img]%s[/img]" % \
-	game_manager.catched_fishes[page-1].get_child(0)))
+	game_manager.catched_fishes[page-1].image))
 	
 
 func hide_anim(foo, bar):
