@@ -6,6 +6,8 @@ var flip_page = 0
 
 onready var tween = get_node("Tween")
 
+export(String, MULTILINE) var credits
+
 func _ready():
 	set_process(true)
 	

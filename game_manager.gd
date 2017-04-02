@@ -1,6 +1,6 @@
 extends Node
 
-onready var cam = get_tree().get_nodes_in_group("Camera")[0]
+#onready var cam = get_tree().get_nodes_in_group("Camera")[0]
 
 signal reset
 signal start
@@ -24,7 +24,7 @@ func hit_fish(fish):
 		catched_fishes.append(fish.duplicate())
 		print("catched a " + fish.name + " for the first time")
 	
-	cam.screenshake()
+#	cam.screenshake()
 	emit_signal("reset")
 	
 func start():
