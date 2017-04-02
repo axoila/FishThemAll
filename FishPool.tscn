@@ -1,4 +1,4 @@
-[gd_scene load_steps=299 format=1]
+[gd_scene load_steps=300 format=1]
 
 [ext_resource path="res://FishPool.gd" type="Script" id=1]
 [ext_resource path="res://Fish.gd" type="Script" id=2]
@@ -36,12 +36,13 @@
 [ext_resource path="res://things/treasure.png" type="Texture" id=34]
 [ext_resource path="res://things/drownDude.png" type="Texture" id=35]
 [ext_resource path="res://eldricht/1/silhoutte12.png" type="Texture" id=36]
-[ext_resource path="res://eldricht/3/arms1.png" type="Texture" id=37]
-[ext_resource path="res://eldricht/3/arms2.png" type="Texture" id=38]
-[ext_resource path="res://eldricht/engelfisch/01.png" type="Texture" id=39]
-[ext_resource path="res://eldricht/engelfisch/02.png" type="Texture" id=40]
-[ext_resource path="res://eldricht/tentakelviehMitSchnabel/01.png" type="Texture" id=41]
-[ext_resource path="res://eldricht/tentakelviehMitSchnabel/02.png" type="Texture" id=42]
+[ext_resource path="res://eldricht/1/silhoutte13.png" type="Texture" id=37]
+[ext_resource path="res://eldricht/3/arms1.png" type="Texture" id=38]
+[ext_resource path="res://eldricht/3/arms2.png" type="Texture" id=39]
+[ext_resource path="res://eldricht/engelfisch/01.png" type="Texture" id=40]
+[ext_resource path="res://eldricht/engelfisch/02.png" type="Texture" id=41]
+[ext_resource path="res://eldricht/tentakelviehMitSchnabel/01.png" type="Texture" id=42]
+[ext_resource path="res://eldricht/tentakelviehMitSchnabel/02.png" type="Texture" id=43]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 
@@ -1140,7 +1141,7 @@ points = Vector2Array( 147.032, -27.5545, 145.371, 3.76227, 120.417, 36.7021, 12
 
 [sub_resource type="SpriteFrames" id=224]
 
-animations = [ { "frames":[ ExtResource( 36 ) ], "loop":true, "name":"default", "speed":1.75 } ]
+animations = [ { "frames":[ ExtResource( 36 ), ExtResource( 37 ) ], "loop":true, "name":"default", "speed":1.75 } ]
 
 [sub_resource type="ConvexPolygonShape2D" id=225]
 
@@ -1194,7 +1195,7 @@ points = Vector2Array( 73.4208, -7.74127, 55.8798, -51.1505, 69.5302, -38.4662 )
 
 [sub_resource type="SpriteFrames" id=235]
 
-animations = [ { "frames":[ ExtResource( 37 ), ExtResource( 38 ) ], "loop":true, "name":"default", "speed":1.75 } ]
+animations = [ { "frames":[ ExtResource( 38 ), ExtResource( 39 ) ], "loop":true, "name":"default", "speed":1.75 } ]
 
 [sub_resource type="ConvexPolygonShape2D" id=236]
 
@@ -1238,7 +1239,7 @@ points = Vector2Array( 1.29022, 27.4567, -10.6669, 13.5381, 53.6797, -28.2504, 4
 
 [sub_resource type="SpriteFrames" id=244]
 
-animations = [ { "frames":[ ExtResource( 39 ), ExtResource( 40 ) ], "loop":true, "name":"default", "speed":1.75 } ]
+animations = [ { "frames":[ ExtResource( 40 ), ExtResource( 41 ) ], "loop":true, "name":"default", "speed":1.75 } ]
 
 [sub_resource type="ConvexPolygonShape2D" id=245]
 
@@ -1297,7 +1298,7 @@ points = Vector2Array( 22.2539, -19.3414, -10.6669, 13.5381, -43.579, 24.9547, -
 
 [sub_resource type="SpriteFrames" id=256]
 
-animations = [ { "frames":[ ExtResource( 41 ), ExtResource( 42 ) ], "loop":true, "name":"default", "speed":1.75 } ]
+animations = [ { "frames":[ ExtResource( 42 ), ExtResource( 43 ) ], "loop":true, "name":"default", "speed":1.75 } ]
 
 [node name="FishPool" type="Node"]
 
@@ -1421,7 +1422,6 @@ material/material = ExtResource( 3 )
 transform/rot = -90.0
 frames = SubResource( 22 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="ningen"]
@@ -1498,6 +1498,7 @@ material/material = ExtResource( 3 )
 transform/rot = -90.0
 frames = SubResource( 37 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="tati"]
@@ -1544,7 +1545,6 @@ material/material = ExtResource( 3 )
 transform/rot = -90.0
 frames = SubResource( 42 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="barsch"]
@@ -1588,7 +1588,6 @@ material/material = ExtResource( 3 )
 transform/rot = -90.0
 frames = SubResource( 46 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="anglerfisch"]
@@ -1632,6 +1631,7 @@ material/material = ExtResource( 3 )
 transform/rot = -90.0
 frames = SubResource( 50 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="rochen"]
@@ -2395,7 +2395,6 @@ transform/pos = Vector2( -1.50742, -6.58912e-08 )
 transform/rot = -90.0
 frames = SubResource( 165 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="crab"]
@@ -2801,7 +2800,7 @@ polygon = Vector2Array( 15.7169, -153.051, 36.8958, -157.931, 62.9557, -145.704,
 shape_range = Vector2( 0, 11 )
 trigger = false
 
-[node name="ulzel" type="Area2D" parent="."]
+[node name="ul'zel" type="Area2D" parent="."]
 
 editor/display_folded = true
 transform/pos = Vector2( 158.885, 803.894 )
@@ -2861,17 +2860,18 @@ description = "Ul\'zel\n\nEin niederes tiefes Wesen. Sie werden geschickt um zu 
 captive_scale = 0.2
 image = null
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="ulzel"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="ul'zel"]
 
 material/material = ExtResource( 3 )
 transform/pos = Vector2( 19.4529, 8.64579 )
 transform/rot = -0.0865118
 frames = SubResource( 224 )
 animation = "default"
+frame = 1
 playing = true
 modulate = Color( 0.996094, 0.996094, 0.996094, 1 )
 
-[node name="CollisionShape2D" type="CollisionPolygon2D" parent="ulzel"]
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="ul'zel"]
 
 transform/pos = Vector2( 1.79595, 25.2594 )
 transform/rot = 0.0202374
@@ -2934,7 +2934,6 @@ transform/pos = Vector2( 19.4529, 8.64579 )
 transform/rot = -0.0865118
 frames = SubResource( 235 )
 animation = "default"
-frame = 1
 playing = true
 modulate = Color( 0.996094, 0.996094, 0.996094, 1 )
 
@@ -2949,6 +2948,7 @@ trigger = false
 
 [node name="kelaktan" type="Area2D" parent="."]
 
+editor/display_folded = true
 transform/pos = Vector2( -211.675, 801.268 )
 input/pickable = true
 shapes/0/shape = SubResource( 236 )
@@ -2994,6 +2994,7 @@ transform/pos = Vector2( 19.4529, 8.64579 )
 transform/rot = -90.6621
 frames = SubResource( 244 )
 animation = "default"
+frame = 1
 playing = true
 modulate = Color( 0.996094, 0.996094, 0.996094, 1 )
 
@@ -3008,6 +3009,7 @@ trigger = false
 
 [node name="gl'gbub" type="Area2D" parent="."]
 
+editor/display_folded = true
 transform/pos = Vector2( -365.424, 1025.86 )
 input/pickable = true
 shapes/0/shape = SubResource( 245 )
@@ -3049,7 +3051,7 @@ linear_damp = 0.1
 angular_damp = 1.0
 script/script = ExtResource( 2 )
 common_depth = Vector2( 55, 75 )
-speed = 200.0
+speed = 180.0
 name = "ulzel"
 description = "Ul\'zel\n\nEin niederes tiefes Wesen. Sie werden geschickt um zu beobachten und zu finden. Ihnen fehlen Gehirn oder ähnliche innere Organe, weshalb davon ausgegangen wird, dass diese Kreaturen von einer höheren Macht erschaffen werden."
 captive_scale = 0.2
@@ -3062,7 +3064,6 @@ transform/pos = Vector2( 19.4529, 8.64579 )
 transform/rot = -90.6621
 frames = SubResource( 256 )
 animation = "default"
-frame = 1
 playing = true
 modulate = Color( 0.996094, 0.996094, 0.996094, 1 )
 
