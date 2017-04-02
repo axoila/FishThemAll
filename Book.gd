@@ -17,7 +17,7 @@ func _process(delta):
 		height = clamp(height + delta * 100, 70, 420)
 	else:
 		height = clamp(height - delta * 500, 70, 420)
-		if game_manager.mouse_pos.x < 40 || game_manager.mouse_pos.x > 380:
+		if game_manager.mouse_pos.x < 60 || game_manager.mouse_pos.x > 360:
 			flip_page += delta
 		else:
 			flip_page = 0

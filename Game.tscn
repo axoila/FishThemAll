@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=1]
+[gd_scene load_steps=32 format=1]
 
 [ext_resource path="res://backgrounds/hintergrundWasser/01.png" type="Texture" id=1]
 [ext_resource path="res://water_color.gd" type="Script" id=2]
@@ -22,10 +22,12 @@
 [ext_resource path="res://book/umblaettern/andereBlätter/04.png" type="Texture" id=20]
 [ext_resource path="res://book/umblaettern/andereBlätter/05.png" type="Texture" id=21]
 [ext_resource path="res://book/umblaettern/andereBlätter/06.png" type="Texture" id=22]
-[ext_resource path="res://Cursor.gd" type="Script" id=23]
-[ext_resource path="res://cursor/cursor.png" type="Texture" id=24]
-[ext_resource path="res://FishSpawner.gd" type="Script" id=25]
-[ext_resource path="res://FishPool.tscn" type="PackedScene" id=26]
+[ext_resource path="res://cursor/pfeil_rechts.png" type="Texture" id=23]
+[ext_resource path="res://cursor/pfeil_links.png" type="Texture" id=24]
+[ext_resource path="res://Cursor.gd" type="Script" id=25]
+[ext_resource path="res://cursor/cursor.png" type="Texture" id=26]
+[ext_resource path="res://FishSpawner.gd" type="Script" id=27]
+[ext_resource path="res://FishPool.tscn" type="PackedScene" id=28]
 
 [sub_resource type="SpriteFrames" id=1]
 
@@ -89,7 +91,6 @@ depth = 0
 material/material = ExtResource( 5 )
 frames = SubResource( 1 )
 animation = "default"
-frame = 1
 playing = true
 centered = false
 
@@ -137,13 +138,14 @@ transform/pos = Vector2( -2.00001, -102 )
 [node name="Book" type="Sprite" parent="Surface"]
 
 material/material = ExtResource( 5 )
-transform/pos = Vector2( 0, 420 )
+transform/pos = Vector2( 0, 70 )
 texture = ExtResource( 14 )
 centered = false
 script/script = ExtResource( 15 )
 
 [node name="seiteNormal" type="Sprite" parent="Surface/Book"]
 
+editor/display_folded = true
 visibility/visible = false
 material/material = ExtResource( 5 )
 texture = ExtResource( 16 )
@@ -187,6 +189,18 @@ wait_time = 0.6
 one_shot = true
 autostart = false
 
+[node name="pfeil_rechts" type="Sprite" parent="Surface/Book"]
+
+material/material = ExtResource( 5 )
+transform/pos = Vector2( 380, 200 )
+texture = ExtResource( 23 )
+
+[node name="pfeil_links" type="Sprite" parent="Surface/Book"]
+
+material/material = ExtResource( 5 )
+transform/pos = Vector2( 40, 200 )
+texture = ExtResource( 24 )
+
 [node name="Player" type="Area2D" parent="."]
 
 editor/display_folded = true
@@ -201,12 +215,12 @@ gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
 linear_damp = 0.1
 angular_damp = 1.0
-script/script = ExtResource( 23 )
+script/script = ExtResource( 25 )
 
 [node name="Sprite" type="Sprite" parent="Player"]
 
 material/material = ExtResource( 5 )
-texture = ExtResource( 24 )
+texture = ExtResource( 26 )
 flip_v = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
@@ -217,8 +231,8 @@ _update_shape_index = 0
 
 [node name="FishSpawner" type="Node" parent="."]
 
-script/script = ExtResource( 25 )
-pool = ExtResource( 26 )
+script/script = ExtResource( 27 )
+pool = ExtResource( 28 )
 fish_delay = 1
 
 
