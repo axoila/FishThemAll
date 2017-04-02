@@ -1,4 +1,4 @@
-[gd_scene load_steps=300 format=1]
+[gd_scene load_steps=311 format=1]
 
 [ext_resource path="res://FishPool.gd" type="Script" id=1]
 [ext_resource path="res://Fish.gd" type="Script" id=2]
@@ -43,6 +43,7 @@
 [ext_resource path="res://eldricht/engelfisch/02.png" type="Texture" id=41]
 [ext_resource path="res://eldricht/tentakelviehMitSchnabel/01.png" type="Texture" id=42]
 [ext_resource path="res://eldricht/tentakelviehMitSchnabel/02.png" type="Texture" id=43]
+[ext_resource path="res://eldricht/cthulu/cthulhu.png" type="Texture" id=44]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 
@@ -1300,6 +1301,55 @@ points = Vector2Array( 22.2539, -19.3414, -10.6669, 13.5381, -43.579, 24.9547, -
 
 animations = [ { "frames":[ ExtResource( 42 ), ExtResource( 43 ) ], "loop":true, "name":"default", "speed":1.75 } ]
 
+[sub_resource type="ConvexPolygonShape2D" id=257]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 97.1664, -14.913, 101.191, 54.6268, 61.0644, -16.6774 )
+
+[sub_resource type="ConvexPolygonShape2D" id=258]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 134.256, -102.751, 136.66, 65.6674, 104.489, 31.3544, 97.1664, -14.913 )
+
+[sub_resource type="ConvexPolygonShape2D" id=259]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -104.022, -147.914, -54.2179, -198.939, -33.0859, -128.049 )
+
+[sub_resource type="ConvexPolygonShape2D" id=260]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 61.0644, -16.6774, 22.2539, -19.3414, 48.9148, -122.6, 80.9782, -184.686, 122.306, -131.364, 134.256, -102.751, 97.1664, -14.913 )
+
+[sub_resource type="ConvexPolygonShape2D" id=261]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -34.0313, 17.1051, -58.3621, 58.1295, -114.831, 94.7579, -142.674, -32.6349, -122.819, -112.436 )
+
+[sub_resource type="ConvexPolygonShape2D" id=262]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -33.0859, -128.049, -26.4959, -180.133, 18.9408, -173.536, 48.9148, -122.6, 22.2539, -19.3414 )
+
+[sub_resource type="ConvexPolygonShape2D" id=263]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 64.6072, 38.0472, 64.7064, 126.69, 45.8724, 128.927, 22.2539, -19.3414, 61.0644, -16.6774 )
+
+[sub_resource type="ConvexPolygonShape2D" id=264]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 9.30975, 131.184, -23.93, 132.329, -34.0313, 17.1051, 22.2539, -19.3414 )
+
+[sub_resource type="ConvexPolygonShape2D" id=265]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 22.2539, -19.3414, -34.0313, 17.1051, -122.819, -112.436, -104.022, -147.914, -33.0859, -128.049 )
+
+[sub_resource type="SpriteFrames" id=266]
+
+animations = [ { "frames":[ ExtResource( 44 ) ], "loop":true, "name":"default", "speed":1.75 } ]
+
 [node name="FishPool" type="Node"]
 
 script/script = ExtResource( 1 )
@@ -1346,6 +1396,7 @@ material/material = ExtResource( 3 )
 transform/rot = -90.0
 frames = SubResource( 7 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="blobfisch"]
@@ -1432,7 +1483,7 @@ polygon = Vector2Array( -19.7842, -153.975, -17.7852, -178.521, -11.1466, -191.1
 shape_range = Vector2( 0, 13 )
 trigger = false
 
-[node name="tati" type="Area2D" parent="."]
+[node name="tati'meiw-nesdttu" type="Area2D" parent="."]
 
 editor/display_folded = true
 transform/pos = Vector2( 408.757, 524.923 )
@@ -1487,12 +1538,12 @@ script/script = ExtResource( 2 )
 __meta__ = { "_edit_group_":true }
 common_depth = Vector2( 55, 100 )
 speed = 70.0
-name = "ningen"
+name = "tati\'meiw-nesdtu"
 description = "Tati\'meiw-Nesdttu\n\nKreaturen auf einer höheren Existenzstufe. Sie projizieren ihre Seele in andere Galaxien und Universen um ihrem Leben auf der Erde zu entfliehen. Dabei hinterlassen sie kaum antwortende Hüllen, welche nur durch höchste Dringlichkeit bewegt werden können.\n\n\n\n"
 captive_scale = 0.4
 image = null
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="tati"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="tati'meiw-nesdttu"]
 
 material/material = ExtResource( 3 )
 transform/rot = -90.0
@@ -1501,7 +1552,7 @@ animation = "default"
 frame = 1
 playing = true
 
-[node name="CollisionShape2D" type="CollisionPolygon2D" parent="tati"]
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="tati'meiw-nesdttu"]
 
 transform/rot = 0.0202374
 build_mode = 0
@@ -1631,7 +1682,6 @@ material/material = ExtResource( 3 )
 transform/rot = -90.0
 frames = SubResource( 50 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="rochen"]
@@ -1747,6 +1797,7 @@ material/material = ExtResource( 3 )
 transform/rot = -90.0
 frames = SubResource( 67 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="hai"]
@@ -1800,6 +1851,7 @@ material/material = ExtResource( 3 )
 transform/rot = -90.0
 frames = SubResource( 74 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="sternengezücht"]
@@ -2226,6 +2278,7 @@ transform/pos = Vector2( -27.3657, -49.0138 )
 transform/rot = -90.0
 frames = SubResource( 150 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="AnimatedSprite 2" type="AnimatedSprite" parent="aal"]
@@ -2235,6 +2288,7 @@ transform/pos = Vector2( -2.8532, -49.0384 )
 transform/rot = -73.1344
 frames = SubResource( 150 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="AnimatedSprite 3" type="AnimatedSprite" parent="aal"]
@@ -2244,6 +2298,7 @@ transform/pos = Vector2( -48.7595, -50.6789 )
 transform/rot = -103.95
 frames = SubResource( 150 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="AnimatedSprite 4" type="AnimatedSprite" parent="aal"]
@@ -2253,7 +2308,6 @@ transform/pos = Vector2( -47.7713, 14.7375 )
 transform/rot = -95.8988
 frames = SubResource( 150 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="AnimatedSprite 5" type="AnimatedSprite" parent="aal"]
@@ -2263,6 +2317,7 @@ transform/pos = Vector2( -9.09616, 16.1361 )
 transform/rot = -86.8947
 frames = SubResource( 150 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="AnimatedSprite 6" type="AnimatedSprite" parent="aal"]
@@ -2272,6 +2327,7 @@ transform/pos = Vector2( -27.7216, 44.4333 )
 transform/rot = -89.3608
 frames = SubResource( 150 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="aal"]
@@ -2395,6 +2451,7 @@ transform/pos = Vector2( -1.50742, -6.58912e-08 )
 transform/rot = -90.0
 frames = SubResource( 165 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="crab"]
@@ -2922,7 +2979,7 @@ angular_damp = 1.0
 script/script = ExtResource( 2 )
 common_depth = Vector2( 70, 95 )
 speed = 160.0
-name = "ulzel"
+name = "karatrik"
 description = "Ul\'zel\n\nEin niederes tiefes Wesen. Sie werden geschickt um zu beobachten und zu finden. Ihnen fehlen Gehirn oder ähnliche innere Organe, weshalb davon ausgegangen wird, dass diese Kreaturen von einer höheren Macht erschaffen werden."
 captive_scale = 0.2
 image = "res://eldricht/3/arms1.png"
@@ -2982,7 +3039,7 @@ angular_damp = 1.0
 script/script = ExtResource( 2 )
 common_depth = Vector2( 80, 100 )
 speed = 200.0
-name = "ulzel"
+name = "kelaktan"
 description = "Ul\'zel\n\nEin niederes tiefes Wesen. Sie werden geschickt um zu beobachten und zu finden. Ihnen fehlen Gehirn oder ähnliche innere Organe, weshalb davon ausgegangen wird, dass diese Kreaturen von einer höheren Macht erschaffen werden."
 captive_scale = 0.2
 image = "res://eldricht/engelfisch/01.png"
@@ -3052,7 +3109,7 @@ angular_damp = 1.0
 script/script = ExtResource( 2 )
 common_depth = Vector2( 55, 75 )
 speed = 180.0
-name = "ulzel"
+name = "gl\'gbub"
 description = "Ul\'zel\n\nEin niederes tiefes Wesen. Sie werden geschickt um zu beobachten und zu finden. Ihnen fehlen Gehirn oder ähnliche innere Organe, weshalb davon ausgegangen wird, dass diese Kreaturen von einer höheren Macht erschaffen werden."
 captive_scale = 0.2
 image = "res://eldricht/tentakelviehMitSchnabel/01.png"
@@ -3074,6 +3131,69 @@ transform/rot = -0.0641621
 build_mode = 0
 polygon = Vector2Array( -82.4896, -67.0567, -63.6099, -132.058, 18.4994, -148.395, 52.8126, -132.188, 122.306, -131.364, 75.3973, -112.359, 130.504, -63.6852, 83.543, -91.6102, 117.023, -13.1301, 97.1664, -14.913, 90.9642, 87.9791, 61.0644, -16.6774, 50.283, 26.6547, 65.7114, 103.35, 24.1145, 30.2939, 22.2539, -19.3414, -2.00014, 51.3435, 1.29022, 27.4567, -10.6669, 13.5381, -43.579, 24.9547, -48.0198, 89.0372, -82.3037, 24.8966, -77.9114, -8.39929, -81.5467, -30.9578 )
 shape_range = Vector2( 0, 10 )
+trigger = false
+
+[node name="C'thulu" type="Area2D" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 24.9971, 1090.93 )
+input/pickable = true
+shapes/0/shape = SubResource( 257 )
+shapes/0/transform = Matrix32( 0.999999, 0.00111984, -0.00111984, 0.999999, 6.56626, 43.2779 )
+shapes/0/trigger = false
+shapes/1/shape = SubResource( 258 )
+shapes/1/transform = Matrix32( 0.999999, 0.00111984, -0.00111984, 0.999999, 6.56626, 43.2779 )
+shapes/1/trigger = false
+shapes/2/shape = SubResource( 259 )
+shapes/2/transform = Matrix32( 0.999999, 0.00111984, -0.00111984, 0.999999, 6.56626, 43.2779 )
+shapes/2/trigger = false
+shapes/3/shape = SubResource( 260 )
+shapes/3/transform = Matrix32( 0.999999, 0.00111984, -0.00111984, 0.999999, 6.56626, 43.2779 )
+shapes/3/trigger = false
+shapes/4/shape = SubResource( 261 )
+shapes/4/transform = Matrix32( 0.999999, 0.00111984, -0.00111984, 0.999999, 6.56626, 43.2779 )
+shapes/4/trigger = false
+shapes/5/shape = SubResource( 262 )
+shapes/5/transform = Matrix32( 0.999999, 0.00111984, -0.00111984, 0.999999, 6.56626, 43.2779 )
+shapes/5/trigger = false
+shapes/6/shape = SubResource( 263 )
+shapes/6/transform = Matrix32( 0.999999, 0.00111984, -0.00111984, 0.999999, 6.56626, 43.2779 )
+shapes/6/trigger = false
+shapes/7/shape = SubResource( 264 )
+shapes/7/transform = Matrix32( 0.999999, 0.00111984, -0.00111984, 0.999999, 6.56626, 43.2779 )
+shapes/7/trigger = false
+shapes/8/shape = SubResource( 265 )
+shapes/8/transform = Matrix32( 0.999999, 0.00111984, -0.00111984, 0.999999, 6.56626, 43.2779 )
+shapes/8/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 2 )
+common_depth = Vector2( 70, 99 )
+speed = 210.0
+name = "C\'thulu"
+description = "Ul\'zel\n\nEin niederes tiefes Wesen. Sie werden geschickt um zu beobachten und zu finden. Ihnen fehlen Gehirn oder ähnliche innere Organe, weshalb davon ausgegangen wird, dass diese Kreaturen von einer höheren Macht erschaffen werden."
+captive_scale = 0.2
+image = "res://eldricht/cthulu/cthulhu.png"
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="C'thulu"]
+
+material/material = ExtResource( 3 )
+transform/pos = Vector2( 5.94777, 2.50713 )
+transform/rot = -90.6621
+frames = SubResource( 266 )
+animation = "default"
+playing = true
+modulate = Color( 0.996094, 0.996094, 0.996094, 1 )
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="C'thulu"]
+
+transform/pos = Vector2( 6.56626, 43.2779 )
+transform/rot = -0.0641621
+build_mode = 0
+polygon = Vector2Array( -54.2179, -198.939, -33.0859, -128.049, -26.4959, -180.133, 18.9408, -173.536, 48.9148, -122.6, 80.9782, -184.686, 122.306, -131.364, 134.256, -102.751, 136.66, 65.6674, 104.489, 31.3544, 97.1664, -14.913, 101.191, 54.6268, 61.0644, -16.6774, 64.6072, 38.0472, 64.7064, 126.69, 45.8724, 128.927, 22.2539, -19.3414, 9.30975, 131.184, -23.93, 132.329, -34.0313, 17.1051, -58.3621, 58.1295, -114.831, 94.7579, -142.674, -32.6349, -122.819, -112.436, -104.022, -147.914 )
+shape_range = Vector2( 0, 8 )
 trigger = false
 
 
