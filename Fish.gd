@@ -5,6 +5,7 @@ export(float) var speed = 25
 export var name = "Fish"
 export(String, MULTILINE) var description
 export(float) var captive_scale = 1
+export(String, FILE) var image
 
 onready var player = get_tree().get_nodes_in_group("Player")[0]
 

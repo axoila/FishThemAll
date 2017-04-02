@@ -111,6 +111,7 @@ depth = 0
 material/material = ExtResource( 5 )
 frames = SubResource( 1 )
 animation = "default"
+frame = 2
 playing = true
 centered = false
 
@@ -126,6 +127,7 @@ script/script = ExtResource( 11 )
 
 [node name="boot_shadow" type="Sprite" parent="Surface"]
 
+editor/display_folded = true
 visibility/self_opacity = 0.5
 material/material = ExtResource( 5 )
 transform/pos = Vector2( 240, 125 )
@@ -172,7 +174,6 @@ script/script = ExtResource( 15 )
 
 [node name="Book" type="Sprite" parent="Surface"]
 
-editor/display_folded = true
 material/material = ExtResource( 5 )
 transform/pos = Vector2( 0, 420 )
 z/z = 2
