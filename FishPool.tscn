@@ -1217,7 +1217,6 @@ material/material = ExtResource( 3 )
 transform/rot = -90.0
 frames = SubResource( 7 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="blobfisch"]
@@ -1466,6 +1465,7 @@ material/material = ExtResource( 3 )
 transform/rot = -90.0
 frames = SubResource( 49 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="barsch"]
@@ -1551,6 +1551,7 @@ material/material = ExtResource( 3 )
 transform/rot = -90.0
 frames = SubResource( 57 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="rochen"]
@@ -1611,6 +1612,7 @@ material/material = ExtResource( 3 )
 transform/rot = -90.0
 frames = SubResource( 67 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="qualle"]
@@ -1663,6 +1665,7 @@ material/material = ExtResource( 3 )
 transform/rot = -90.0
 frames = SubResource( 74 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="hai"]
@@ -1715,7 +1718,6 @@ material/material = ExtResource( 3 )
 transform/rot = -90.0
 frames = SubResource( 81 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="sternengezücht"]
@@ -2138,6 +2140,7 @@ transform/pos = Vector2( -27.3657, -49.0138 )
 transform/rot = -90.0
 frames = SubResource( 157 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="AnimatedSprite 2" type="AnimatedSprite" parent="aal"]
@@ -2147,6 +2150,7 @@ transform/pos = Vector2( -2.8532, -49.0384 )
 transform/rot = -73.1344
 frames = SubResource( 157 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="AnimatedSprite 3" type="AnimatedSprite" parent="aal"]
@@ -2156,6 +2160,7 @@ transform/pos = Vector2( -48.7595, -50.6789 )
 transform/rot = -103.95
 frames = SubResource( 157 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="AnimatedSprite 4" type="AnimatedSprite" parent="aal"]
@@ -2165,7 +2170,6 @@ transform/pos = Vector2( -47.7713, 14.7375 )
 transform/rot = -95.8988
 frames = SubResource( 157 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="AnimatedSprite 5" type="AnimatedSprite" parent="aal"]
@@ -2175,6 +2179,7 @@ transform/pos = Vector2( -9.09616, 16.1361 )
 transform/rot = -86.8947
 frames = SubResource( 157 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="AnimatedSprite 6" type="AnimatedSprite" parent="aal"]
@@ -2184,6 +2189,7 @@ transform/pos = Vector2( -27.7216, 44.4333 )
 transform/rot = -89.3608
 frames = SubResource( 157 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="aal"]
@@ -2306,7 +2312,6 @@ transform/pos = Vector2( -1.50742, -6.58912e-08 )
 transform/rot = -90.0
 frames = SubResource( 172 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="crab"]
@@ -2412,7 +2417,7 @@ common_depth = Vector2( 50, 80 )
 speed = 115.0
 name = "algen"
 description = "Algen\n\nDiese komischen Algen haben Wölbungen, welche mich an Augen erinnern, aber sie gehen wohl nur unter Wasser auf also kann ich nicht wirklich etwas bestätigen. Ich weiß nicht warum, aber ich fühle mich als würde ich merkwürdigen Tiefen immer näher kommen."
-captive_scale = 0.6
+captive_scale = 0.5
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="algen"]
 
@@ -2613,7 +2618,7 @@ common_depth = Vector2( 20, 50 )
 speed = 175.0
 name = "truhe"
 description = "Schatztruhe\n\nScheint wohl mal einem Piraten gehört zu haben. Oder Kindern, die gerne Piraten spielten\? Es war ziemlich schwer herauszufischen aber mit dem ganzen Geld darin sollte ich mir ein schönes Leben machen können, jedenfalls mit dem, was noch davon übrig ist."
-captive_scale = 0.7
+captive_scale = 0.5
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="truhe"]
 
@@ -2761,7 +2766,7 @@ common_depth = Vector2( 60, 90 )
 speed = 190.0
 name = "ulzel"
 description = "Ul\'zel\n\nEin niederes tiefes Wesen. Sie werden geschickt um zu beobachten und zu finden. Ihnen fehlen Gehirn oder ähnliche innere Organe, weshalb davon ausgegangen wird, dass diese Kreaturen von einer höheren Macht erschaffen werden."
-captive_scale = 0.2
+captive_scale = 0.4
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="ulzel"]
 
