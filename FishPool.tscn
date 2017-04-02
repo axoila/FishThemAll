@@ -1,4 +1,4 @@
-[gd_scene load_steps=252 format=1]
+[gd_scene load_steps=261 format=1]
 
 [ext_resource path="res://FishPool.gd" type="Script" id=1]
 [ext_resource path="res://Fish.gd" type="Script" id=2]
@@ -19,21 +19,23 @@
 [ext_resource path="res://fish/qualle/qualle2.png" type="Texture" id=17]
 [ext_resource path="res://fish/hai/hai1.png" type="Texture" id=18]
 [ext_resource path="res://fish/hai/hai2.png" type="Texture" id=19]
-[ext_resource path="res://fish/clownfish/fisch1.png" type="Texture" id=20]
-[ext_resource path="res://fish/clownfish/fisch2neu.png" type="Texture" id=21]
-[ext_resource path="res://fish/aal/aal1.png" type="Texture" id=22]
-[ext_resource path="res://fish/aal/aal2.png" type="Texture" id=23]
-[ext_resource path="res://fish/krabbe/doufeelitnowmrkrabs.png" type="Texture" id=24]
-[ext_resource path="res://fish/krabbe/doufeelitnowmrkrabs2.png" type="Texture" id=25]
-[ext_resource path="res://things/Stiefel.png" type="Texture" id=26]
-[ext_resource path="res://things/algen.png" type="Texture" id=27]
-[ext_resource path="res://things/book.png" type="Texture" id=28]
-[ext_resource path="res://things/vermisst.png" type="Texture" id=29]
-[ext_resource path="res://things/kristall.png" type="Texture" id=30]
-[ext_resource path="res://things/reifen.png" type="Texture" id=31]
-[ext_resource path="res://things/treasure.png" type="Texture" id=32]
-[ext_resource path="res://things/drownDude.png" type="Texture" id=33]
-[ext_resource path="res://eldricht/1/silhoutte12.png" type="Texture" id=34]
+[ext_resource path="res://eldricht/2/sternengebilde1.png" type="Texture" id=20]
+[ext_resource path="res://eldricht/2/sternengebilde2.png" type="Texture" id=21]
+[ext_resource path="res://fish/clownfish/fisch1.png" type="Texture" id=22]
+[ext_resource path="res://fish/clownfish/fisch2neu.png" type="Texture" id=23]
+[ext_resource path="res://fish/aal/aal1.png" type="Texture" id=24]
+[ext_resource path="res://fish/aal/aal2.png" type="Texture" id=25]
+[ext_resource path="res://fish/krabbe/doufeelitnowmrkrabs.png" type="Texture" id=26]
+[ext_resource path="res://fish/krabbe/doufeelitnowmrkrabs2.png" type="Texture" id=27]
+[ext_resource path="res://things/Stiefel.png" type="Texture" id=28]
+[ext_resource path="res://things/algen.png" type="Texture" id=29]
+[ext_resource path="res://things/book.png" type="Texture" id=30]
+[ext_resource path="res://things/vermisst.png" type="Texture" id=31]
+[ext_resource path="res://things/kristall.png" type="Texture" id=32]
+[ext_resource path="res://things/reifen.png" type="Texture" id=33]
+[ext_resource path="res://things/treasure.png" type="Texture" id=34]
+[ext_resource path="res://things/drownDude.png" type="Texture" id=35]
+[ext_resource path="res://eldricht/1/silhoutte12.png" type="Texture" id=36]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 
@@ -362,6 +364,40 @@ points = Vector2Array( 14.8647, 35.2463, 2.85591, 60.242, -6.14374, 59.2388, -16
 
 animations = [ { "frames":[ ExtResource( 18 ), ExtResource( 19 ) ], "loop":true, "name":"default", "speed":3.08 } ]
 
+[sub_resource type="ConvexPolygonShape2D" id=218]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 8.47363, 52.7042, -2.33728, 62.9673, -8.27606, 48.3754, 17.6635, 41.9003 )
+
+[sub_resource type="ConvexPolygonShape2D" id=219]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -7.16498, -37.5414, -12.0265, -42.4064, -8.78149, -50.5106, -2.83582, -55.3718, 7.97217, -57.5294, 25.2629, -55.3619, 39.8488, -44.5495, 43.0872, -33.7412, 40.9232, -26.7172, 33.3569, -22.9374 )
+
+[sub_resource type="ConvexPolygonShape2D" id=220]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 34.9628, 19.7516, 29.556, 28.9358, 17.6635, 41.9003, -8.27606, 48.3754, -16.9152, 29.4598, -21.2306, 8.38421, 34.9661, 10.5655 )
+
+[sub_resource type="ConvexPolygonShape2D" id=221]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 37.1332, -5.64454, 39.8311, 5.70398, 34.9661, 10.5655, -21.2306, 8.38421, -24.4674, -6.74701, -17.9804, -14.3098, 31.1914, -11.5906 )
+
+[sub_resource type="ConvexPolygonShape2D" id=222]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -7.16498, -37.5414, 33.3569, -22.9374, 31.1914, -11.5906, -17.9804, -14.3098, -22.2993, -25.6588, -17.973, -35.3838 )
+
+[sub_resource type="ConvexPolygonShape2D" id=223]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -17.973, -35.3838, -22.2993, -25.6588, -22.2993, -25.6588 )
+
+[sub_resource type="SpriteFrames" id=224]
+
+animations = [ { "frames":[ ExtResource( 20 ), ExtResource( 21 ) ], "loop":true, "name":"default", "speed":2.0 } ]
+
 [sub_resource type="ConvexPolygonShape2D" id=38]
 
 custom_solver_bias = 0.0
@@ -644,7 +680,7 @@ points = Vector2Array( -4.90872, -8.10153, -5.58087, -0.171356, -7.34885, -3.225
 
 [sub_resource type="SpriteFrames" id=94]
 
-animations = [ { "frames":[ ExtResource( 20 ), ExtResource( 21 ) ], "loop":true, "name":"default", "speed":2.5 } ]
+animations = [ { "frames":[ ExtResource( 22 ), ExtResource( 23 ) ], "loop":true, "name":"default", "speed":2.5 } ]
 
 [sub_resource type="ConvexPolygonShape2D" id=95]
 
@@ -738,7 +774,7 @@ points = Vector2Array( 5.48093, -22.0222, 5.9995, 1.95834, 4.67995, 7.49182, -4.
 
 [sub_resource type="SpriteFrames" id=113]
 
-animations = [ { "frames":[ ExtResource( 22 ), ExtResource( 23 ) ], "loop":true, "name":"default", "speed":2.61 } ]
+animations = [ { "frames":[ ExtResource( 24 ), ExtResource( 25 ) ], "loop":true, "name":"default", "speed":2.61 } ]
 
 [sub_resource type="ConvexPolygonShape2D" id=114]
 
@@ -812,7 +848,7 @@ points = Vector2Array( -1.21729, -38.1243, 3.12491, -62.9841, 13.9254, -44.0677,
 
 [sub_resource type="SpriteFrames" id=128]
 
-animations = [ { "frames":[ ExtResource( 24 ), ExtResource( 25 ) ], "loop":true, "name":"default", "speed":2.6 } ]
+animations = [ { "frames":[ ExtResource( 26 ), ExtResource( 27 ) ], "loop":true, "name":"default", "speed":2.6 } ]
 
 [sub_resource type="ConvexPolygonShape2D" id=129]
 
@@ -826,7 +862,7 @@ points = Vector2Array( -15.832, 62.3727, -33.6704, 80.7387, -47.1839, 93.7025, -
 
 [sub_resource type="SpriteFrames" id=131]
 
-animations = [ { "frames":[ ExtResource( 26 ) ], "loop":true, "name":"default", "speed":1.75 } ]
+animations = [ { "frames":[ ExtResource( 28 ) ], "loop":true, "name":"default", "speed":1.75 } ]
 
 [sub_resource type="ConvexPolygonShape2D" id=132]
 
@@ -895,7 +931,7 @@ points = Vector2Array( 80.4223, 7.94983, 79.1262, 40.4568, 57.6621, 58.4932, 18.
 
 [sub_resource type="SpriteFrames" id=145]
 
-animations = [ { "frames":[ ExtResource( 27 ) ], "loop":true, "name":"default", "speed":1.75 } ]
+animations = [ { "frames":[ ExtResource( 29 ) ], "loop":true, "name":"default", "speed":1.75 } ]
 
 [sub_resource type="ConvexPolygonShape2D" id=146]
 
@@ -904,7 +940,7 @@ points = Vector2Array( 39.7158, 11.9518, 25.3377, 35.8962, 1.98029, 54.4488, -21
 
 [sub_resource type="SpriteFrames" id=147]
 
-animations = [ { "frames":[ ExtResource( 28 ) ], "loop":true, "name":"default", "speed":1.75 } ]
+animations = [ { "frames":[ ExtResource( 30 ) ], "loop":true, "name":"default", "speed":1.75 } ]
 
 [sub_resource type="ConvexPolygonShape2D" id=148]
 
@@ -918,7 +954,7 @@ points = Vector2Array( 8.29608, 102.701, -32.4327, 112.461, -34.056, 96.1704, -1
 
 [sub_resource type="SpriteFrames" id=150]
 
-animations = [ { "frames":[ ExtResource( 29 ) ], "loop":true, "name":"default", "speed":1.75 } ]
+animations = [ { "frames":[ ExtResource( 31 ) ], "loop":true, "name":"default", "speed":1.75 } ]
 
 [sub_resource type="ConvexPolygonShape2D" id=151]
 
@@ -927,7 +963,7 @@ points = Vector2Array( -13.6453, -39.8449, -31.584, 15.5351, -42.9854, 10.644, -
 
 [sub_resource type="SpriteFrames" id=152]
 
-animations = [ { "frames":[ ExtResource( 30 ) ], "loop":true, "name":"default", "speed":1.75 } ]
+animations = [ { "frames":[ ExtResource( 32 ) ], "loop":true, "name":"default", "speed":1.75 } ]
 
 [sub_resource type="ConvexPolygonShape2D" id=153]
 
@@ -936,7 +972,7 @@ points = Vector2Array( 55.5478, 73.3959, 72.6414, 104.353, 71.0078, 117.385, 61.
 
 [sub_resource type="SpriteFrames" id=154]
 
-animations = [ { "frames":[ ExtResource( 31 ) ], "loop":true, "name":"default", "speed":1.75 } ]
+animations = [ { "frames":[ ExtResource( 33 ) ], "loop":true, "name":"default", "speed":1.75 } ]
 
 [sub_resource type="ConvexPolygonShape2D" id=155]
 
@@ -960,7 +996,7 @@ points = Vector2Array( 43.3624, -17.8331, 49.0515, 17.1926, 50.6742, 35.1124, 13
 
 [sub_resource type="SpriteFrames" id=159]
 
-animations = [ { "frames":[ ExtResource( 32 ) ], "loop":true, "name":"default", "speed":1.75 } ]
+animations = [ { "frames":[ ExtResource( 34 ) ], "loop":true, "name":"default", "speed":1.75 } ]
 
 [sub_resource type="ConvexPolygonShape2D" id=160]
 
@@ -1024,7 +1060,7 @@ points = Vector2Array( -83.4741, 72.0872, -96.4119, 65.8086, -121.855, -53.8777 
 
 [sub_resource type="SpriteFrames" id=172]
 
-animations = [ { "frames":[ ExtResource( 33 ) ], "loop":true, "name":"default", "speed":1.75 } ]
+animations = [ { "frames":[ ExtResource( 35 ) ], "loop":true, "name":"default", "speed":1.75 } ]
 
 [sub_resource type="ConvexPolygonShape2D" id=173]
 
@@ -1098,7 +1134,7 @@ points = Vector2Array( 147.032, -27.5545, 145.371, 3.76227, 120.417, 36.7021, 12
 
 [sub_resource type="SpriteFrames" id=187]
 
-animations = [ { "frames":[ ExtResource( 34 ) ], "loop":true, "name":"default", "speed":1.75 } ]
+animations = [ { "frames":[ ExtResource( 36 ) ], "loop":true, "name":"default", "speed":1.75 } ]
 
 [node name="FishPool" type="Node"]
 
@@ -1137,7 +1173,7 @@ common_depth = Vector2( 40, 100 )
 speed = 70.0
 name = "blobfisch"
 description = "Psychrolutes marcidus\nBlobfisch\n\nIgitt, als ich diese Monstrosität aus dem Wasser fischte, dachte ich es wäre ein toter Mensch, aber als ich dann den Fisch ins Wasser tauchte, sah er komplett anders aus. Bringt man diese Wesen aus ihrem natürlichen Lebensraum, ändert sich die Betrachtung anderer auf sie extrem. Interessant."
-captive_scale = 1
+captive_scale = 0.7
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="blobfisch"]
 
@@ -1145,7 +1181,6 @@ material/material = ExtResource( 3 )
 transform/rot = -90.0
 frames = SubResource( 7 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="blobfisch"]
@@ -1213,7 +1248,7 @@ common_depth = Vector2( 40, 100 )
 speed = 70.0
 name = "ningen"
 description = "Ningen\n\nEin merkwürdiges Menschenähnliches Wesen, es hatte keinen Eintrag in diesem Lexikon also hab ich selbst einen geschrieben. Ich habe das Gefühl diese Dinger werden eigentlich größer, aber der hier scheint recht klein zu sein. Ich habe auch mal gehört, dass sie eigentlich in kalten Gebieten leben. Ich habe mich langsam mit meinen merkwürdigen Fängen abgefunden."
-captive_scale = 1
+captive_scale = 0.5
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="ningen"]
 
@@ -1221,6 +1256,7 @@ material/material = ExtResource( 3 )
 transform/rot = -90.0
 frames = SubResource( 202 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="ningen"]
@@ -1233,6 +1269,7 @@ trigger = false
 
 [node name="tati" type="Area2D" parent="."]
 
+editor/display_folded = true
 transform/pos = Vector2( 408.757, 524.923 )
 input/pickable = true
 shapes/0/shape = SubResource( 203 )
@@ -1286,8 +1323,8 @@ __meta__ = { "_edit_group_":true }
 common_depth = Vector2( 40, 100 )
 speed = 70.0
 name = "ningen"
-description = "Ningen\n\nEin merkwürdiges Menschenähnliches Wesen, es hatte keinen Eintrag in diesem Lexikon also hab ich selbst einen geschrieben. Ich habe das Gefühl diese Dinger werden eigentlich größer, aber der hier scheint recht klein zu sein. Ich habe auch mal gehört, dass sie eigentlich in kalten Gebieten leben. Ich habe mich langsam mit meinen merkwürdigen Fängen abgefunden."
-captive_scale = 1
+description = "Tati\'meiw-Nesdttu\n\nKreaturen auf einer höheren Existenzstufe. Sie projizieren ihre Seele in andere Galaxien und Universen um ihrem Leben auf der Erde zu entfliehen. Dabei hinterlassen sie kaum antwortende Hüllen, welche nur durch höchste Dringlichkeit bewegt werden können.\n\n\n\n"
+captive_scale = 0.5
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="tati"]
 
@@ -1332,7 +1369,7 @@ common_depth = Vector2( 0, 50 )
 speed = 85.0
 name = "barsch"
 description = "Dicentrarchus labrax\nSeebarsch\n\nEin äußerst häufiger Salzwasserfisch. So mancher Bürger idyllischer Kleinstädte ist beim Hobbyangeln von ihrer Häufigkeit genervt.\nEs sind räuberische Tiere, welche nur zum Jagen ins Flache Wasser kommen."
-captive_scale = 1
+captive_scale = 0.6
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="barsch"]
 
@@ -1340,6 +1377,7 @@ material/material = ExtResource( 3 )
 transform/rot = -90.0
 frames = SubResource( 12 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="barsch"]
@@ -1374,7 +1412,7 @@ common_depth = Vector2( 70, 100 )
 speed = 120.0
 name = "anglerfisch"
 description = "Melanocetus johnsonii\nAnglerfisch\n\nIch habe gehört dass sich diese Tiere in der Regel äußerst gut tarnen sollen. Sie sind auch eher Jäger, oder nicht\? Viel weiter unten am Meeresboden sollen sie auch leben. Sie fangen sich die Schwachen, welche auf ihren Köder reagieren und fressen sie, so wie ich es mache."
-captive_scale = 1
+captive_scale = 0.7
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="anglerfisch"]
 
@@ -1382,6 +1420,7 @@ material/material = ExtResource( 3 )
 transform/rot = -90.0
 frames = SubResource( 16 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="anglerfisch"]
@@ -1416,7 +1455,7 @@ common_depth = Vector2( 10, 80 )
 speed = 190.0
 name = "rochen"
 description = "Gattung Rajidae\nRochen\n\nDa bist du platt, oder\? Ich habe vor meinem Fischerdasein versucht, Witze zu schreiben, aber alles was ich hinbekommen habe waren schlechte Wortspiele die flacher waren als solche Fische, gefühlt genau so giftig wie einige Exemplare ihrer Art."
-captive_scale = 1
+captive_scale = 0.3
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="rochen"]
 
@@ -1424,7 +1463,6 @@ material/material = ExtResource( 3 )
 transform/rot = -90.0
 frames = SubResource( 20 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="rochen"]
@@ -1477,7 +1515,7 @@ common_depth = Vector2( 30, 90 )
 speed = 99.0
 name = "qualle"
 description = "Aurelia Aurita\nQualle\n\nEin äußerst leichtes Tier, es besteht größtenteils aus Wasser, so wie wir Menschen, nur noch...naja, eben viel mehr.\nKomisch dass diese Wesen so leblos wirken, sie treiben nur dorthin, wo die Strömung sie hinträgt... ist vielleicht doch gar nicht so anders wie Menschen."
-captive_scale = 1
+captive_scale = 0.6
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="qualle"]
 
@@ -1485,7 +1523,6 @@ material/material = ExtResource( 3 )
 transform/rot = -90.0
 frames = SubResource( 30 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="qualle"]
@@ -1530,7 +1567,7 @@ common_depth = Vector2( 30, 100 )
 speed = 160.0
 name = "hai"
 description = "Carcharodon carcharias\nHai\n\nAls einziger Mann einen solchen herauszufischen ist ein schon ziemlicher Akt, aber eigentlich sollte meine Angel auch nicht so weit nach unten reichen - was zum Teufel wurde mir hier verkauft\?\nHaie sind übrigens harmloser als einige Leute denken, aber den hier behalte ich als Trophäe."
-captive_scale = 1
+captive_scale = 0.7
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="hai"]
 
@@ -1548,6 +1585,59 @@ transform/rot = 0.0202374
 build_mode = 0
 polygon = Vector2Array( 67.8757, 4.26498, 33.3274, -23.2571, 21.8715, 16.2487, 30.595, 47.1369, 14.8647, 35.2463, 2.85591, 60.242, 9.84566, 89.2445, -2.16492, 119.24, -12.1543, 89.2367, -6.14374, 59.2388, -16.1342, 32.2353, -36.1391, 46.2282, -33.1314, 24.2293, -26.1261, 9.23178, -37.1158, -19.7721, -72.1215, -3.78446, -62.1088, -39.7809, -35.1003, -63.7714, -24.09, -92.7675, -4.08121, -117.76, 19.9107, -94.752, 34.9004, -65.7467, 59.8887, -32.7378 )
 shape_range = Vector2( 0, 6 )
+trigger = false
+
+[node name="sternengezücht" type="Area2D" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( -403.681, 215.171 )
+input/pickable = true
+shapes/0/shape = SubResource( 218 )
+shapes/0/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 0.902539, -2.80498 )
+shapes/0/trigger = false
+shapes/1/shape = SubResource( 219 )
+shapes/1/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 0.902539, -2.80498 )
+shapes/1/trigger = false
+shapes/2/shape = SubResource( 220 )
+shapes/2/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 0.902539, -2.80498 )
+shapes/2/trigger = false
+shapes/3/shape = SubResource( 221 )
+shapes/3/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 0.902539, -2.80498 )
+shapes/3/trigger = false
+shapes/4/shape = SubResource( 222 )
+shapes/4/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 0.902539, -2.80498 )
+shapes/4/trigger = false
+shapes/5/shape = SubResource( 223 )
+shapes/5/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 0.902539, -2.80498 )
+shapes/5/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 2 )
+__meta__ = { "_edit_group_":true }
+common_depth = Vector2( 30, 100 )
+speed = 160.0
+name = "sternengezücht"
+description = "Sternengezücht\n\nWesen aus einer anderen Welt. Ob sie Cthulus nachkommen, oder seine innigen Anhänger sind, ist unklar. Obwohl sie nach dem Fall Ry\'lehs gestorben sind, flüstern sie noch immer den Sterblichen der Erde  Prophezeiungen zu, welche zu Wahnvorstellungen führen."
+captive_scale = 0.7
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="sternengezücht"]
+
+material/material = ExtResource( 3 )
+transform/rot = -90.0
+frames = SubResource( 224 )
+animation = "default"
+frame = 1
+playing = true
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="sternengezücht"]
+
+transform/pos = Vector2( 0.902539, -2.80498 )
+transform/rot = 0.0202374
+build_mode = 0
+polygon = Vector2Array( -7.16498, -37.5414, -12.0265, -42.4064, -8.78149, -50.5106, -2.83582, -55.3718, 7.97217, -57.5294, 25.2629, -55.3619, 39.8488, -44.5495, 43.0872, -33.7412, 40.9232, -26.7172, 33.3569, -22.9374, 31.1914, -11.5906, 37.1332, -5.64454, 39.8311, 5.70398, 34.9661, 10.5655, 34.9628, 19.7516, 29.556, 28.9358, 17.6635, 41.9003, 8.47363, 52.7042, -2.33728, 62.9673, -8.27606, 48.3754, -16.9152, 29.4598, -21.2306, 8.38421, -24.4674, -6.74701, -17.9804, -14.3098, -22.2993, -25.6588, -22.2993, -25.6588, -17.973, -35.3838 )
+shape_range = Vector2( 0, 5 )
 trigger = false
 
 [node name="clownfisch" type="Area2D" parent="."]
@@ -1734,7 +1824,7 @@ common_depth = Vector2( 40, 80 )
 speed = 170.0
 name = "clownfisch"
 description = "Premnas biaculeatus\nClownisch\n\nEin kleiner Niemand. Ist es eigentlich nicht Wert dass aus dem Meer geholt zu werden, ich hab auch ziemliche Angst, dass ich meinen Vater mit diesem Fang verärgere. Sie leben normalerweise in Gruppen zwischen Anemonen."
-captive_scale = 1
+captive_scale = 0.7
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="clownfisch"]
 
@@ -1952,7 +2042,7 @@ common_depth = Vector2( 10, 65 )
 speed = 160.0
 name = "aal"
 description = "Anguilla anguilla\nAal\n\nEin äußerst langer, vom Aussterben bedrohter Fisch. \nGenau wie einige Menschen kann auch dieses Tier sich einfach durch die engsten Pässe drängen, jedoch ist es bei diesem Vertreter hier eher Wortwörtlich gemeint."
-captive_scale = 1
+captive_scale = 0.5
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="aal"]
 
@@ -1961,6 +2051,7 @@ transform/pos = Vector2( -27.3657, -49.0138 )
 transform/rot = -90.0
 frames = SubResource( 113 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="AnimatedSprite 2" type="AnimatedSprite" parent="aal"]
@@ -1970,6 +2061,7 @@ transform/pos = Vector2( -2.8532, -49.0384 )
 transform/rot = -73.1344
 frames = SubResource( 113 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="AnimatedSprite 3" type="AnimatedSprite" parent="aal"]
@@ -1979,6 +2071,7 @@ transform/pos = Vector2( -48.7595, -50.6789 )
 transform/rot = -103.95
 frames = SubResource( 113 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="AnimatedSprite 4" type="AnimatedSprite" parent="aal"]
@@ -1988,7 +2081,6 @@ transform/pos = Vector2( -47.7713, 14.7375 )
 transform/rot = -95.8988
 frames = SubResource( 113 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="AnimatedSprite 5" type="AnimatedSprite" parent="aal"]
@@ -1998,6 +2090,7 @@ transform/pos = Vector2( -9.09616, 16.1361 )
 transform/rot = -86.8947
 frames = SubResource( 113 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="AnimatedSprite 6" type="AnimatedSprite" parent="aal"]
@@ -2007,6 +2100,7 @@ transform/pos = Vector2( -27.7216, 44.4333 )
 transform/rot = -89.3608
 frames = SubResource( 113 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="aal"]
@@ -2120,7 +2214,7 @@ common_depth = Vector2( 60, 90 )
 speed = 110.0
 name = "crab"
 description = "Macrocheira kaempferi\nRiesenkrabbe\n\nOho, ein interessanter Fang! Eigentlich leben diese Tiere nur in den Gewässern von Japan und ich hocke hier an deutscher Küste. Aber bei dem Ganzen, was ich bis jetzt gefangen habe, wundert mich fast gar nichts mehr."
-captive_scale = 1
+captive_scale = 0.5
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="crab"]
 
@@ -2162,7 +2256,7 @@ common_depth = Vector2( 0, 40 )
 speed = 80.0
 name = "stiefel"
 description = "Stiefel\n\nEin alter Stiefel, hat bestimmt mal einem anderen Fischer gehört. Ekelhaft, dass Leute so etwas ins Meer schmeißen. Ich finde so etwas ja absolut barbarisch."
-captive_scale = 1
+captive_scale = 0.7
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="stiefel"]
 
@@ -2235,7 +2329,7 @@ common_depth = Vector2( 50, 80 )
 speed = 115.0
 name = "algen"
 description = "Algen\n\nDiese komischen Algen haben Wölbungen, welche mich an Augen erinnern, aber sie gehen wohl nur unter Wasser auf also kann ich nicht wirklich etwas bestätigen. Ich weiß nicht warum, aber ich fühle mich als würde ich merkwürdigen Tiefen immer näher kommen."
-captive_scale = 1
+captive_scale = 0.7
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="algen"]
 
@@ -2272,7 +2366,7 @@ common_depth = Vector2( 140, 180 )
 speed = 115.0
 name = "buch"
 description = "Die Innschrift ist kaum noch lesbar, ich erkenne nur:\n„Kartoffeln, Karotten und Paprika ...zen und Schneiden, Lachs fileti ...Blech legen. Mit Salz, pfeffer, thym...osmarin würzen ... 45 Minuten im Ofen erh....“"
-captive_scale = 1
+captive_scale = 0.7
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="buch"]
 
@@ -2313,7 +2407,7 @@ common_depth = Vector2( 140, 180 )
 speed = 115.0
 name = "poster"
 description = "Vermissten-Plakat\n\nEin Poster, welches eine Gruppe Jugendlicher zeigt. Das letzte Mal vor ein paar Jahren gesehen...\? Kann es sein, dass jemand die brillante Idee hatte so etwas einzuschweißen\? Ach ich lasse es einfach hier, vielleicht kann ich das Rätsel anders lösen."
-captive_scale = 1
+captive_scale = 0.7
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="poster"]
 
@@ -2351,7 +2445,7 @@ common_depth = Vector2( 70, 120 )
 speed = 135.0
 name = "kristall"
 description = "blauer Kristall\n\nEin leuchtendes Kleinod, es schimmert in einer merkwürdigen Farbe. Ich frage mich, ob ich den als Köder verwenden könnte, aber mache es lieber nicht. Ich fühle mich wohl wenn ich ihn anschaue."
-captive_scale = 1
+captive_scale = 0.5
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="kristall"]
 
@@ -2389,7 +2483,7 @@ common_depth = Vector2( 40, 60 )
 speed = 99.0
 name = "reifen"
 description = "Reifen\n\nEin ganz normaler Reifen, scheint noch nicht sehr alt zu sein. Er ist kaum von Pflanzen überzogen. \nOb sich Fische auch irgendwelche Fortbewegungsmittel wünschen\? Ein bequemes Leben\?"
-captive_scale = 1
+captive_scale = 0.9
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="reifen"]
 
@@ -2436,7 +2530,7 @@ common_depth = Vector2( 20, 50 )
 speed = 175.0
 name = "truhe"
 description = "Schatztruhe\n\nScheint wohl mal einem Piraten gehört zu haben. Oder Kindern, die gerne Piraten spielten\? Es war ziemlich schwer herauszufischen aber mit dem ganzen Geld darin sollte ich mir ein schönes Leben machen können, jedenfalls mit dem, was noch davon übrig ist."
-captive_scale = 1
+captive_scale = 0.7
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="truhe"]
 
@@ -2507,7 +2601,7 @@ common_depth = Vector2( 60, 90 )
 speed = 250.0
 name = "leiche"
 description = "Wasserleiche\n\nBin...das ich\? Er trägt meine Kleidung, hat das gleiche Gesicht, den gleichen Körperbau. Bin das ich -  aus einer anderen Dimension\? Oder sterbe ich in naher Zukunft...oder bin ich schon tot\?"
-captive_scale = 1
+captive_scale = 0.7
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="leiche"]
 
@@ -2527,7 +2621,7 @@ polygon = Vector2Array( 15.7169, -153.051, 36.8958, -157.931, 62.9557, -145.704,
 shape_range = Vector2( 0, 11 )
 trigger = false
 
-[node name="eldritch thing" type="Area2D" parent="."]
+[node name="ulzel" type="Area2D" parent="."]
 
 editor/display_folded = true
 transform/pos = Vector2( 162.986, 750.58 )
@@ -2584,9 +2678,9 @@ common_depth = Vector2( 60, 90 )
 speed = 190.0
 name = "ulzel"
 description = "Ul\'zel\n\nEin niederes tiefes Wesen. Sie werden geschickt um zu beobachten und zu finden. Ihnen fehlen Gehirn oder ähnliche innere Organe, weshalb davon ausgegangen wird, dass diese Kreaturen von einer höheren Macht erschaffen werden."
-captive_scale = 1
+captive_scale = 0.3
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="eldritch thing"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="ulzel"]
 
 material/material = ExtResource( 3 )
 transform/pos = Vector2( 19.4529, 8.64579 )
@@ -2596,7 +2690,7 @@ animation = "default"
 playing = true
 modulate = Color( 0.996094, 0.996094, 0.996094, 1 )
 
-[node name="CollisionShape2D" type="CollisionPolygon2D" parent="eldritch thing"]
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="ulzel"]
 
 transform/pos = Vector2( 1.79595, 25.2594 )
 transform/rot = 0.0202374
