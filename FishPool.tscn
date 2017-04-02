@@ -1,4 +1,4 @@
-[gd_scene load_steps=311 format=1]
+[gd_scene load_steps=297 format=1]
 
 [ext_resource path="res://FishPool.gd" type="Script" id=1]
 [ext_resource path="res://Fish.gd" type="Script" id=2]
@@ -31,19 +31,16 @@
 [ext_resource path="res://things/algen.png" type="Texture" id=29]
 [ext_resource path="res://things/book.png" type="Texture" id=30]
 [ext_resource path="res://things/vermisst.png" type="Texture" id=31]
-[ext_resource path="res://things/kristall.png" type="Texture" id=32]
-[ext_resource path="res://things/reifen.png" type="Texture" id=33]
-[ext_resource path="res://things/treasure.png" type="Texture" id=34]
-[ext_resource path="res://things/drownDude.png" type="Texture" id=35]
-[ext_resource path="res://eldricht/1/silhoutte12.png" type="Texture" id=36]
-[ext_resource path="res://eldricht/1/silhoutte13.png" type="Texture" id=37]
-[ext_resource path="res://eldricht/3/arms1.png" type="Texture" id=38]
-[ext_resource path="res://eldricht/3/arms2.png" type="Texture" id=39]
-[ext_resource path="res://eldricht/engelfisch/01.png" type="Texture" id=40]
-[ext_resource path="res://eldricht/engelfisch/02.png" type="Texture" id=41]
-[ext_resource path="res://eldricht/tentakelviehMitSchnabel/01.png" type="Texture" id=42]
-[ext_resource path="res://eldricht/tentakelviehMitSchnabel/02.png" type="Texture" id=43]
-[ext_resource path="res://eldricht/cthulu/cthulhu.png" type="Texture" id=44]
+[ext_resource path="res://things/reifen.png" type="Texture" id=32]
+[ext_resource path="res://things/treasure.png" type="Texture" id=33]
+[ext_resource path="res://things/drownDude.png" type="Texture" id=34]
+[ext_resource path="res://eldricht/1/silhoutte12.png" type="Texture" id=35]
+[ext_resource path="res://eldricht/1/silhoutte13.png" type="Texture" id=36]
+[ext_resource path="res://eldricht/3/arms1.png" type="Texture" id=37]
+[ext_resource path="res://eldricht/3/arms2.png" type="Texture" id=38]
+[ext_resource path="res://eldricht/tentakelviehMitSchnabel/01.png" type="Texture" id=39]
+[ext_resource path="res://eldricht/tentakelviehMitSchnabel/02.png" type="Texture" id=40]
+[ext_resource path="res://eldricht/cthulu/cthulhu.png" type="Texture" id=41]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 
@@ -82,24 +79,24 @@ animations = [ { "frames":[ ExtResource( 4 ), ExtResource( 5 ) ], "loop":true, "
 [sub_resource type="ConvexPolygonShape2D" id=8]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 18.592, 135.289, 27.2066, 163.156, 26.5372, 180.405, 21.8885, 193.671, 7.96143, 180.398, -7.95203, 155.846, -16.5695, 135.94, 4.6651, 121.353 )
+points = Vector2Array( 3.97386, 74.0014, -5.02614, 73.9982, -4.01801, 50.9986, 3.98199, 51.0014 )
 
 [sub_resource type="ConvexPolygonShape2D" id=9]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -16.5695, 135.94, -24.5361, 151.86, -39.1391, 173.747, -65.6808, 187.67, -68.3282, 169.757, -65.667, 148.528, -51.7259, 121.996, -40.443, 108.732 )
+points = Vector2Array( 9.98764, 35.0035, 3.98199, 51.0014, -4.01801, 50.9986, -8.01342, 37.9972, -11.0099, 27.9961 )
 
 [sub_resource type="ConvexPolygonShape2D" id=10]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 11.9672, 108.75, 4.6651, 121.353, -16.5695, 135.94, -40.443, 108.732, -55.6892, 73.565 )
+points = Vector2Array( 15.9979, 6.00565, 13.9922, 22.0049, 12.9905, 27.0046, 9.98764, 35.0035, -11.0099, 27.9961, -13.0081, 22.9954, -16.0025, 6.99435, -17.9975, -7.00636 )
 
 [sub_resource type="ConvexPolygonShape2D" id=11]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -76.2159, -37.8969, -97.4505, -23.3091, -120.004, -31.2781, -118.005, -55.1605, -100.752, -66.4326, -56.3044, -63.0998 )
+points = Vector2Array( 5.02614, -73.9982, 15.0205, -57.9947, 18.0138, -38.9936, 19.0102, -28.9933, 19.0028, -7.99329, 15.9979, 6.00565, -17.9975, -7.00636, -18.9908, -26.0067, -17.9869, -37.0064, -13.9799, -57.0049, -5.97457, -72.0021, 0.0268478, -76 )
 
-[sub_resource type="ConvexPolygonShape2D" id=12]
+[sub_resource type="ConvexPolygonShape2D" id=266]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -56.3044, -63.0998, -100.752, -66.4326, -77.5237, -91.6344, -51.652, -86.9813 )
@@ -107,19 +104,19 @@ points = Vector2Array( -56.3044, -63.0998, -100.752, -66.4326, -77.5237, -91.634
 [sub_resource type="ConvexPolygonShape2D" id=13]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -51.652, -86.9813, -77.5237, -91.6344, -64.2421, -129.445, -42.3421, -149.339 )
+points = Vector2Array( 5.47189, 40.2269, -6.12308, 40.4864, -3.37097, 27.4601, 2.35083, 27.022 )
 
 [sub_resource type="ConvexPolygonShape2D" id=14]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 86.9865, -40.4929, 112.855, -26.5519, 116.167, -13.9458, 103.56, -5.98917, 88.9671, -13.292, 68.4076, -31.875 )
+points = Vector2Array( -1.88458, -22.23, -1.61728, -33.0342, 1.05161, -32.8357, 1.48787, -21.8324 )
 
 [sub_resource type="ConvexPolygonShape2D" id=15]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 63.7777, -71.6818, 86.9865, -40.4929, 68.4076, -31.875, 51.8289, -51.1201 )
+points = Vector2Array( 13.9242, -15.3729, 16.8208, -9.57437, 22.3491, 6.50229, 13.9922, 22.0049, 2.35083, 27.022, -3.37097, 27.4601, -7.77206, 27.0184, -13.0081, 22.9954, -21.6598, 9.3855, -17.9975, -7.00636, -14.3595, -13.9157, -7.94604, -20.9145, -1.88458, -22.23, 1.48787, -21.8324, 9.18256, -20.3814 )
 
-[sub_resource type="ConvexPolygonShape2D" id=16]
+[sub_resource type="ConvexPolygonShape2D" id=267]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 57.1632, -127.411, 63.7777, -71.6818, 51.8289, -51.1201, 39.2246, -53.1147, -51.652, -86.9813, -42.3421, -149.339, -19.7842, -153.975, 45.2261, -140.021 )
@@ -127,19 +124,19 @@ points = Vector2Array( 57.1632, -127.411, 63.7777, -71.6818, 51.8289, -51.1201, 
 [sub_resource type="ConvexPolygonShape2D" id=17]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 43.8524, -7.3371, 45.8303, 27.8249, 43.1672, 54.3607, 33.8708, 78.2406, 11.9672, 108.75, -55.6892, 73.565, -57.6591, 15.8467, -53.0058, -10.6884, -41.0574, -29.9234, 31.9204, -34.5416 )
+points = Vector2Array( 23.4857, 77.7237, 1.89821, 171.119, -25.0145, 84.8914 )
 
 [sub_resource type="ConvexPolygonShape2D" id=18]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 31.9204, -34.5416, -41.0574, -29.9234, -45.6913, -58.4521, 39.2246, -53.1147 )
+points = Vector2Array( -56.1359, 48.3575, -67.5069, 33.9838, -90.2472, 1.04523, -98.619, -28.8946, -89.0195, -84.5737, -71.6477, -108.517, -31.5314, -110.898, 33.1321, -110.875, 70.2532, -109.066, 92.3912, -65.9488, 95.3718, -28.8261, 83.3865, 1.10655, 23.4857, 77.7237, -25.0145, 84.8914 )
 
 [sub_resource type="ConvexPolygonShape2D" id=19]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 39.2246, -53.1147, -45.6913, -58.4521, -51.652, -86.9813 )
+points = Vector2Array( 12.7802, -125.252, 33.1321, -110.875, -31.5314, -110.898, -18.9527, -125.862 )
 
-[sub_resource type="ConvexPolygonShape2D" id=20]
+[sub_resource type="ConvexPolygonShape2D" id=268]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 41.9106, -144.666, 45.2261, -140.021, -19.7842, -153.975, -17.7852, -178.521 )
@@ -147,48 +144,48 @@ points = Vector2Array( 41.9106, -144.666, 45.2261, -140.021, -19.7842, -153.975,
 [sub_resource type="ConvexPolygonShape2D" id=21]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 10.7473, -193.77, 31.3114, -188.455, 45.9019, -175.182, 47.225, -164.567, 47.2213, -153.952, 41.9106, -144.666, -17.7852, -178.521, -11.1466, -191.124 )
+points = Vector2Array( -38.8879, 20.0373, -56.9411, 29.0559, -38.8844, 10.1098 )
 
-[sub_resource type="SpriteFrames" id=22]
+[sub_resource type="SpriteFrames" id=269]
 
 animations = [ { "frames":[ ExtResource( 6 ), ExtResource( 7 ) ], "loop":true, "name":"default", "speed":1.4 } ]
 
 [sub_resource type="ConvexPolygonShape2D" id=23]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 87.1711, -39.6063, 93.9214, -32.8513, 89.9462, -24.114, 82.0011, -21.7335, 74.4617, -43.5829 )
+points = Vector2Array( -4.60123, 43.5144, -29.8799, 67.873, -24.4539, 37.1899 )
 
 [sub_resource type="ConvexPolygonShape2D" id=24]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 57.3847, -52.7249, 67.3148, -51.927, 69.2986, -45.5709, 67.2933, 8.8468 )
+points = Vector2Array( 32.4086, 22.77, 43.2275, 54.3613, 30.595, 47.1369 )
 
 [sub_resource type="ConvexPolygonShape2D" id=25]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 27.2056, -78.5545, 46.6692, -78.9448, 60.9672, -74.1732, 68.5102, -62.6513, 64.536, -56.6945, 57.3847, -52.7249, 17.6693, -69.8192 )
+points = Vector2Array( -28.0401, -30.4988, -27.1274, -59.3785, -13.5953, -44.0313 )
 
 [sub_resource type="ConvexPolygonShape2D" id=26]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 86.3682, -15.3766, 85.9666, -3.06305, 84.3733, 9.64722, 77.6199, 11.6309, 67.2933, 8.8468, 82.0011, -21.7335 )
+points = Vector2Array( -37.9764, -5.2323, -59.6273, -31.4125, -28.0401, -30.4988, 33.3274, -23.2571, 39.6356, 2.91751, 32.4086, 22.77, 13.4488, 43.5208 )
 
 [sub_resource type="ConvexPolygonShape2D" id=27]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -46.279, -78.8723, -41.9033, -96.7454, -32.3693, -99.1253, -21.6466, -93.2687, -17.6805, -76.1871, -42.7071, -70.1324 )
+points = Vector2Array( 32.4086, 22.77, 30.595, 47.1369, 13.4488, 43.5208 )
 
 [sub_resource type="ConvexPolygonShape2D" id=28]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -24.0961, 94.2155, -34.4262, 101.362, -47.1364, 99.3712, -51.5018, 88.2477, -43.9502, 75.5394, -24.0936, 87.0657 )
+points = Vector2Array( -30.767, 24.5527, -38.8879, 20.0373, -38.8844, 10.1098 )
 
 [sub_resource type="ConvexPolygonShape2D" id=29]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 69.2752, 20.7639, 74.831, 35.4628, 71.6459, 56.514, 64.0938, 70.8111, 48.6017, 72.7917, 39.4677, 67.2274, 64.908, 14.8041 )
+points = Vector2Array( -28.0401, -30.4988, -13.5953, -44.0313, 8.06693, -50.3411, 22.5025, -37.701, 33.3274, -23.2571 )
 
-[sub_resource type="ConvexPolygonShape2D" id=30]
+[sub_resource type="ConvexPolygonShape2D" id=270]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 69.2986, -45.5709, 74.4617, -43.5829, 82.0011, -21.7335, 67.2933, 8.8468 )
@@ -196,407 +193,407 @@ points = Vector2Array( 69.2986, -45.5709, 74.4617, -43.5829, 82.0011, -21.7335, 
 [sub_resource type="ConvexPolygonShape2D" id=31]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 17.6693, -69.8192, 57.3847, -52.7249, 67.2933, 8.8468, 64.908, 14.8041, 39.4677, 67.2274, 8.53412, -71.8085 )
+points = Vector2Array( 21.8715, 16.2487, 30.595, 47.1369, 14.8647, 35.2463 )
 
 [sub_resource type="ConvexPolygonShape2D" id=32]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -55.026, -55.4398, -49.8593, -63.3822, -42.7071, -70.1324, -17.6805, -76.1871, -6.95529, -77.3749, 8.53412, -71.8085, 39.4677, 67.2274, 34.3006, 76.7587, 19.601, 84.3007, -2.24734, 88.6623, -24.0936, 87.0657, -43.9502, 75.5394, -49.9062, 69.1819 )
+points = Vector2Array( 59.8887, -32.7378, 67.8757, 4.26498, 33.3274, -23.2571, 34.9004, -65.7467 )
 
 [sub_resource type="ConvexPolygonShape2D" id=33]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -55.026, -55.4398, -49.9062, 69.1819, -62.2193, 67.5887, -69.3658, 58.053 )
+points = Vector2Array( 2.85591, 60.242, 9.84566, 89.2445, -2.16492, 119.24, -12.1543, 89.2367, -6.14374, 59.2388 )
 
 [sub_resource type="ConvexPolygonShape2D" id=34]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -66.5436, -59.8132, -55.026, -55.4398, -69.3658, 58.053, -84.4563, 47.7202, -91.2027, 30.2404, -83.6453, 0.849121 )
+points = Vector2Array( -16.1342, 32.2353, -36.1391, 46.2282, -33.1314, 24.2293, -26.1261, 9.23178 )
 
 [sub_resource type="ConvexPolygonShape2D" id=35]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -89.2011, -13.7444, -89.5919, -32.0163, -85.2172, -47.1089, -76.0785, -55.05, -66.5436, -59.8132, -83.6453, 0.849121 )
+points = Vector2Array( -16.1342, 32.2353, -26.1261, 9.23178, -37.1158, -19.7721, -35.1003, -63.7714, -24.09, -92.7675, -4.08121, -117.76, 19.9107, -94.752, 34.9004, -65.7467, 33.3274, -23.2571, 21.8715, 16.2487, 14.8647, 35.2463 )
 
 [sub_resource type="ConvexPolygonShape2D" id=36]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -83.6453, 0.849121, -91.2027, 30.2404, -90.0046, 11.9689 )
+points = Vector2Array( 14.8647, 35.2463, 2.85591, 60.242, -6.14374, 59.2388, -16.1342, 32.2353 )
 
-[sub_resource type="SpriteFrames" id=37]
+[sub_resource type="SpriteFrames" id=271]
 
 animations = [ { "frames":[ ExtResource( 8 ), ExtResource( 9 ) ], "loop":true, "name":"default", "speed":1.4 } ]
 
-[sub_resource type="ConvexPolygonShape2D" id=38]
+[sub_resource type="ConvexPolygonShape2D" id=272]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 3.97386, 74.0014, -5.02614, 73.9982, -4.01801, 50.9986, 3.98199, 51.0014 )
 
-[sub_resource type="ConvexPolygonShape2D" id=39]
+[sub_resource type="ConvexPolygonShape2D" id=273]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 9.98764, 35.0035, 3.98199, 51.0014, -4.01801, 50.9986, -8.01342, 37.9972, -11.0099, 27.9961 )
 
-[sub_resource type="ConvexPolygonShape2D" id=40]
+[sub_resource type="ConvexPolygonShape2D" id=274]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 15.9979, 6.00565, 13.9922, 22.0049, 12.9905, 27.0046, 9.98764, 35.0035, -11.0099, 27.9961, -13.0081, 22.9954, -16.0025, 6.99435, -17.9975, -7.00636 )
 
-[sub_resource type="ConvexPolygonShape2D" id=41]
+[sub_resource type="ConvexPolygonShape2D" id=275]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 5.02614, -73.9982, 15.0205, -57.9947, 18.0138, -38.9936, 19.0102, -28.9933, 19.0028, -7.99329, 15.9979, 6.00565, -17.9975, -7.00636, -18.9908, -26.0067, -17.9869, -37.0064, -13.9799, -57.0049, -5.97457, -72.0021, 0.0268478, -76 )
 
-[sub_resource type="SpriteFrames" id=42]
+[sub_resource type="SpriteFrames" id=276]
 
 animations = [ { "frames":[ ExtResource( 10 ), ExtResource( 11 ) ], "loop":true, "name":"default", "speed":1.75 } ]
 
-[sub_resource type="ConvexPolygonShape2D" id=43]
+[sub_resource type="ConvexPolygonShape2D" id=277]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 5.47189, 40.2269, -6.12308, 40.4864, -3.37097, 27.4601, 2.35083, 27.022 )
 
-[sub_resource type="ConvexPolygonShape2D" id=44]
+[sub_resource type="ConvexPolygonShape2D" id=278]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -1.88458, -22.23, -1.61728, -33.0342, 1.05161, -32.8357, 1.48787, -21.8324 )
 
-[sub_resource type="ConvexPolygonShape2D" id=45]
+[sub_resource type="ConvexPolygonShape2D" id=279]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 13.9242, -15.3729, 16.8208, -9.57437, 22.3491, 6.50229, 13.9922, 22.0049, 2.35083, 27.022, -3.37097, 27.4601, -7.77206, 27.0184, -13.0081, 22.9954, -21.6598, 9.3855, -17.9975, -7.00636, -14.3595, -13.9157, -7.94604, -20.9145, -1.88458, -22.23, 1.48787, -21.8324, 9.18256, -20.3814 )
 
-[sub_resource type="SpriteFrames" id=46]
+[sub_resource type="SpriteFrames" id=280]
 
 animations = [ { "frames":[ ExtResource( 12 ), ExtResource( 13 ) ], "loop":true, "name":"default", "speed":2.95 } ]
 
-[sub_resource type="ConvexPolygonShape2D" id=47]
+[sub_resource type="ConvexPolygonShape2D" id=281]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 23.4857, 77.7237, 1.89821, 171.119, -25.0145, 84.8914 )
 
-[sub_resource type="ConvexPolygonShape2D" id=48]
+[sub_resource type="ConvexPolygonShape2D" id=282]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -56.1359, 48.3575, -67.5069, 33.9838, -90.2472, 1.04523, -98.619, -28.8946, -89.0195, -84.5737, -71.6477, -108.517, -31.5314, -110.898, 33.1321, -110.875, 70.2532, -109.066, 92.3912, -65.9488, 95.3718, -28.8261, 83.3865, 1.10655, 23.4857, 77.7237, -25.0145, 84.8914 )
 
-[sub_resource type="ConvexPolygonShape2D" id=49]
+[sub_resource type="ConvexPolygonShape2D" id=283]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 12.7802, -125.252, 33.1321, -110.875, -31.5314, -110.898, -18.9527, -125.862 )
 
-[sub_resource type="SpriteFrames" id=50]
+[sub_resource type="SpriteFrames" id=284]
 
 animations = [ { "frames":[ ExtResource( 14 ), ExtResource( 15 ) ], "loop":true, "name":"default", "speed":2.34 } ]
 
-[sub_resource type="ConvexPolygonShape2D" id=51]
+[sub_resource type="ConvexPolygonShape2D" id=285]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -38.8879, 20.0373, -56.9411, 29.0559, -38.8844, 10.1098 )
 
-[sub_resource type="ConvexPolygonShape2D" id=52]
+[sub_resource type="ConvexPolygonShape2D" id=286]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 22.5025, -37.701, 50.486, -54.8386, 33.3274, -23.2571 )
 
-[sub_resource type="ConvexPolygonShape2D" id=53]
+[sub_resource type="ConvexPolygonShape2D" id=287]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -4.60123, 43.5144, -29.8799, 67.873, -24.4539, 37.1899 )
 
-[sub_resource type="ConvexPolygonShape2D" id=54]
+[sub_resource type="ConvexPolygonShape2D" id=288]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 32.4086, 22.77, 43.2275, 54.3613, 30.595, 47.1369 )
 
-[sub_resource type="ConvexPolygonShape2D" id=55]
+[sub_resource type="ConvexPolygonShape2D" id=289]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -28.0401, -30.4988, -27.1274, -59.3785, -13.5953, -44.0313 )
 
-[sub_resource type="ConvexPolygonShape2D" id=56]
+[sub_resource type="ConvexPolygonShape2D" id=290]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -37.9764, -5.2323, -59.6273, -31.4125, -28.0401, -30.4988, 33.3274, -23.2571, 39.6356, 2.91751, 32.4086, 22.77, 13.4488, 43.5208 )
 
-[sub_resource type="ConvexPolygonShape2D" id=57]
+[sub_resource type="ConvexPolygonShape2D" id=291]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 32.4086, 22.77, 30.595, 47.1369, 13.4488, 43.5208 )
 
-[sub_resource type="ConvexPolygonShape2D" id=58]
+[sub_resource type="ConvexPolygonShape2D" id=292]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -30.767, 24.5527, -38.8879, 20.0373, -38.8844, 10.1098 )
 
-[sub_resource type="ConvexPolygonShape2D" id=59]
+[sub_resource type="ConvexPolygonShape2D" id=293]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -28.0401, -30.4988, -13.5953, -44.0313, 8.06693, -50.3411, 22.5025, -37.701, 33.3274, -23.2571 )
 
-[sub_resource type="SpriteFrames" id=60]
+[sub_resource type="SpriteFrames" id=294]
 
 animations = [ { "frames":[ ExtResource( 16 ), ExtResource( 17 ) ], "loop":true, "name":"default", "speed":1.0 } ]
 
-[sub_resource type="ConvexPolygonShape2D" id=61]
+[sub_resource type="ConvexPolygonShape2D" id=295]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 21.8715, 16.2487, 30.595, 47.1369, 14.8647, 35.2463 )
 
-[sub_resource type="ConvexPolygonShape2D" id=62]
+[sub_resource type="ConvexPolygonShape2D" id=296]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 59.8887, -32.7378, 67.8757, 4.26498, 33.3274, -23.2571, 34.9004, -65.7467 )
 
-[sub_resource type="ConvexPolygonShape2D" id=63]
+[sub_resource type="ConvexPolygonShape2D" id=297]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 2.85591, 60.242, 9.84566, 89.2445, -2.16492, 119.24, -12.1543, 89.2367, -6.14374, 59.2388 )
 
-[sub_resource type="ConvexPolygonShape2D" id=64]
+[sub_resource type="ConvexPolygonShape2D" id=298]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -16.1342, 32.2353, -36.1391, 46.2282, -33.1314, 24.2293, -26.1261, 9.23178 )
 
-[sub_resource type="ConvexPolygonShape2D" id=65]
+[sub_resource type="ConvexPolygonShape2D" id=299]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -16.1342, 32.2353, -26.1261, 9.23178, -37.1158, -19.7721, -35.1003, -63.7714, -24.09, -92.7675, -4.08121, -117.76, 19.9107, -94.752, 34.9004, -65.7467, 33.3274, -23.2571, 21.8715, 16.2487, 14.8647, 35.2463 )
 
-[sub_resource type="ConvexPolygonShape2D" id=66]
+[sub_resource type="ConvexPolygonShape2D" id=300]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 14.8647, 35.2463, 2.85591, 60.242, -6.14374, 59.2388, -16.1342, 32.2353 )
 
-[sub_resource type="SpriteFrames" id=67]
+[sub_resource type="SpriteFrames" id=301]
 
 animations = [ { "frames":[ ExtResource( 18 ), ExtResource( 19 ) ], "loop":true, "name":"default", "speed":3.08 } ]
 
-[sub_resource type="ConvexPolygonShape2D" id=68]
+[sub_resource type="ConvexPolygonShape2D" id=302]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 8.47363, 52.7042, -2.33728, 62.9673, -8.27606, 48.3754, 17.6635, 41.9003 )
 
-[sub_resource type="ConvexPolygonShape2D" id=69]
+[sub_resource type="ConvexPolygonShape2D" id=303]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -7.16498, -37.5414, -12.0265, -42.4064, -8.78149, -50.5106, -2.83582, -55.3718, 7.97217, -57.5294, 25.2629, -55.3619, 39.8488, -44.5495, 43.0872, -33.7412, 40.9232, -26.7172, 33.3569, -22.9374 )
 
-[sub_resource type="ConvexPolygonShape2D" id=70]
+[sub_resource type="ConvexPolygonShape2D" id=304]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 34.9628, 19.7516, 29.556, 28.9358, 17.6635, 41.9003, -8.27606, 48.3754, -16.9152, 29.4598, -21.2306, 8.38421, 34.9661, 10.5655 )
 
-[sub_resource type="ConvexPolygonShape2D" id=71]
+[sub_resource type="ConvexPolygonShape2D" id=305]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 37.1332, -5.64454, 39.8311, 5.70398, 34.9661, 10.5655, -21.2306, 8.38421, -24.4674, -6.74701, -17.9804, -14.3098, 31.1914, -11.5906 )
 
-[sub_resource type="ConvexPolygonShape2D" id=72]
+[sub_resource type="ConvexPolygonShape2D" id=306]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -7.16498, -37.5414, 33.3569, -22.9374, 31.1914, -11.5906, -17.9804, -14.3098, -22.2993, -25.6588, -17.973, -35.3838 )
 
-[sub_resource type="ConvexPolygonShape2D" id=73]
+[sub_resource type="ConvexPolygonShape2D" id=307]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -17.973, -35.3838, -22.2993, -25.6588, -22.2993, -25.6588 )
 
-[sub_resource type="SpriteFrames" id=74]
+[sub_resource type="SpriteFrames" id=308]
 
 animations = [ { "frames":[ ExtResource( 20 ), ExtResource( 21 ) ], "loop":true, "name":"default", "speed":2.0 } ]
 
-[sub_resource type="ConvexPolygonShape2D" id=75]
+[sub_resource type="ConvexPolygonShape2D" id=309]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 0.70874, 11.3693, -6.98398, 12.5904, -2.96121, 7.52185, 2.28384, 6.6496 )
 
-[sub_resource type="ConvexPolygonShape2D" id=76]
+[sub_resource type="ConvexPolygonShape2D" id=310]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -5.58087, -0.171356, -9.77679, 0.176849, -7.34885, -3.22565 )
 
-[sub_resource type="ConvexPolygonShape2D" id=77]
+[sub_resource type="ConvexPolygonShape2D" id=311]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 2.28384, 6.6496, 4.72928, 12.5945, 0.70874, 11.3693 )
 
-[sub_resource type="ConvexPolygonShape2D" id=78]
+[sub_resource type="ConvexPolygonShape2D" id=312]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 8.51657, -3.33972, 10.5024, 1.40775, 6.65662, 0.532288 )
 
-[sub_resource type="ConvexPolygonShape2D" id=79]
+[sub_resource type="ConvexPolygonShape2D" id=313]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 2.28384, 6.6496, -2.96121, 7.52185, -4.18347, 3.15082, 5.43207, 2.62976 )
 
-[sub_resource type="ConvexPolygonShape2D" id=80]
+[sub_resource type="ConvexPolygonShape2D" id=314]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 0.808594, -11.1817, 5.33298, -9.56097, 8.51657, -3.33972, 6.65662, 0.532288, 5.43207, 2.62976, -4.18347, 3.15082, -5.58087, -0.171356, -4.90872, -8.10153 )
 
-[sub_resource type="ConvexPolygonShape2D" id=81]
+[sub_resource type="ConvexPolygonShape2D" id=315]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -4.90872, -8.10153, -5.58087, -0.171356, -7.34885, -3.22565 )
 
-[sub_resource type="ConvexPolygonShape2D" id=82]
+[sub_resource type="ConvexPolygonShape2D" id=316]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 0.70874, 11.3693, -6.98398, 12.5904, -2.96121, 7.52185, 2.28384, 6.6496 )
 
-[sub_resource type="ConvexPolygonShape2D" id=83]
+[sub_resource type="ConvexPolygonShape2D" id=317]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -5.58087, -0.171356, -9.77679, 0.176849, -7.34885, -3.22565 )
 
-[sub_resource type="ConvexPolygonShape2D" id=84]
+[sub_resource type="ConvexPolygonShape2D" id=318]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 2.28384, 6.6496, 4.72928, 12.5945, 0.70874, 11.3693 )
 
-[sub_resource type="ConvexPolygonShape2D" id=85]
+[sub_resource type="ConvexPolygonShape2D" id=319]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 8.51657, -3.33972, 10.5024, 1.40775, 6.65662, 0.532288 )
 
-[sub_resource type="ConvexPolygonShape2D" id=86]
+[sub_resource type="ConvexPolygonShape2D" id=320]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 2.28384, 6.6496, -2.96121, 7.52185, -4.18347, 3.15082, 5.43207, 2.62976 )
 
-[sub_resource type="ConvexPolygonShape2D" id=87]
+[sub_resource type="ConvexPolygonShape2D" id=321]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 0.808594, -11.1817, 5.33298, -9.56097, 8.51657, -3.33972, 6.65662, 0.532288, 5.43207, 2.62976, -4.18347, 3.15082, -5.58087, -0.171356, -4.90872, -8.10153 )
 
-[sub_resource type="ConvexPolygonShape2D" id=88]
+[sub_resource type="ConvexPolygonShape2D" id=322]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -4.90872, -8.10153, -5.58087, -0.171356, -7.34885, -3.22565 )
 
-[sub_resource type="ConvexPolygonShape2D" id=89]
+[sub_resource type="ConvexPolygonShape2D" id=323]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 0.70874, 11.3693, -6.98398, 12.5904, -2.96121, 7.52185, 2.28384, 6.6496 )
 
-[sub_resource type="ConvexPolygonShape2D" id=90]
+[sub_resource type="ConvexPolygonShape2D" id=324]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -5.58087, -0.171356, -9.77679, 0.176849, -7.34885, -3.22565 )
 
-[sub_resource type="ConvexPolygonShape2D" id=91]
+[sub_resource type="ConvexPolygonShape2D" id=325]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 2.28384, 6.6496, 4.72928, 12.5945, 0.70874, 11.3693 )
 
-[sub_resource type="ConvexPolygonShape2D" id=92]
+[sub_resource type="ConvexPolygonShape2D" id=326]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 8.51657, -3.33972, 10.5024, 1.40775, 6.65662, 0.532288 )
 
-[sub_resource type="ConvexPolygonShape2D" id=93]
+[sub_resource type="ConvexPolygonShape2D" id=327]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 2.28384, 6.6496, -2.96121, 7.52185, -4.18347, 3.15082, 5.43207, 2.62976 )
 
-[sub_resource type="ConvexPolygonShape2D" id=94]
+[sub_resource type="ConvexPolygonShape2D" id=328]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 0.808594, -11.1817, 5.33298, -9.56097, 8.51657, -3.33972, 6.65662, 0.532288, 5.43207, 2.62976, -4.18347, 3.15082, -5.58087, -0.171356, -4.90872, -8.10153 )
 
-[sub_resource type="ConvexPolygonShape2D" id=95]
+[sub_resource type="ConvexPolygonShape2D" id=329]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -4.90872, -8.10153, -5.58087, -0.171356, -7.34885, -3.22565 )
 
-[sub_resource type="ConvexPolygonShape2D" id=96]
+[sub_resource type="ConvexPolygonShape2D" id=330]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 0.70874, 11.3693, -6.98398, 12.5904, -2.96121, 7.52185, 2.28384, 6.6496 )
 
-[sub_resource type="ConvexPolygonShape2D" id=97]
+[sub_resource type="ConvexPolygonShape2D" id=331]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -5.58087, -0.171356, -9.77679, 0.176849, -7.34885, -3.22565 )
 
-[sub_resource type="ConvexPolygonShape2D" id=98]
+[sub_resource type="ConvexPolygonShape2D" id=332]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 2.28384, 6.6496, 4.72928, 12.5945, 0.70874, 11.3693 )
 
-[sub_resource type="ConvexPolygonShape2D" id=99]
+[sub_resource type="ConvexPolygonShape2D" id=333]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 8.51657, -3.33972, 10.5024, 1.40775, 6.65662, 0.532288 )
 
-[sub_resource type="ConvexPolygonShape2D" id=100]
+[sub_resource type="ConvexPolygonShape2D" id=334]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 2.28384, 6.6496, -2.96121, 7.52185, -4.18347, 3.15082, 5.43207, 2.62976 )
 
-[sub_resource type="ConvexPolygonShape2D" id=101]
+[sub_resource type="ConvexPolygonShape2D" id=335]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 0.808594, -11.1817, 5.33298, -9.56097, 8.51657, -3.33972, 6.65662, 0.532288, 5.43207, 2.62976, -4.18347, 3.15082, -5.58087, -0.171356, -4.90872, -8.10153 )
 
-[sub_resource type="ConvexPolygonShape2D" id=102]
+[sub_resource type="ConvexPolygonShape2D" id=336]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -4.90872, -8.10153, -5.58087, -0.171356, -7.34885, -3.22565 )
 
-[sub_resource type="ConvexPolygonShape2D" id=103]
+[sub_resource type="ConvexPolygonShape2D" id=337]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 0.70874, 11.3693, -6.98398, 12.5904, -2.96121, 7.52185, 2.28384, 6.6496 )
 
-[sub_resource type="ConvexPolygonShape2D" id=104]
+[sub_resource type="ConvexPolygonShape2D" id=338]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -5.58087, -0.171356, -9.77679, 0.176849, -7.34885, -3.22565 )
 
-[sub_resource type="ConvexPolygonShape2D" id=105]
+[sub_resource type="ConvexPolygonShape2D" id=339]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 2.28384, 6.6496, 4.72928, 12.5945, 0.70874, 11.3693 )
 
-[sub_resource type="ConvexPolygonShape2D" id=106]
+[sub_resource type="ConvexPolygonShape2D" id=340]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 8.51657, -3.33972, 10.5024, 1.40775, 6.65662, 0.532288 )
 
-[sub_resource type="ConvexPolygonShape2D" id=107]
+[sub_resource type="ConvexPolygonShape2D" id=341]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 2.28384, 6.6496, -2.96121, 7.52185, -4.18347, 3.15082, 5.43207, 2.62976 )
 
-[sub_resource type="ConvexPolygonShape2D" id=108]
+[sub_resource type="ConvexPolygonShape2D" id=342]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 0.808594, -11.1817, 5.33298, -9.56097, 8.51657, -3.33972, 6.65662, 0.532288, 5.43207, 2.62976, -4.18347, 3.15082, -5.58087, -0.171356, -4.90872, -8.10153 )
 
-[sub_resource type="ConvexPolygonShape2D" id=109]
+[sub_resource type="ConvexPolygonShape2D" id=343]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -4.90872, -8.10153, -5.58087, -0.171356, -7.34885, -3.22565 )
 
-[sub_resource type="ConvexPolygonShape2D" id=110]
+[sub_resource type="ConvexPolygonShape2D" id=344]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 0.70874, 11.3693, -6.98398, 12.5904, -2.96121, 7.52185, 2.28384, 6.6496 )
 
-[sub_resource type="ConvexPolygonShape2D" id=111]
+[sub_resource type="ConvexPolygonShape2D" id=345]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -5.58087, -0.171356, -9.77679, 0.176849, -7.34885, -3.22565 )
 
-[sub_resource type="ConvexPolygonShape2D" id=112]
+[sub_resource type="ConvexPolygonShape2D" id=346]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 2.28384, 6.6496, 4.72928, 12.5945, 0.70874, 11.3693 )
 
-[sub_resource type="ConvexPolygonShape2D" id=113]
+[sub_resource type="ConvexPolygonShape2D" id=347]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 8.51657, -3.33972, 10.5024, 1.40775, 6.65662, 0.532288 )
@@ -604,44 +601,44 @@ points = Vector2Array( 8.51657, -3.33972, 10.5024, 1.40775, 6.65662, 0.532288 )
 [sub_resource type="ConvexPolygonShape2D" id=114]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 2.28384, 6.6496, -2.96121, 7.52185, -4.18347, 3.15082, 5.43207, 2.62976 )
+points = Vector2Array( 69.9429, 10.431, 77.0519, 35.0219, 44.5589, 46.1163, 65.4155, 4.60577 )
 
 [sub_resource type="ConvexPolygonShape2D" id=115]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 0.808594, -11.1817, 5.33298, -9.56097, 8.51657, -3.33972, 6.65662, 0.532288, 5.43207, 2.62976, -4.18347, 3.15082, -5.58087, -0.171356, -4.90872, -8.10153 )
+points = Vector2Array( 23.3689, -31.3215, 29.8412, -36.1722, 37.7939, -36.3873, 39.0842, -25.7101, 10.909, 52.8986 )
 
 [sub_resource type="ConvexPolygonShape2D" id=116]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -4.90872, -8.10153, -5.58087, -0.171356, -7.34885, -3.22565 )
+points = Vector2Array( 85.159, -18.0347, 78.0543, -54.92, 88.4185, -86.2991, 110.744, -89.8501, 120.766, -69.1404, 118.492, -43.2585, 91.9515, -13.1793 )
 
 [sub_resource type="ConvexPolygonShape2D" id=117]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 0.70874, 11.3693, -6.98398, 12.5904, -2.96121, 7.52185, 2.28384, 6.6496 )
+points = Vector2Array( 65.4155, 4.60577, 85.159, -18.0347, 91.9515, -13.1793, 87.6059, -2.07507, 69.9429, 10.431 )
 
 [sub_resource type="ConvexPolygonShape2D" id=118]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -5.58087, -0.171356, -9.77679, 0.176849, -7.34885, -3.22565 )
+points = Vector2Array( -11.8978, -27.1279, -9.30632, -36.1859, -1.21729, -38.1243, 2.01611, -32.623, 10.909, 52.8986 )
 
 [sub_resource type="ConvexPolygonShape2D" id=119]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 2.28384, 6.6496, 4.72928, 12.5945, 0.70874, 11.3693 )
+points = Vector2Array( 53.9616, -11.1459, 65.4155, 4.60577, 44.5589, 46.1163, 10.909, 52.8986, 39.0842, -25.7101 )
 
 [sub_resource type="ConvexPolygonShape2D" id=120]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 8.51657, -3.33972, 10.5024, 1.40775, 6.65662, 0.532288 )
+points = Vector2Array( -42.9675, 2.62628, -23.0361, -20.5556, -11.8978, -27.1279, 10.909, 52.8986, -13.3563, 53.8607, -42.3345, 42.0975 )
 
 [sub_resource type="ConvexPolygonShape2D" id=121]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 2.28384, 6.6496, -2.96121, 7.52185, -4.18347, 3.15082, 5.43207, 2.62976 )
+points = Vector2Array( -42.9675, 2.62628, -42.3345, 42.0975, -47.8223, 7.47742 )
 
-[sub_resource type="ConvexPolygonShape2D" id=122]
+[sub_resource type="ConvexPolygonShape2D" id=348]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 0.808594, -11.1817, 5.33298, -9.56097, 8.51657, -3.33972, 6.65662, 0.532288, 5.43207, 2.62976, -4.18347, 3.15082, -5.58087, -0.171356, -4.90872, -8.10153 )
@@ -649,29 +646,29 @@ points = Vector2Array( 0.808594, -11.1817, 5.33298, -9.56097, 8.51657, -3.33972,
 [sub_resource type="ConvexPolygonShape2D" id=123]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -4.90872, -8.10153, -5.58087, -0.171356, -7.34885, -3.22565 )
+points = Vector2Array( -14.2552, -24.2909, -13.7105, -36.719, -1.21729, -38.1243, 10.0641, -32.9281, 12.7593, -14.5549, 6.8028, 21.1068, -9.40729, 18.9396 )
 
 [sub_resource type="ConvexPolygonShape2D" id=124]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 0.70874, 11.3693, -6.98398, 12.5904, -2.96121, 7.52185, 2.28384, 6.6496 )
+points = Vector2Array( 12.7593, -14.5549, 39.2378, -16.707, 48.4226, -12.9212, 52.1989, 4.37164, 48.9505, 22.2024, 36.5218, 23.2788, 6.8028, 21.1068 )
 
 [sub_resource type="ConvexPolygonShape2D" id=125]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -5.58087, -0.171356, -9.77679, 0.176849, -7.34885, -3.22565 )
+points = Vector2Array( 25.811, -37.5792, 19.3399, -74.8663, 33.3791, -46.2223 )
 
 [sub_resource type="ConvexPolygonShape2D" id=126]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 2.28384, 6.6496, 4.72928, 12.5945, 0.70874, 11.3693 )
+points = Vector2Array( 78.7617, -24.5919, 85.7914, -38.6387, 87.9389, 0.80835 )
 
 [sub_resource type="ConvexPolygonShape2D" id=127]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 8.51657, -3.33972, 10.5024, 1.40775, 6.65662, 0.532288 )
+points = Vector2Array( -1.21729, -38.1243, 3.12491, -62.9841, 13.9254, -44.0677, 9.05017, -10.0267 )
 
-[sub_resource type="ConvexPolygonShape2D" id=128]
+[sub_resource type="ConvexPolygonShape2D" id=349]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 2.28384, 6.6496, -2.96121, 7.52185, -4.18347, 3.15082, 5.43207, 2.62976 )
@@ -679,43 +676,43 @@ points = Vector2Array( 2.28384, 6.6496, -2.96121, 7.52185, -4.18347, 3.15082, 5.
 [sub_resource type="ConvexPolygonShape2D" id=129]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 0.808594, -11.1817, 5.33298, -9.56097, 8.51657, -3.33972, 6.65662, 0.532288, 5.43207, 2.62976, -4.18347, 3.15082, -5.58087, -0.171356, -4.90872, -8.10153 )
+points = Vector2Array( -34.1706, -32.7372, -12.5408, -76.4987, -5.52332, -55.9625, -1.21729, -38.1243 )
 
 [sub_resource type="ConvexPolygonShape2D" id=130]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -4.90872, -8.10153, -5.58087, -0.171356, -7.34885, -3.22565 )
+points = Vector2Array( -15.832, 62.3727, -33.6704, 80.7387, -47.1839, 93.7025, -54.7354, 55.3343, -51.481, 20.7524 )
 
-[sub_resource type="SpriteFrames" id=131]
+[sub_resource type="SpriteFrames" id=350]
 
 animations = [ { "frames":[ ExtResource( 22 ), ExtResource( 23 ) ], "loop":true, "name":"default", "speed":2.5 } ]
 
 [sub_resource type="ConvexPolygonShape2D" id=132]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 3.35934, 15.924, 0.715973, 39.1128, -5.60181, 20.1371, -5.0705, 8.01541 )
+points = Vector2Array( 9.05017, -10.0267, 25.811, -37.5792, 33.3791, -46.2223, 54.4446, -21.8986, 77.1235, 24.04, 33.8802, 65.0921 )
 
 [sub_resource type="ConvexPolygonShape2D" id=133]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 4.67995, 7.49182, 3.35934, 15.924, -5.0705, 8.01541, -4.01111, -7.00488 )
+points = Vector2Array( 54.4446, -21.8986, 51.2127, -51.0792, 70.1265, -54.3147, 78.7617, -24.5919 )
 
 [sub_resource type="ConvexPolygonShape2D" id=134]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 5.48093, -22.0222, 5.9995, 1.95834, 4.67995, 7.49182, -4.01111, -7.00488, -3.74284, -20.4443, -2.42041, -34.1469, 1.79564, -33.3548 )
+points = Vector2Array( -43.9086, -0.318939, -34.1706, -32.7372, -1.21729, -38.1243, 9.05017, -10.0267, 33.8802, 65.0921 )
 
 [sub_resource type="ConvexPolygonShape2D" id=135]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 3.35934, 15.924, 0.715973, 39.1128, -5.60181, 20.1371, -5.0705, 8.01541 )
+points = Vector2Array( -51.481, 20.7524, -43.9086, -0.318939, 33.8802, 65.0921, -15.832, 62.3727 )
 
 [sub_resource type="ConvexPolygonShape2D" id=136]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 4.67995, 7.49182, 3.35934, 15.924, -5.0705, 8.01541, -4.01111, -7.00488 )
+points = Vector2Array( 39.7158, 11.9518, 25.3377, 35.8962, 1.98029, 54.4488, -21.9583, 23.9047, 5.60413, -34.1631, 22.3679, -31.7622, 54.4446, -21.8986 )
 
-[sub_resource type="ConvexPolygonShape2D" id=137]
+[sub_resource type="ConvexPolygonShape2D" id=351]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 5.48093, -22.0222, 5.9995, 1.95834, 4.67995, 7.49182, -4.01111, -7.00488, -3.74284, -20.4443, -2.42041, -34.1469, 1.79564, -33.3548 )
@@ -723,9 +720,9 @@ points = Vector2Array( 5.48093, -22.0222, 5.9995, 1.95834, 4.67995, 7.49182, -4.
 [sub_resource type="ConvexPolygonShape2D" id=138]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 3.35934, 15.924, 0.715973, 39.1128, -5.60181, 20.1371, -5.0705, 8.01541 )
+points = Vector2Array( 18.6685, -4.62946, 30.786, 7.76031, 17.6056, 20.4046, 6.01514, 7.75159 )
 
-[sub_resource type="ConvexPolygonShape2D" id=139]
+[sub_resource type="ConvexPolygonShape2D" id=352]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 4.67995, 7.49182, 3.35934, 15.924, -5.0705, 8.01541, -4.01111, -7.00488 )
@@ -733,9 +730,9 @@ points = Vector2Array( 4.67995, 7.49182, 3.35934, 15.924, -5.0705, 8.01541, -4.0
 [sub_resource type="ConvexPolygonShape2D" id=140]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 5.48093, -22.0222, 5.9995, 1.95834, 4.67995, 7.49182, -4.01111, -7.00488, -3.74284, -20.4443, -2.42041, -34.1469, 1.79564, -33.3548 )
+points = Vector2Array( 26.0862, -41.57, 46.4673, -37.3568, 66.845, -23.4377, 77.5156, -6.28662, 80.4223, 7.94983, 74.5936, 22.5068, 65.2056, 38.0331, 49.6718, 49.9984, 18.61, 57.1051, -9.2121, 51.9188, -28.295, 36.0588, -36.6994, 15.0262, -36.6918, -6.32697, -25.0386, -23.4702, -10.1517, -35.7592, 6.67389, -40.9297 )
 
-[sub_resource type="ConvexPolygonShape2D" id=141]
+[sub_resource type="ConvexPolygonShape2D" id=353]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 3.35934, 15.924, 0.715973, 39.1128, -5.60181, 20.1371, -5.0705, 8.01541 )
@@ -743,29 +740,29 @@ points = Vector2Array( 3.35934, 15.924, 0.715973, 39.1128, -5.60181, 20.1371, -5
 [sub_resource type="ConvexPolygonShape2D" id=142]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 4.67995, 7.49182, 3.35934, 15.924, -5.0705, 8.01541, -4.01111, -7.00488 )
+points = Vector2Array( -18.8802, -5.90698, -42.2887, -5.42755, -38.8708, -17.1305, -31.5516, -28.8322, -16.4285, -43.4571, 5.51721, -44.4247 )
 
 [sub_resource type="ConvexPolygonShape2D" id=143]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 5.48093, -22.0222, 5.9995, 1.95834, 4.67995, 7.49182, -4.01111, -7.00488, -3.74284, -20.4443, -2.42041, -34.1469, 1.79564, -33.3548 )
+points = Vector2Array( 18.61, 57.1051, -44.2623, 59.4326, -43.7653, 33.0982, -42.7816, 9.20251, -18.8802, -5.90698 )
 
 [sub_resource type="ConvexPolygonShape2D" id=144]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 3.35934, 15.924, 0.715973, 39.1128, -5.60181, 20.1371, -5.0705, 8.01541 )
+points = Vector2Array( 80.4223, 7.94983, 79.1262, 40.4568, 57.6621, 58.4932, 18.61, 57.1051, -18.8802, -5.90698, 5.51721, -44.4247, 26.9746, -43.4417, 78.655, -6.36017 )
 
-[sub_resource type="ConvexPolygonShape2D" id=145]
+[sub_resource type="ConvexPolygonShape2D" id=354]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 4.67995, 7.49182, 3.35934, 15.924, -5.0705, 8.01541, -4.01111, -7.00488 )
 
-[sub_resource type="ConvexPolygonShape2D" id=146]
+[sub_resource type="ConvexPolygonShape2D" id=355]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 5.48093, -22.0222, 5.9995, 1.95834, 4.67995, 7.49182, -4.01111, -7.00488, -3.74284, -20.4443, -2.42041, -34.1469, 1.79564, -33.3548 )
 
-[sub_resource type="ConvexPolygonShape2D" id=147]
+[sub_resource type="ConvexPolygonShape2D" id=356]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 3.35934, 15.924, 0.715973, 39.1128, -5.60181, 20.1371, -5.0705, 8.01541 )
@@ -773,23 +770,23 @@ points = Vector2Array( 3.35934, 15.924, 0.715973, 39.1128, -5.60181, 20.1371, -5
 [sub_resource type="ConvexPolygonShape2D" id=148]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 4.67995, 7.49182, 3.35934, 15.924, -5.0705, 8.01541, -4.01111, -7.00488 )
+points = Vector2Array( 44.2174, -132.678, 44.2117, -116.388, 40.3311, -117.156 )
 
 [sub_resource type="ConvexPolygonShape2D" id=149]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 5.48093, -22.0222, 5.9995, 1.95834, 4.67995, 7.49182, -4.01111, -7.00488, -3.74284, -20.4443, -2.42041, -34.1469, 1.79564, -33.3548 )
+points = Vector2Array( 8.29608, 102.701, -32.4327, 112.461, -34.056, 96.1704, -16.9473, 84.7734 )
 
-[sub_resource type="SpriteFrames" id=150]
+[sub_resource type="SpriteFrames" id=357]
 
 animations = [ { "frames":[ ExtResource( 24 ), ExtResource( 25 ) ], "loop":true, "name":"default", "speed":2.61 } ]
 
 [sub_resource type="ConvexPolygonShape2D" id=151]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 69.9429, 10.431, 77.0519, 35.0219, 44.5589, 46.1163, 65.4155, 4.60577 )
+points = Vector2Array( -13.6453, -39.8449, -31.584, 15.5351, -42.9854, 10.644, -36.4529, -35.7805, -28.3035, -47.9952 )
 
-[sub_resource type="ConvexPolygonShape2D" id=152]
+[sub_resource type="ConvexPolygonShape2D" id=358]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 23.3689, -31.3215, 29.8412, -36.1722, 37.7939, -36.3873, 39.0842, -25.7101, 10.909, 52.8986 )
@@ -797,9 +794,9 @@ points = Vector2Array( 23.3689, -31.3215, 29.8412, -36.1722, 37.7939, -36.3873, 
 [sub_resource type="ConvexPolygonShape2D" id=153]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 85.159, -18.0347, 78.0543, -54.92, 88.4185, -86.2991, 110.744, -89.8501, 120.766, -69.1404, 118.492, -43.2585, 91.9515, -13.1793 )
+points = Vector2Array( 55.5478, 73.3959, 72.6414, 104.353, 71.0078, 117.385, 61.2338, 117.381, 39.247, 103.527, 27.8539, 75.0151 )
 
-[sub_resource type="ConvexPolygonShape2D" id=154]
+[sub_resource type="ConvexPolygonShape2D" id=359]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 65.4155, 4.60577, 85.159, -18.0347, 91.9515, -13.1793, 87.6059, -2.07507, 69.9429, 10.431 )
@@ -807,24 +804,24 @@ points = Vector2Array( 65.4155, 4.60577, 85.159, -18.0347, 91.9515, -13.1793, 87
 [sub_resource type="ConvexPolygonShape2D" id=155]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -11.8978, -27.1279, -9.30632, -36.1859, -1.21729, -38.1243, 2.01611, -32.623, 10.909, 52.8986 )
+points = Vector2Array( -12.8029, -118.852, 44.2174, -132.678, 40.3311, -117.156, 0.219666, -91.9684 )
 
 [sub_resource type="ConvexPolygonShape2D" id=156]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 53.9616, -11.1459, 65.4155, 4.60577, 44.5589, 46.1163, 10.909, 52.8986, 39.0842, -25.7101 )
+points = Vector2Array( 0.219666, -91.9684, 40.3311, -117.156, 34.4296, -93.5854 )
 
 [sub_resource type="ConvexPolygonShape2D" id=157]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -42.9675, 2.62628, -23.0361, -20.5556, -11.8978, -27.1279, 10.909, 52.8986, -13.3563, 53.8607, -42.3345, 42.0975 )
+points = Vector2Array( 50.6742, 35.1124, 55.5478, 73.3959, 27.8539, 75.0151, 13.2153, 11.4784 )
 
 [sub_resource type="ConvexPolygonShape2D" id=158]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -42.9675, 2.62628, -42.3345, 42.0975, -47.8223, 7.47742 )
+points = Vector2Array( 43.3624, -17.8331, 49.0515, 17.1926, 50.6742, 35.1124, 13.2153, 11.4784, -13.6453, -39.8449 )
 
-[sub_resource type="ConvexPolygonShape2D" id=159]
+[sub_resource type="ConvexPolygonShape2D" id=360]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 65.4155, 4.60577, 85.159, -18.0347, 91.9515, -13.1793, 87.6059, -2.07507, 69.9429, 10.431 )
@@ -832,62 +829,62 @@ points = Vector2Array( 65.4155, 4.60577, 85.159, -18.0347, 91.9515, -13.1793, 87
 [sub_resource type="ConvexPolygonShape2D" id=160]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -14.2552, -24.2909, -13.7105, -36.719, -1.21729, -38.1243, 10.0641, -32.9281, 12.7593, -14.5549, 6.8028, 21.1068, -9.40729, 18.9396 )
+points = Vector2Array( -144.748, -132.401, -119.865, -164.579, -129.147, -119.716, -141.354, -75.3423 )
 
 [sub_resource type="ConvexPolygonShape2D" id=161]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 12.7593, -14.5549, 39.2378, -16.707, 48.4226, -12.9212, 52.1989, 4.37164, 48.9505, 22.2024, 36.5218, 23.2788, 6.8028, 21.1068 )
+points = Vector2Array( 111.526, 112.045, 70.5269, 116.463, 100.496, 82.718 )
 
 [sub_resource type="ConvexPolygonShape2D" id=162]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 25.811, -37.5792, 19.3399, -74.8663, 33.3791, -46.2223 )
+points = Vector2Array( 120.417, 36.7021, 111.526, 112.045, 100.496, 82.718, 102.299, 62.3614 )
 
 [sub_resource type="ConvexPolygonShape2D" id=163]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 78.7617, -24.5919, 85.7914, -38.6387, 87.9389, 0.80835 )
+points = Vector2Array( -141.354, -75.3423, -129.147, -119.716, -116.969, -79.7228, -121.855, -53.8777 )
 
 [sub_resource type="ConvexPolygonShape2D" id=164]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -1.21729, -38.1243, 3.12491, -62.9841, 13.9254, -44.0677, 9.05017, -10.0267 )
+points = Vector2Array( 143.056, -44.2806, 154.803, -68.549, 166.982, -43.0598, 147.032, -27.5545 )
 
-[sub_resource type="SpriteFrames" id=165]
+[sub_resource type="SpriteFrames" id=361]
 
 animations = [ { "frames":[ ExtResource( 26 ), ExtResource( 27 ) ], "loop":true, "name":"default", "speed":2.6 } ]
 
 [sub_resource type="ConvexPolygonShape2D" id=166]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -34.1706, -32.7372, -12.5408, -76.4987, -5.52332, -55.9625, -1.21729, -38.1243 )
+points = Vector2Array( 81.1005, -121.856, 129.216, -64.6482, 120.417, 36.7021, 102.299, 62.3614, 90.4946, 51.0959, 69.9817, -130.995 )
 
 [sub_resource type="ConvexPolygonShape2D" id=167]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -15.832, 62.3727, -33.6704, 80.7387, -47.1839, 93.7025, -54.7354, 55.3343, -51.481, 20.7524 )
+points = Vector2Array( 8.29608, 102.701, -32.4327, 112.461, -34.056, 96.1704, -16.9473, 84.7734, 40.6237, 77.6711 )
 
-[sub_resource type="SpriteFrames" id=168]
+[sub_resource type="SpriteFrames" id=362]
 
 animations = [ { "frames":[ ExtResource( 28 ) ], "loop":true, "name":"default", "speed":1.75 } ]
 
 [sub_resource type="ConvexPolygonShape2D" id=169]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 9.05017, -10.0267, 25.811, -37.5792, 33.3791, -46.2223, 54.4446, -21.8986, 77.1235, 24.04, 33.8802, 65.0921 )
+points = Vector2Array( 81.1005, -121.856, 102.746, -128.401, 128.224, -108.448, 129.216, -64.6482 )
 
 [sub_resource type="ConvexPolygonShape2D" id=170]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 54.4446, -21.8986, 51.2127, -51.0792, 70.1265, -54.3147, 78.7617, -24.5919 )
+points = Vector2Array( -16.9473, 84.7734, -58.5095, 94.3978, -83.4741, 72.0872, -121.855, -53.8777 )
 
 [sub_resource type="ConvexPolygonShape2D" id=171]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -43.9086, -0.318939, -34.1706, -32.7372, -1.21729, -38.1243, 9.05017, -10.0267, 33.8802, 65.0921 )
+points = Vector2Array( -83.4741, 72.0872, -96.4119, 65.8086, -121.855, -53.8777 )
 
-[sub_resource type="ConvexPolygonShape2D" id=172]
+[sub_resource type="ConvexPolygonShape2D" id=363]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -51.481, 20.7524, -43.9086, -0.318939, 33.8802, 65.0921, -15.832, 62.3727 )
@@ -895,99 +892,99 @@ points = Vector2Array( -51.481, 20.7524, -43.9086, -0.318939, 33.8802, 65.0921, 
 [sub_resource type="ConvexPolygonShape2D" id=173]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 39.7158, 11.9518, 25.3377, 35.8962, 1.98029, 54.4488, -21.9583, 23.9047, 5.60413, -34.1631, 22.3679, -31.7622, 54.4446, -21.8986 )
+points = Vector2Array( 90.4946, 51.0959, -25.2611, -150.403, -11.1613, -154.69, 14.244, -160.143, 36.8958, -157.931, 52.5108, -149.273, 69.9817, -130.995 )
 
 [sub_resource type="ConvexPolygonShape2D" id=174]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -15.832, 62.3727, -33.6704, 80.7387, -47.1839, 93.7025, -54.7354, 55.3343, -51.481, 20.7524 )
+points = Vector2Array( 147.032, -27.5545, 145.371, 3.76227, 120.417, 36.7021, 129.216, -64.6482, 143.056, -44.2806 )
 
 [sub_resource type="ConvexPolygonShape2D" id=175]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 18.6685, -4.62946, 30.786, 7.76031, 17.6056, 20.4046, 6.01514, 7.75159 )
+points = Vector2Array( -141.354, -75.3423, -129.147, -119.716, -116.969, -79.7228, -121.855, -53.8777 )
 
 [sub_resource type="ConvexPolygonShape2D" id=176]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 9.05017, -10.0267, 25.811, -37.5792, 33.3791, -46.2223, 54.4446, -21.8986, 77.1235, 24.04, 33.8802, 65.0921 )
+points = Vector2Array( 143.056, -44.2806, 154.803, -68.549, 166.982, -43.0598, 147.032, -27.5545 )
 
 [sub_resource type="ConvexPolygonShape2D" id=177]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 26.0862, -41.57, 46.4673, -37.3568, 66.845, -23.4377, 77.5156, -6.28662, 80.4223, 7.94983, 74.5936, 22.5068, 65.2056, 38.0331, 49.6718, 49.9984, 18.61, 57.1051, -9.2121, 51.9188, -28.295, 36.0588, -36.6994, 15.0262, -36.6918, -6.32697, -25.0386, -23.4702, -10.1517, -35.7592, 6.67389, -40.9297 )
+points = Vector2Array( -96.4119, 65.8086, -97.515, 70.4879, -120.033, 54.3456, -137.741, -3.27832, -121.855, -53.8777 )
 
 [sub_resource type="ConvexPolygonShape2D" id=178]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -43.9086, -0.318939, -34.1706, -32.7372, -1.21729, -38.1243, 9.05017, -10.0267, 33.8802, 65.0921 )
+points = Vector2Array( 81.1005, -121.856, 129.216, -64.6482, 120.417, 36.7021, 102.299, 62.3614, 90.4946, 51.0959, 69.9817, -130.995 )
 
 [sub_resource type="ConvexPolygonShape2D" id=179]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -18.8802, -5.90698, -42.2887, -5.42755, -38.8708, -17.1305, -31.5516, -28.8322, -16.4285, -43.4571, 5.51721, -44.4247 )
+points = Vector2Array( 8.29608, 102.701, -32.4327, 112.461, -34.056, 96.1704, -16.9473, 84.7734, 40.6237, 77.6711 )
 
 [sub_resource type="ConvexPolygonShape2D" id=180]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 18.61, 57.1051, -44.2623, 59.4326, -43.7653, 33.0982, -42.7816, 9.20251, -18.8802, -5.90698 )
+points = Vector2Array( 55.5478, 73.3959, 40.6237, 77.6711, -80.8648, -125.551, -64.7581, -163.585, -40.8615, -165.039, -25.2611, -150.403, 90.4946, 51.0959 )
 
 [sub_resource type="ConvexPolygonShape2D" id=181]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 80.4223, 7.94983, 79.1262, 40.4568, 57.6621, 58.4932, 18.61, 57.1051, -18.8802, -5.90698, 5.51721, -44.4247, 26.9746, -43.4417, 78.655, -6.36017 )
+points = Vector2Array( 81.1005, -121.856, 102.746, -128.401, 128.224, -108.448, 129.216, -64.6482 )
 
-[sub_resource type="SpriteFrames" id=182]
+[sub_resource type="SpriteFrames" id=364]
 
 animations = [ { "frames":[ ExtResource( 29 ) ], "loop":true, "name":"default", "speed":1.75 } ]
 
 [sub_resource type="ConvexPolygonShape2D" id=183]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 39.7158, 11.9518, 25.3377, 35.8962, 1.98029, 54.4488, -21.9583, 23.9047, 5.60413, -34.1631, 22.3679, -31.7622, 54.4446, -21.8986 )
+points = Vector2Array( -83.4741, 72.0872, -96.4119, 65.8086, -121.855, -53.8777 )
 
-[sub_resource type="SpriteFrames" id=184]
+[sub_resource type="SpriteFrames" id=365]
 
 animations = [ { "frames":[ ExtResource( 30 ) ], "loop":true, "name":"default", "speed":1.75 } ]
 
 [sub_resource type="ConvexPolygonShape2D" id=185]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 44.2174, -132.678, 44.2117, -116.388, 40.3311, -117.156 )
+points = Vector2Array( 90.4946, 51.0959, -25.2611, -150.403, -11.1613, -154.69, 14.244, -160.143, 36.8958, -157.931, 52.5108, -149.273, 69.9817, -130.995 )
 
 [sub_resource type="ConvexPolygonShape2D" id=186]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 8.29608, 102.701, -32.4327, 112.461, -34.056, 96.1704, -16.9473, 84.7734 )
+points = Vector2Array( 147.032, -27.5545, 145.371, 3.76227, 120.417, 36.7021, 129.216, -64.6482, 143.056, -44.2806 )
 
 [sub_resource type="SpriteFrames" id=187]
 
-animations = [ { "frames":[ ExtResource( 31 ) ], "loop":true, "name":"default", "speed":1.75 } ]
+animations = [ { "frames":[ ExtResource( 31 ) ], "loop":true, "name":"default", "speed":1.0 } ]
 
-[sub_resource type="ConvexPolygonShape2D" id=188]
+[sub_resource type="ConvexPolygonShape2D" id=366]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -13.6453, -39.8449, -31.584, 15.5351, -42.9854, 10.644, -36.4529, -35.7805, -28.3035, -47.9952 )
 
 [sub_resource type="SpriteFrames" id=189]
 
-animations = [ { "frames":[ ExtResource( 32 ) ], "loop":true, "name":"default", "speed":1.75 } ]
+animations = [ { "frames":[ ExtResource( 22 ), ExtResource( 23 ) ], "loop":true, "name":"default", "speed":2.5 } ]
 
-[sub_resource type="ConvexPolygonShape2D" id=190]
+[sub_resource type="ConvexPolygonShape2D" id=367]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 55.5478, 73.3959, 72.6414, 104.353, 71.0078, 117.385, 61.2338, 117.381, 39.247, 103.527, 27.8539, 75.0151 )
 
-[sub_resource type="SpriteFrames" id=191]
+[sub_resource type="SpriteFrames" id=368]
 
-animations = [ { "frames":[ ExtResource( 33 ) ], "loop":true, "name":"default", "speed":1.75 } ]
+animations = [ { "frames":[ ExtResource( 32 ) ], "loop":true, "name":"default", "speed":1.75 } ]
 
-[sub_resource type="ConvexPolygonShape2D" id=192]
+[sub_resource type="ConvexPolygonShape2D" id=369]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -12.8029, -118.852, 44.2174, -132.678, 40.3311, -117.156, 0.219666, -91.9684 )
 
-[sub_resource type="ConvexPolygonShape2D" id=193]
+[sub_resource type="ConvexPolygonShape2D" id=370]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 0.219666, -91.9684, 40.3311, -117.156, 34.4296, -93.5854 )
@@ -995,18 +992,18 @@ points = Vector2Array( 0.219666, -91.9684, 40.3311, -117.156, 34.4296, -93.5854 
 [sub_resource type="ConvexPolygonShape2D" id=194]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 50.6742, 35.1124, 55.5478, 73.3959, 27.8539, 75.0151, 13.2153, 11.4784 )
+points = Vector2Array( -15.832, 62.3727, -33.6704, 80.7387, -47.1839, 93.7025, -54.7354, 55.3343, -51.481, 20.7524 )
 
 [sub_resource type="ConvexPolygonShape2D" id=195]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 43.3624, -17.8331, 49.0515, 17.1926, 50.6742, 35.1124, 13.2153, 11.4784, -13.6453, -39.8449 )
+points = Vector2Array( 9.05017, -10.0267, 25.811, -37.5792, 33.3791, -46.2223, 54.4446, -21.8986, 77.1235, 24.04, 33.8802, 65.0921 )
 
-[sub_resource type="SpriteFrames" id=196]
+[sub_resource type="SpriteFrames" id=371]
 
-animations = [ { "frames":[ ExtResource( 34 ) ], "loop":true, "name":"default", "speed":1.75 } ]
+animations = [ { "frames":[ ExtResource( 33 ) ], "loop":true, "name":"default", "speed":1.75 } ]
 
-[sub_resource type="ConvexPolygonShape2D" id=197]
+[sub_resource type="ConvexPolygonShape2D" id=372]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -144.748, -132.401, -119.865, -164.579, -129.147, -119.716, -141.354, -75.3423 )
@@ -1014,9 +1011,9 @@ points = Vector2Array( -144.748, -132.401, -119.865, -164.579, -129.147, -119.71
 [sub_resource type="ConvexPolygonShape2D" id=198]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 111.526, 112.045, 70.5269, 116.463, 100.496, 82.718 )
+points = Vector2Array( 39.7158, 11.9518, 25.3377, 35.8962, 1.98029, 54.4488, -21.9583, 23.9047, 5.60413, -34.1631, 22.3679, -31.7622, 54.4446, -21.8986 )
 
-[sub_resource type="ConvexPolygonShape2D" id=199]
+[sub_resource type="ConvexPolygonShape2D" id=373]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 120.417, 36.7021, 111.526, 112.045, 100.496, 82.718, 102.299, 62.3614 )
@@ -1024,331 +1021,277 @@ points = Vector2Array( 120.417, 36.7021, 111.526, 112.045, 100.496, 82.718, 102.
 [sub_resource type="ConvexPolygonShape2D" id=200]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -141.354, -75.3423, -129.147, -119.716, -116.969, -79.7228, -121.855, -53.8777 )
+points = Vector2Array( 0.70874, 11.3693, -6.98398, 12.5904, -2.96121, 7.52185, 2.28384, 6.6496 )
 
 [sub_resource type="ConvexPolygonShape2D" id=201]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 143.056, -44.2806, 154.803, -68.549, 166.982, -43.0598, 147.032, -27.5545 )
+points = Vector2Array( -5.58087, -0.171356, -9.77679, 0.176849, -7.34885, -3.22565 )
 
 [sub_resource type="ConvexPolygonShape2D" id=202]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -96.4119, 65.8086, -97.515, 70.4879, -120.033, 54.3456, -137.741, -3.27832, -121.855, -53.8777 )
+points = Vector2Array( 2.28384, 6.6496, 4.72928, 12.5945, 0.70874, 11.3693 )
 
-[sub_resource type="ConvexPolygonShape2D" id=203]
+[sub_resource type="ConvexPolygonShape2D" id=374]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 81.1005, -121.856, 129.216, -64.6482, 120.417, 36.7021, 102.299, 62.3614, 90.4946, 51.0959, 69.9817, -130.995 )
 
-[sub_resource type="ConvexPolygonShape2D" id=204]
+[sub_resource type="ConvexPolygonShape2D" id=375]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 8.29608, 102.701, -32.4327, 112.461, -34.056, 96.1704, -16.9473, 84.7734, 40.6237, 77.6711 )
 
-[sub_resource type="ConvexPolygonShape2D" id=205]
+[sub_resource type="ConvexPolygonShape2D" id=376]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 55.5478, 73.3959, 40.6237, 77.6711, -80.8648, -125.551, -64.7581, -163.585, -40.8615, -165.039, -25.2611, -150.403, 90.4946, 51.0959 )
 
-[sub_resource type="ConvexPolygonShape2D" id=206]
+[sub_resource type="ConvexPolygonShape2D" id=377]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 81.1005, -121.856, 102.746, -128.401, 128.224, -108.448, 129.216, -64.6482 )
 
-[sub_resource type="ConvexPolygonShape2D" id=207]
+[sub_resource type="ConvexPolygonShape2D" id=378]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -16.9473, 84.7734, -58.5095, 94.3978, -83.4741, 72.0872, -121.855, -53.8777 )
 
-[sub_resource type="ConvexPolygonShape2D" id=208]
+[sub_resource type="ConvexPolygonShape2D" id=379]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -83.4741, 72.0872, -96.4119, 65.8086, -121.855, -53.8777 )
 
-[sub_resource type="SpriteFrames" id=209]
+[sub_resource type="SpriteFrames" id=380]
 
-animations = [ { "frames":[ ExtResource( 35 ) ], "loop":true, "name":"default", "speed":1.75 } ]
+animations = [ { "frames":[ ExtResource( 34 ) ], "loop":true, "name":"default", "speed":1.75 } ]
 
-[sub_resource type="ConvexPolygonShape2D" id=210]
+[sub_resource type="ConvexPolygonShape2D" id=381]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 90.4946, 51.0959, -25.2611, -150.403, -11.1613, -154.69, 14.244, -160.143, 36.8958, -157.931, 52.5108, -149.273, 69.9817, -130.995 )
 
-[sub_resource type="ConvexPolygonShape2D" id=211]
+[sub_resource type="ConvexPolygonShape2D" id=382]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 147.032, -27.5545, 145.371, 3.76227, 120.417, 36.7021, 129.216, -64.6482, 143.056, -44.2806 )
 
-[sub_resource type="ConvexPolygonShape2D" id=212]
+[sub_resource type="ConvexPolygonShape2D" id=383]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -141.354, -75.3423, -129.147, -119.716, -116.969, -79.7228, -121.855, -53.8777 )
 
-[sub_resource type="ConvexPolygonShape2D" id=213]
+[sub_resource type="ConvexPolygonShape2D" id=384]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 143.056, -44.2806, 154.803, -68.549, 166.982, -43.0598, 147.032, -27.5545 )
 
-[sub_resource type="ConvexPolygonShape2D" id=214]
+[sub_resource type="ConvexPolygonShape2D" id=385]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -96.4119, 65.8086, -97.515, 70.4879, -120.033, 54.3456, -137.741, -3.27832, -121.855, -53.8777 )
 
-[sub_resource type="ConvexPolygonShape2D" id=215]
+[sub_resource type="ConvexPolygonShape2D" id=386]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 81.1005, -121.856, 129.216, -64.6482, 120.417, 36.7021, 102.299, 62.3614, 90.4946, 51.0959, 69.9817, -130.995 )
 
-[sub_resource type="ConvexPolygonShape2D" id=216]
+[sub_resource type="ConvexPolygonShape2D" id=387]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 8.29608, 102.701, -32.4327, 112.461, -34.056, 96.1704, -16.9473, 84.7734, 40.6237, 77.6711 )
 
-[sub_resource type="ConvexPolygonShape2D" id=217]
+[sub_resource type="ConvexPolygonShape2D" id=388]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 55.5478, 73.3959, 40.6237, 77.6711, -80.8648, -125.551, -64.7581, -163.585, -40.8615, -165.039, -25.2611, -150.403, 90.4946, 51.0959 )
 
-[sub_resource type="ConvexPolygonShape2D" id=218]
+[sub_resource type="ConvexPolygonShape2D" id=389]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 81.1005, -121.856, 102.746, -128.401, 128.224, -108.448, 129.216, -64.6482 )
 
-[sub_resource type="ConvexPolygonShape2D" id=219]
+[sub_resource type="ConvexPolygonShape2D" id=390]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -16.9473, 84.7734, -58.5095, 94.3978, -83.4741, 72.0872, -121.855, -53.8777 )
 
-[sub_resource type="ConvexPolygonShape2D" id=220]
+[sub_resource type="ConvexPolygonShape2D" id=391]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -83.4741, 72.0872, -96.4119, 65.8086, -121.855, -53.8777 )
 
-[sub_resource type="ConvexPolygonShape2D" id=221]
+[sub_resource type="ConvexPolygonShape2D" id=392]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 40.6237, 77.6711, -16.9473, 84.7734, -121.855, -53.8777, -116.969, -79.7228, -99.402, -109.952, -80.8648, -125.551 )
 
-[sub_resource type="ConvexPolygonShape2D" id=222]
+[sub_resource type="ConvexPolygonShape2D" id=393]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 90.4946, 51.0959, -25.2611, -150.403, -11.1613, -154.69, 14.244, -160.143, 36.8958, -157.931, 52.5108, -149.273, 69.9817, -130.995 )
 
-[sub_resource type="ConvexPolygonShape2D" id=223]
+[sub_resource type="ConvexPolygonShape2D" id=394]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 147.032, -27.5545, 145.371, 3.76227, 120.417, 36.7021, 129.216, -64.6482, 143.056, -44.2806 )
 
-[sub_resource type="SpriteFrames" id=224]
+[sub_resource type="SpriteFrames" id=395]
 
-animations = [ { "frames":[ ExtResource( 36 ), ExtResource( 37 ) ], "loop":true, "name":"default", "speed":1.75 } ]
+animations = [ { "frames":[ ExtResource( 35 ), ExtResource( 36 ) ], "loop":true, "name":"default", "speed":1.75 } ]
 
-[sub_resource type="ConvexPolygonShape2D" id=225]
+[sub_resource type="ConvexPolygonShape2D" id=396]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 41.7018, 48.8179, 63.1456, 88.3271, 37.2991, 87.3426, 13.9094, 34.6654 )
 
-[sub_resource type="ConvexPolygonShape2D" id=226]
+[sub_resource type="ConvexPolygonShape2D" id=397]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 58.3389, -109.671, 73.4506, -92.109, 51.0153, -85.7772, 24.6817, -88.225 )
 
-[sub_resource type="ConvexPolygonShape2D" id=227]
+[sub_resource type="ConvexPolygonShape2D" id=398]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -48.9702, -51.6753, -52.3749, -77.0356, -35.2899, -123.359, -14.324, -111.647, 13.4597, -72.6233, 13.9094, 34.6654 )
 
-[sub_resource type="ConvexPolygonShape2D" id=228]
+[sub_resource type="ConvexPolygonShape2D" id=399]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -1.22302, 75.6248, -24.1477, 86.8332, -48.0217, 24.4023, 13.9094, 34.6654 )
 
-[sub_resource type="ConvexPolygonShape2D" id=229]
+[sub_resource type="ConvexPolygonShape2D" id=400]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -64.1038, -7.30219, -65.0641, -49.7303, -48.9702, -51.6753, 13.9094, 34.6654, -48.0217, 24.4023 )
 
-[sub_resource type="ConvexPolygonShape2D" id=230]
+[sub_resource type="ConvexPolygonShape2D" id=401]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 73.4208, -7.74127, 83.6791, -56.5051, 107.575, -55.0336, 110.492, -29.1859, 103.165, 3.48578, 77.802, 14.2057 )
 
-[sub_resource type="ConvexPolygonShape2D" id=231]
+[sub_resource type="ConvexPolygonShape2D" id=402]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 13.9094, 34.6654, 13.4597, -72.6233, 24.6817, -88.225, 51.0153, -85.7772, 55.8798, -51.1505, 58.2873, 36.1442, 41.7018, 48.8179 )
 
-[sub_resource type="ConvexPolygonShape2D" id=232]
+[sub_resource type="ConvexPolygonShape2D" id=403]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -14.324, -111.647, 1.76871, -110.178, 13.4597, -72.6233 )
 
-[sub_resource type="ConvexPolygonShape2D" id=233]
+[sub_resource type="ConvexPolygonShape2D" id=404]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 77.802, 14.2057, 58.2873, 36.1442, 55.8798, -51.1505, 73.4208, -7.74127 )
 
-[sub_resource type="ConvexPolygonShape2D" id=234]
+[sub_resource type="ConvexPolygonShape2D" id=405]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 73.4208, -7.74127, 55.8798, -51.1505, 69.5302, -38.4662 )
 
-[sub_resource type="SpriteFrames" id=235]
+[sub_resource type="SpriteFrames" id=406]
 
-animations = [ { "frames":[ ExtResource( 38 ), ExtResource( 39 ) ], "loop":true, "name":"default", "speed":1.75 } ]
+animations = [ { "frames":[ ExtResource( 37 ), ExtResource( 38 ) ], "loop":true, "name":"default", "speed":1.75 } ]
 
-[sub_resource type="ConvexPolygonShape2D" id=236]
-
-custom_solver_bias = 0.0
-points = Vector2Array( -19.3404, -30.2379, -65.0585, 21.5602, -82.3037, 24.8966, -69.0962, -29.5188, -41.919, -50.1152 )
-
-[sub_resource type="ConvexPolygonShape2D" id=237]
-
-custom_solver_bias = 0.0
-points = Vector2Array( 1.29022, 27.4567, 37.1171, 29.4067, 45.7676, 52.6168, 18.5666, 51.9839, -2.00014, 51.3435 )
-
-[sub_resource type="ConvexPolygonShape2D" id=238]
-
-custom_solver_bias = 0.0
-points = Vector2Array( 2.48036, -94.6143, 41.0986, -95.9236, 51.0464, -85.9689, 41.0913, -75.3575, -2.14056, -74.0431, -9.45153, -85.9764 )
-
-[sub_resource type="ConvexPolygonShape2D" id=239]
-
-custom_solver_bias = 0.0
-points = Vector2Array( 89.4875, 19.5287, 76.2411, -42.8376, 83.6791, -56.5051, 107.575, -55.0336, 110.492, -29.1859, 114.039, 6.93237 )
-
-[sub_resource type="ConvexPolygonShape2D" id=240]
-
-custom_solver_bias = 0.0
-points = Vector2Array( 53.6797, -28.2504, -10.6669, 13.5381, -48.0217, 24.4023, -65.0585, 21.5602, -19.3404, -30.2379, 53.0233, -48.1532 )
-
-[sub_resource type="ConvexPolygonShape2D" id=241]
-
-custom_solver_bias = 0.0
-points = Vector2Array( 76.2411, -42.8376, 89.4875, 19.5287, 49.0233, 6.90942, 53.6797, -28.2504 )
-
-[sub_resource type="ConvexPolygonShape2D" id=242]
-
-custom_solver_bias = 0.0
-points = Vector2Array( -2.14056, -74.0431, 41.0913, -75.3575, 53.0233, -48.1532, -19.3404, -30.2379 )
-
-[sub_resource type="ConvexPolygonShape2D" id=243]
-
-custom_solver_bias = 0.0
-points = Vector2Array( 1.29022, 27.4567, -10.6669, 13.5381, 53.6797, -28.2504, 49.0233, 6.90942, 37.1171, 29.4067 )
-
-[sub_resource type="SpriteFrames" id=244]
-
-animations = [ { "frames":[ ExtResource( 40 ), ExtResource( 41 ) ], "loop":true, "name":"default", "speed":1.75 } ]
-
-[sub_resource type="ConvexPolygonShape2D" id=245]
+[sub_resource type="ConvexPolygonShape2D" id=407]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 52.8126, -132.188, 75.3973, -112.359, 130.504, -63.6852, 83.543, -91.6102, 18.4994, -148.395 )
 
-[sub_resource type="ConvexPolygonShape2D" id=246]
+[sub_resource type="ConvexPolygonShape2D" id=408]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 22.2539, -19.3414, -2.00014, 51.3435, 1.29022, 27.4567 )
 
-[sub_resource type="ConvexPolygonShape2D" id=247]
+[sub_resource type="ConvexPolygonShape2D" id=409]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 50.283, 26.6547, 65.7114, 103.35, 24.1145, 30.2939, 22.2539, -19.3414 )
 
-[sub_resource type="ConvexPolygonShape2D" id=248]
+[sub_resource type="ConvexPolygonShape2D" id=410]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 97.1664, -14.913, 90.9642, 87.9791, 61.0644, -16.6774, 83.543, -91.6102 )
 
-[sub_resource type="ConvexPolygonShape2D" id=249]
+[sub_resource type="ConvexPolygonShape2D" id=411]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 52.8126, -132.188, 122.306, -131.364, 75.3973, -112.359 )
 
-[sub_resource type="ConvexPolygonShape2D" id=250]
+[sub_resource type="ConvexPolygonShape2D" id=412]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -43.579, 24.9547, -48.0198, 89.0372, -82.3037, 24.8966, -77.9114, -8.39929 )
 
-[sub_resource type="ConvexPolygonShape2D" id=251]
+[sub_resource type="ConvexPolygonShape2D" id=413]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 83.543, -91.6102, 117.023, -13.1301, 97.1664, -14.913 )
 
-[sub_resource type="ConvexPolygonShape2D" id=252]
+[sub_resource type="ConvexPolygonShape2D" id=414]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 22.2539, -19.3414, 1.29022, 27.4567, -10.6669, 13.5381 )
 
-[sub_resource type="ConvexPolygonShape2D" id=253]
+[sub_resource type="ConvexPolygonShape2D" id=415]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 61.0644, -16.6774, 50.283, 26.6547, 22.2539, -19.3414 )
 
-[sub_resource type="ConvexPolygonShape2D" id=254]
+[sub_resource type="ConvexPolygonShape2D" id=416]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -82.4896, -67.0567, -63.6099, -132.058, 18.4994, -148.395, 83.543, -91.6102, 61.0644, -16.6774, 22.2539, -19.3414, -81.5467, -30.9578 )
 
-[sub_resource type="ConvexPolygonShape2D" id=255]
+[sub_resource type="ConvexPolygonShape2D" id=417]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 22.2539, -19.3414, -10.6669, 13.5381, -43.579, 24.9547, -77.9114, -8.39929, -81.5467, -30.9578 )
 
-[sub_resource type="SpriteFrames" id=256]
+[sub_resource type="SpriteFrames" id=418]
 
-animations = [ { "frames":[ ExtResource( 42 ), ExtResource( 43 ) ], "loop":true, "name":"default", "speed":1.75 } ]
-
-[sub_resource type="ConvexPolygonShape2D" id=257]
-
-custom_solver_bias = 0.0
-points = Vector2Array( 97.1664, -14.913, 101.191, 54.6268, 61.0644, -16.6774 )
+animations = [ { "frames":[ ExtResource( 39 ), ExtResource( 40 ) ], "loop":true, "name":"default", "speed":1.75 } ]
 
 [sub_resource type="ConvexPolygonShape2D" id=258]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 134.256, -102.751, 136.66, 65.6674, 104.489, 31.3544, 97.1664, -14.913 )
+points = Vector2Array( 21.8715, 16.2487, 30.595, 47.1369, 14.8647, 35.2463 )
 
 [sub_resource type="ConvexPolygonShape2D" id=259]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -104.022, -147.914, -54.2179, -198.939, -33.0859, -128.049 )
+points = Vector2Array( 59.8887, -32.7378, 67.8757, 4.26498, 33.3274, -23.2571, 34.9004, -65.7467 )
 
 [sub_resource type="ConvexPolygonShape2D" id=260]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 61.0644, -16.6774, 22.2539, -19.3414, 48.9148, -122.6, 80.9782, -184.686, 122.306, -131.364, 134.256, -102.751, 97.1664, -14.913 )
+points = Vector2Array( 2.85591, 60.242, 9.84566, 89.2445, -2.16492, 119.24, -12.1543, 89.2367, -6.14374, 59.2388 )
 
 [sub_resource type="ConvexPolygonShape2D" id=261]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -34.0313, 17.1051, -58.3621, 58.1295, -114.831, 94.7579, -142.674, -32.6349, -122.819, -112.436 )
+points = Vector2Array( -16.1342, 32.2353, -36.1391, 46.2282, -33.1314, 24.2293, -26.1261, 9.23178 )
 
 [sub_resource type="ConvexPolygonShape2D" id=262]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -33.0859, -128.049, -26.4959, -180.133, 18.9408, -173.536, 48.9148, -122.6, 22.2539, -19.3414 )
+points = Vector2Array( -16.1342, 32.2353, -26.1261, 9.23178, -37.1158, -19.7721, -35.1003, -63.7714, -24.09, -92.7675, -4.08121, -117.76, 19.9107, -94.752, 34.9004, -65.7467, 33.3274, -23.2571, 21.8715, 16.2487, 14.8647, 35.2463 )
 
 [sub_resource type="ConvexPolygonShape2D" id=263]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 64.6072, 38.0472, 64.7064, 126.69, 45.8724, 128.927, 22.2539, -19.3414, 61.0644, -16.6774 )
-
-[sub_resource type="ConvexPolygonShape2D" id=264]
-
-custom_solver_bias = 0.0
-points = Vector2Array( 9.30975, 131.184, -23.93, 132.329, -34.0313, 17.1051, 22.2539, -19.3414 )
+points = Vector2Array( 14.8647, 35.2463, 2.85591, 60.242, -6.14374, 59.2388, -16.1342, 32.2353 )
 
 [sub_resource type="ConvexPolygonShape2D" id=265]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 22.2539, -19.3414, -34.0313, 17.1051, -122.819, -112.436, -104.022, -147.914, -33.0859, -128.049 )
+points = Vector2Array( 8.47363, 52.7042, -2.33728, 62.9673, -8.27606, 48.3754, 17.6635, 41.9003 )
 
-[sub_resource type="SpriteFrames" id=266]
+[sub_resource type="SpriteFrames" id=419]
 
-animations = [ { "frames":[ ExtResource( 44 ) ], "loop":true, "name":"default", "speed":1.75 } ]
+animations = [ { "frames":[ ExtResource( 41 ) ], "loop":true, "name":"default", "speed":5.0 } ]
 
 [node name="FishPool" type="Node"]
 
@@ -1388,6 +1331,7 @@ speed = 70.0
 name = "blobfisch"
 description = "Psychrolutes marcidus\nBlobfisch\n\nIgitt, als ich diese Monstrosität aus dem Wasser fischte, dachte ich es wäre ein toter Mensch, aber als ich dann den Fisch ins Wasser tauchte, sah er komplett anders aus. Bringt man diese Wesen aus ihrem natürlichen Lebensraum, ändert sich die Betrachtung anderer auf sie extrem. Interessant."
 captive_scale = 0.6
+image = "res://fish/blobfish/blobfish1.png"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="blobfisch"]
 
@@ -1395,7 +1339,6 @@ material/material = ExtResource( 3 )
 transform/rot = -90.0
 frames = SubResource( 7 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="blobfisch"]
@@ -1423,7 +1366,7 @@ shapes/2/trigger = false
 shapes/3/shape = SubResource( 11 )
 shapes/3/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 0, 0 )
 shapes/3/trigger = false
-shapes/4/shape = SubResource( 12 )
+shapes/4/shape = SubResource( 266 )
 shapes/4/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 0, 0 )
 shapes/4/trigger = false
 shapes/5/shape = SubResource( 13 )
@@ -1435,7 +1378,7 @@ shapes/6/trigger = false
 shapes/7/shape = SubResource( 15 )
 shapes/7/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 0, 0 )
 shapes/7/trigger = false
-shapes/8/shape = SubResource( 16 )
+shapes/8/shape = SubResource( 267 )
 shapes/8/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 0, 0 )
 shapes/8/trigger = false
 shapes/9/shape = SubResource( 17 )
@@ -1447,7 +1390,7 @@ shapes/10/trigger = false
 shapes/11/shape = SubResource( 19 )
 shapes/11/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 0, 0 )
 shapes/11/trigger = false
-shapes/12/shape = SubResource( 20 )
+shapes/12/shape = SubResource( 268 )
 shapes/12/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 0, 0 )
 shapes/12/trigger = false
 shapes/13/shape = SubResource( 21 )
@@ -1464,14 +1407,14 @@ speed = 70.0
 name = "ningen"
 description = "Ningen\n\nEin merkwürdiges Menschenähnliches Wesen, es hatte keinen Eintrag in diesem Lexikon also hab ich selbst einen geschrieben. Ich habe das Gefühl diese Dinger werden eigentlich größer, aber der hier scheint recht klein zu sein. Ich habe auch mal gehört, dass sie eigentlich in kalten Gebieten leben. Ich habe mich langsam mit meinen merkwürdigen Fängen abgefunden."
 captive_scale = 0.4
+image = "res://fish/ningen/01.png"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="ningen"]
 
 material/material = ExtResource( 3 )
 transform/rot = -90.0
-frames = SubResource( 22 )
+frames = SubResource( 269 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="ningen"]
@@ -1508,7 +1451,7 @@ shapes/5/trigger = false
 shapes/6/shape = SubResource( 29 )
 shapes/6/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 0, 0 )
 shapes/6/trigger = false
-shapes/7/shape = SubResource( 30 )
+shapes/7/shape = SubResource( 270 )
 shapes/7/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 0, 0 )
 shapes/7/trigger = false
 shapes/8/shape = SubResource( 31 )
@@ -1540,13 +1483,15 @@ speed = 70.0
 name = "tati\'meiw-nesdtu"
 description = "Tati\'meiw-Nesdttu\n\nKreaturen auf einer höheren Existenzstufe. Sie projizieren ihre Seele in andere Galaxien und Universen um ihrem Leben auf der Erde zu entfliehen. Dabei hinterlassen sie kaum antwortende Hüllen, welche nur durch höchste Dringlichkeit bewegt werden können.\n\n\n\n"
 captive_scale = 0.4
+image = "res://eldricht/tati/Tati\'meiw1.png"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="tati'meiw-nesdttu"]
 
 material/material = ExtResource( 3 )
 transform/rot = -90.0
-frames = SubResource( 37 )
+frames = SubResource( 271 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="tati'meiw-nesdttu"]
@@ -1562,16 +1507,16 @@ trigger = false
 editor/display_folded = true
 transform/pos = Vector2( 137, 358 )
 input/pickable = true
-shapes/0/shape = SubResource( 38 )
+shapes/0/shape = SubResource( 272 )
 shapes/0/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 39 )
+shapes/1/shape = SubResource( 273 )
 shapes/1/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 0, 0 )
 shapes/1/trigger = false
-shapes/2/shape = SubResource( 40 )
+shapes/2/shape = SubResource( 274 )
 shapes/2/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 0, 0 )
 shapes/2/trigger = false
-shapes/3/shape = SubResource( 41 )
+shapes/3/shape = SubResource( 275 )
 shapes/3/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 0, 0 )
 shapes/3/trigger = false
 gravity_vec = Vector2( 0, 1 )
@@ -1585,12 +1530,13 @@ speed = 85.0
 name = "barsch"
 description = "Dicentrarchus labrax\nSeebarsch\n\nEin äußerst häufiger Salzwasserfisch. So mancher Bürger idyllischer Kleinstädte ist beim Hobbyangeln von ihrer Häufigkeit genervt.\nEs sind räuberische Tiere, welche nur zum Jagen ins Flache Wasser kommen."
 captive_scale = 0.5
+image = "res://fish/seebarsch/seebarsch1.png"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="barsch"]
 
 material/material = ExtResource( 3 )
 transform/rot = -90.0
-frames = SubResource( 42 )
+frames = SubResource( 276 )
 animation = "default"
 frame = 1
 playing = true
@@ -1608,13 +1554,13 @@ trigger = false
 editor/display_folded = true
 transform/pos = Vector2( 283.419, 355.162 )
 input/pickable = true
-shapes/0/shape = SubResource( 43 )
+shapes/0/shape = SubResource( 277 )
 shapes/0/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 44 )
+shapes/1/shape = SubResource( 278 )
 shapes/1/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 0, 0 )
 shapes/1/trigger = false
-shapes/2/shape = SubResource( 45 )
+shapes/2/shape = SubResource( 279 )
 shapes/2/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 0, 0 )
 shapes/2/trigger = false
 gravity_vec = Vector2( 0, 1 )
@@ -1628,13 +1574,15 @@ speed = 120.0
 name = "anglerfisch"
 description = "Melanocetus johnsonii\nAnglerfisch\n\nIch habe gehört dass sich diese Tiere in der Regel äußerst gut tarnen sollen. Sie sind auch eher Jäger, oder nicht\? Viel weiter unten am Meeresboden sollen sie auch leben. Sie fangen sich die Schwachen, welche auf ihren Köder reagieren und fressen sie, so wie ich es mache."
 captive_scale = 0.6
+image = "res://fish/anglerfisch/anglerfisch1.png"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="anglerfisch"]
 
 material/material = ExtResource( 3 )
 transform/rot = -90.0
-frames = SubResource( 46 )
+frames = SubResource( 280 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="anglerfisch"]
@@ -1650,13 +1598,13 @@ trigger = false
 editor/display_folded = true
 transform/pos = Vector2( 215.79, 239.018 )
 input/pickable = true
-shapes/0/shape = SubResource( 47 )
+shapes/0/shape = SubResource( 281 )
 shapes/0/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 48 )
+shapes/1/shape = SubResource( 282 )
 shapes/1/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 0, 0 )
 shapes/1/trigger = false
-shapes/2/shape = SubResource( 49 )
+shapes/2/shape = SubResource( 283 )
 shapes/2/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 0, 0 )
 shapes/2/trigger = false
 gravity_vec = Vector2( 0, 1 )
@@ -1670,13 +1618,15 @@ speed = 190.0
 name = "rochen"
 description = "Gattung Rajidae\nRochen\n\nDa bist du platt, oder\? Ich habe vor meinem Fischerdasein versucht, Witze zu schreiben, aber alles was ich hinbekommen habe waren schlechte Wortspiele die flacher waren als solche Fische, gefühlt genau so giftig wie einige Exemplare ihrer Art."
 captive_scale = 0.2
+image = "res://buch_grafiken/rochen.png"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="rochen"]
 
 material/material = ExtResource( 3 )
 transform/rot = -90.0
-frames = SubResource( 50 )
+frames = SubResource( 284 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="rochen"]
@@ -1692,31 +1642,31 @@ trigger = false
 editor/display_folded = true
 transform/pos = Vector2( 444.81, 275 )
 input/pickable = true
-shapes/0/shape = SubResource( 51 )
+shapes/0/shape = SubResource( 285 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 52 )
+shapes/1/shape = SubResource( 286 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
-shapes/2/shape = SubResource( 53 )
+shapes/2/shape = SubResource( 287 )
 shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/2/trigger = false
-shapes/3/shape = SubResource( 54 )
+shapes/3/shape = SubResource( 288 )
 shapes/3/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/3/trigger = false
-shapes/4/shape = SubResource( 55 )
+shapes/4/shape = SubResource( 289 )
 shapes/4/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/4/trigger = false
-shapes/5/shape = SubResource( 56 )
+shapes/5/shape = SubResource( 290 )
 shapes/5/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/5/trigger = false
-shapes/6/shape = SubResource( 57 )
+shapes/6/shape = SubResource( 291 )
 shapes/6/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/6/trigger = false
-shapes/7/shape = SubResource( 58 )
+shapes/7/shape = SubResource( 292 )
 shapes/7/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/7/trigger = false
-shapes/8/shape = SubResource( 59 )
+shapes/8/shape = SubResource( 293 )
 shapes/8/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/8/trigger = false
 gravity_vec = Vector2( 0, 1 )
@@ -1730,12 +1680,13 @@ speed = 99.0
 name = "qualle"
 description = "Aurelia Aurita\nQualle\n\nEin äußerst leichtes Tier, es besteht größtenteils aus Wasser, so wie wir Menschen, nur noch...naja, eben viel mehr.\nKomisch dass diese Wesen so leblos wirken, sie treiben nur dorthin, wo die Strömung sie hinträgt... ist vielleicht doch gar nicht so anders wie Menschen."
 captive_scale = 0.5
+image = "res://fish/qualle/qualle1.png"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="qualle"]
 
 material/material = ExtResource( 3 )
 transform/rot = -90.0
-frames = SubResource( 60 )
+frames = SubResource( 294 )
 animation = "default"
 playing = true
 
@@ -1753,22 +1704,22 @@ trigger = false
 editor/display_folded = true
 transform/pos = Vector2( -89.19, 124 )
 input/pickable = true
-shapes/0/shape = SubResource( 61 )
+shapes/0/shape = SubResource( 295 )
 shapes/0/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 0.902539, -2.80498 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 62 )
+shapes/1/shape = SubResource( 296 )
 shapes/1/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 0.902539, -2.80498 )
 shapes/1/trigger = false
-shapes/2/shape = SubResource( 63 )
+shapes/2/shape = SubResource( 297 )
 shapes/2/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 0.902539, -2.80498 )
 shapes/2/trigger = false
-shapes/3/shape = SubResource( 64 )
+shapes/3/shape = SubResource( 298 )
 shapes/3/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 0.902539, -2.80498 )
 shapes/3/trigger = false
-shapes/4/shape = SubResource( 65 )
+shapes/4/shape = SubResource( 299 )
 shapes/4/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/4/trigger = false
-shapes/5/shape = SubResource( 66 )
+shapes/5/shape = SubResource( 300 )
 shapes/5/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/5/trigger = false
 gravity_vec = Vector2( 0, 1 )
@@ -1782,12 +1733,13 @@ speed = 160.0
 name = "hai"
 description = "Carcharodon carcharias\nHai\n\nAls einziger Mann einen solchen herauszufischen ist ein schon ziemlicher Akt, aber eigentlich sollte meine Angel auch nicht so weit nach unten reichen - was zum Teufel wurde mir hier verkauft\?\nHaie sind übrigens harmloser als einige Leute denken, aber den hier behalte ich als Trophäe."
 captive_scale = 0.6
+image = "res://fish/hai/hai2.png"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="hai"]
 
 material/material = ExtResource( 3 )
 transform/rot = -90.0
-frames = SubResource( 67 )
+frames = SubResource( 301 )
 animation = "default"
 frame = 1
 playing = true
@@ -1806,22 +1758,22 @@ trigger = false
 editor/display_folded = true
 transform/pos = Vector2( -403.681, 215.171 )
 input/pickable = true
-shapes/0/shape = SubResource( 68 )
+shapes/0/shape = SubResource( 302 )
 shapes/0/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 0.902539, -2.80498 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 69 )
+shapes/1/shape = SubResource( 303 )
 shapes/1/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 0.902539, -2.80498 )
 shapes/1/trigger = false
-shapes/2/shape = SubResource( 70 )
+shapes/2/shape = SubResource( 304 )
 shapes/2/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 0.902539, -2.80498 )
 shapes/2/trigger = false
-shapes/3/shape = SubResource( 71 )
+shapes/3/shape = SubResource( 305 )
 shapes/3/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 0.902539, -2.80498 )
 shapes/3/trigger = false
-shapes/4/shape = SubResource( 72 )
+shapes/4/shape = SubResource( 306 )
 shapes/4/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 0.902539, -2.80498 )
 shapes/4/trigger = false
-shapes/5/shape = SubResource( 73 )
+shapes/5/shape = SubResource( 307 )
 shapes/5/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 0.902539, -2.80498 )
 shapes/5/trigger = false
 gravity_vec = Vector2( 0, 1 )
@@ -1835,12 +1787,13 @@ speed = 160.0
 name = "sternengezücht"
 description = "Sternengezücht\n\nWesen aus einer anderen Welt. Ob sie Cthulus nachkommen, oder seine innigen Anhänger sind, ist unklar. Obwohl sie nach dem Fall Ry\'lehs gestorben sind, flüstern sie noch immer den Sterblichen der Erde  Prophezeiungen zu, welche zu Wahnvorstellungen führen."
 captive_scale = 0.6
+image = "res://eldricht/2/sternengebilde1.png"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="sternengezücht"]
 
 material/material = ExtResource( 3 )
 transform/rot = -90.0
-frames = SubResource( 74 )
+frames = SubResource( 308 )
 animation = "default"
 frame = 1
 playing = true
@@ -1860,121 +1813,121 @@ editor/display_folded = true
 transform/pos = Vector2( -243.706, 124 )
 z/z = -1
 input/pickable = true
-shapes/0/shape = SubResource( 75 )
+shapes/0/shape = SubResource( 309 )
 shapes/0/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -23.3095, -36.5379 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 76 )
+shapes/1/shape = SubResource( 310 )
 shapes/1/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -23.3095, -36.5379 )
 shapes/1/trigger = false
-shapes/2/shape = SubResource( 77 )
+shapes/2/shape = SubResource( 311 )
 shapes/2/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -23.3095, -36.5379 )
 shapes/2/trigger = false
-shapes/3/shape = SubResource( 78 )
+shapes/3/shape = SubResource( 312 )
 shapes/3/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -23.3095, -36.5379 )
 shapes/3/trigger = false
-shapes/4/shape = SubResource( 79 )
+shapes/4/shape = SubResource( 313 )
 shapes/4/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -23.3095, -36.5379 )
 shapes/4/trigger = false
-shapes/5/shape = SubResource( 80 )
+shapes/5/shape = SubResource( 314 )
 shapes/5/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -23.3095, -36.5379 )
 shapes/5/trigger = false
-shapes/6/shape = SubResource( 81 )
+shapes/6/shape = SubResource( 315 )
 shapes/6/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -23.3095, -36.5379 )
 shapes/6/trigger = false
-shapes/7/shape = SubResource( 82 )
+shapes/7/shape = SubResource( 316 )
 shapes/7/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -6.62657, -23.0326 )
 shapes/7/trigger = false
-shapes/8/shape = SubResource( 83 )
+shapes/8/shape = SubResource( 317 )
 shapes/8/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -6.62657, -23.0326 )
 shapes/8/trigger = false
-shapes/9/shape = SubResource( 84 )
+shapes/9/shape = SubResource( 318 )
 shapes/9/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -6.62657, -23.0326 )
 shapes/9/trigger = false
-shapes/10/shape = SubResource( 85 )
+shapes/10/shape = SubResource( 319 )
 shapes/10/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -6.62657, -23.0326 )
 shapes/10/trigger = false
-shapes/11/shape = SubResource( 86 )
+shapes/11/shape = SubResource( 320 )
 shapes/11/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -6.62657, -23.0326 )
 shapes/11/trigger = false
-shapes/12/shape = SubResource( 87 )
+shapes/12/shape = SubResource( 321 )
 shapes/12/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -6.62657, -23.0326 )
 shapes/12/trigger = false
-shapes/13/shape = SubResource( 88 )
+shapes/13/shape = SubResource( 322 )
 shapes/13/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -6.62657, -23.0326 )
 shapes/13/trigger = false
-shapes/14/shape = SubResource( 89 )
+shapes/14/shape = SubResource( 323 )
 shapes/14/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -40.787, -18.6632 )
 shapes/14/trigger = false
-shapes/15/shape = SubResource( 90 )
+shapes/15/shape = SubResource( 324 )
 shapes/15/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -40.787, -18.6632 )
 shapes/15/trigger = false
-shapes/16/shape = SubResource( 91 )
+shapes/16/shape = SubResource( 325 )
 shapes/16/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -40.787, -18.6632 )
 shapes/16/trigger = false
-shapes/17/shape = SubResource( 92 )
+shapes/17/shape = SubResource( 326 )
 shapes/17/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -40.787, -18.6632 )
 shapes/17/trigger = false
-shapes/18/shape = SubResource( 93 )
+shapes/18/shape = SubResource( 327 )
 shapes/18/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -40.787, -18.6632 )
 shapes/18/trigger = false
-shapes/19/shape = SubResource( 94 )
+shapes/19/shape = SubResource( 328 )
 shapes/19/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -40.787, -18.6632 )
 shapes/19/trigger = false
-shapes/20/shape = SubResource( 95 )
+shapes/20/shape = SubResource( 329 )
 shapes/20/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -40.787, -18.6632 )
 shapes/20/trigger = false
-shapes/21/shape = SubResource( 96 )
+shapes/21/shape = SubResource( 330 )
 shapes/21/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 2.1122, 5.56682 )
 shapes/21/trigger = false
-shapes/22/shape = SubResource( 97 )
+shapes/22/shape = SubResource( 331 )
 shapes/22/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 2.1122, 5.56682 )
 shapes/22/trigger = false
-shapes/23/shape = SubResource( 98 )
+shapes/23/shape = SubResource( 332 )
 shapes/23/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 2.1122, 5.56682 )
 shapes/23/trigger = false
-shapes/24/shape = SubResource( 99 )
+shapes/24/shape = SubResource( 333 )
 shapes/24/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 2.1122, 5.56682 )
 shapes/24/trigger = false
-shapes/25/shape = SubResource( 100 )
+shapes/25/shape = SubResource( 334 )
 shapes/25/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 2.1122, 5.56682 )
 shapes/25/trigger = false
-shapes/26/shape = SubResource( 101 )
+shapes/26/shape = SubResource( 335 )
 shapes/26/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 2.1122, 5.56682 )
 shapes/26/trigger = false
-shapes/27/shape = SubResource( 102 )
+shapes/27/shape = SubResource( 336 )
 shapes/27/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 2.1122, 5.56682 )
 shapes/27/trigger = false
-shapes/28/shape = SubResource( 103 )
+shapes/28/shape = SubResource( 337 )
 shapes/28/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -50.7173, 7.95007 )
 shapes/28/trigger = false
-shapes/29/shape = SubResource( 104 )
+shapes/29/shape = SubResource( 338 )
 shapes/29/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -50.7173, 7.95007 )
 shapes/29/trigger = false
-shapes/30/shape = SubResource( 105 )
+shapes/30/shape = SubResource( 339 )
 shapes/30/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -50.7173, 7.95007 )
 shapes/30/trigger = false
-shapes/31/shape = SubResource( 106 )
+shapes/31/shape = SubResource( 340 )
 shapes/31/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -50.7173, 7.95007 )
 shapes/31/trigger = false
-shapes/32/shape = SubResource( 107 )
+shapes/32/shape = SubResource( 341 )
 shapes/32/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -50.7173, 7.95007 )
 shapes/32/trigger = false
-shapes/33/shape = SubResource( 108 )
+shapes/33/shape = SubResource( 342 )
 shapes/33/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -50.7173, 7.95007 )
 shapes/33/trigger = false
-shapes/34/shape = SubResource( 109 )
+shapes/34/shape = SubResource( 343 )
 shapes/34/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -50.7173, 7.95007 )
 shapes/34/trigger = false
-shapes/35/shape = SubResource( 110 )
+shapes/35/shape = SubResource( 344 )
 shapes/35/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -65.4143, -20.6494 )
 shapes/35/trigger = false
-shapes/36/shape = SubResource( 111 )
+shapes/36/shape = SubResource( 345 )
 shapes/36/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -65.4143, -20.6494 )
 shapes/36/trigger = false
-shapes/37/shape = SubResource( 112 )
+shapes/37/shape = SubResource( 346 )
 shapes/37/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -65.4143, -20.6494 )
 shapes/37/trigger = false
-shapes/38/shape = SubResource( 113 )
+shapes/38/shape = SubResource( 347 )
 shapes/38/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -65.4143, -20.6494 )
 shapes/38/trigger = false
 shapes/39/shape = SubResource( 114 )
@@ -2001,7 +1954,7 @@ shapes/45/trigger = false
 shapes/46/shape = SubResource( 121 )
 shapes/46/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 18.398, -18.6633 )
 shapes/46/trigger = false
-shapes/47/shape = SubResource( 122 )
+shapes/47/shape = SubResource( 348 )
 shapes/47/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 18.398, -18.6633 )
 shapes/47/trigger = false
 shapes/48/shape = SubResource( 123 )
@@ -2019,7 +1972,7 @@ shapes/51/trigger = false
 shapes/52/shape = SubResource( 127 )
 shapes/52/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -22.5151, 5.1696 )
 shapes/52/trigger = false
-shapes/53/shape = SubResource( 128 )
+shapes/53/shape = SubResource( 349 )
 shapes/53/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -22.5151, 5.1696 )
 shapes/53/trigger = false
 shapes/54/shape = SubResource( 129 )
@@ -2039,13 +1992,14 @@ speed = 170.0
 name = "clownfisch"
 description = "Premnas biaculeatus\nClownisch\n\nEin kleiner Niemand. Ist es eigentlich nicht Wert dass aus dem Meer geholt zu werden, ich hab auch ziemliche Angst, dass ich meinen Vater mit diesem Fang verärgere. Sie leben normalerweise in Gruppen zwischen Anemonen."
 captive_scale = 0.6
+image = "res://fish/clownfish/fisch2neu.png"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="clownfisch"]
 
 material/material = ExtResource( 3 )
 transform/pos = Vector2( -23.8354, -36.9222 )
 transform/rot = -90.0
-frames = SubResource( 131 )
+frames = SubResource( 350 )
 animation = "default"
 playing = true
 
@@ -2054,7 +2008,7 @@ playing = true
 material/material = ExtResource( 3 )
 transform/pos = Vector2( -7.15247, -23.4169 )
 transform/rot = -90.0
-frames = SubResource( 131 )
+frames = SubResource( 350 )
 animation = "default"
 frame = 1
 playing = true
@@ -2064,7 +2018,7 @@ playing = true
 material/material = ExtResource( 3 )
 transform/pos = Vector2( -41.3129, -19.0475 )
 transform/rot = -90.0
-frames = SubResource( 131 )
+frames = SubResource( 350 )
 animation = "default"
 frame = 1
 playing = true
@@ -2074,7 +2028,7 @@ playing = true
 material/material = ExtResource( 3 )
 transform/pos = Vector2( 1.5863, 5.18248 )
 transform/rot = -90.0
-frames = SubResource( 131 )
+frames = SubResource( 350 )
 animation = "default"
 playing = true
 
@@ -2083,7 +2037,7 @@ playing = true
 material/material = ExtResource( 3 )
 transform/pos = Vector2( -51.2432, 7.56573 )
 transform/rot = -90.0
-frames = SubResource( 131 )
+frames = SubResource( 350 )
 animation = "default"
 frame = 1
 playing = true
@@ -2093,7 +2047,7 @@ playing = true
 material/material = ExtResource( 3 )
 transform/pos = Vector2( -65.9402, -21.0337 )
 transform/rot = -90.0
-frames = SubResource( 131 )
+frames = SubResource( 350 )
 animation = "default"
 playing = true
 
@@ -2102,7 +2056,7 @@ playing = true
 material/material = ExtResource( 3 )
 transform/pos = Vector2( 17.8721, -19.0476 )
 transform/rot = -90.0
-frames = SubResource( 131 )
+frames = SubResource( 350 )
 animation = "default"
 frame = 1
 playing = true
@@ -2112,7 +2066,7 @@ playing = true
 material/material = ExtResource( 3 )
 transform/pos = Vector2( -23.041, 4.78526 )
 transform/rot = -90.0
-frames = SubResource( 131 )
+frames = SubResource( 350 )
 animation = "default"
 frame = 1
 playing = true
@@ -2209,19 +2163,19 @@ shapes/3/trigger = false
 shapes/4/shape = SubResource( 136 )
 shapes/4/transform = Matrix32( 0.956886, -0.290465, 0.290465, 0.956886, -2.23843, -48.8232 )
 shapes/4/trigger = false
-shapes/5/shape = SubResource( 137 )
+shapes/5/shape = SubResource( 351 )
 shapes/5/transform = Matrix32( 0.956886, -0.290465, 0.290465, 0.956886, -2.23843, -48.8232 )
 shapes/5/trigger = false
 shapes/6/shape = SubResource( 138 )
 shapes/6/transform = Matrix32( 0.970591, 0.240733, -0.240733, 0.970591, -48.3418, -50.1792 )
 shapes/6/trigger = false
-shapes/7/shape = SubResource( 139 )
+shapes/7/shape = SubResource( 352 )
 shapes/7/transform = Matrix32( 0.970591, 0.240733, -0.240733, 0.970591, -48.3418, -50.1792 )
 shapes/7/trigger = false
 shapes/8/shape = SubResource( 140 )
 shapes/8/transform = Matrix32( 0.970591, 0.240733, -0.240733, 0.970591, -48.3418, -50.1792 )
 shapes/8/trigger = false
-shapes/9/shape = SubResource( 141 )
+shapes/9/shape = SubResource( 353 )
 shapes/9/transform = Matrix32( 0.994741, 0.102421, -0.102421, 0.994741, -47.2877, 15.1738 )
 shapes/9/trigger = false
 shapes/10/shape = SubResource( 142 )
@@ -2233,13 +2187,13 @@ shapes/11/trigger = false
 shapes/12/shape = SubResource( 144 )
 shapes/12/transform = Matrix32( 0.998513, -0.0545229, 0.0545229, 0.998513, -8.55023, 16.4914 )
 shapes/12/trigger = false
-shapes/13/shape = SubResource( 145 )
+shapes/13/shape = SubResource( 354 )
 shapes/13/transform = Matrix32( 0.998513, -0.0545229, 0.0545229, 0.998513, -8.55023, 16.4914 )
 shapes/13/trigger = false
-shapes/14/shape = SubResource( 146 )
+shapes/14/shape = SubResource( 355 )
 shapes/14/transform = Matrix32( 0.998513, -0.0545229, 0.0545229, 0.998513, -8.55023, 16.4914 )
 shapes/14/trigger = false
-shapes/15/shape = SubResource( 147 )
+shapes/15/shape = SubResource( 356 )
 shapes/15/transform = Matrix32( 0.999934, -0.0115087, 0.0115087, 0.999934, -27.1915, 44.8117 )
 shapes/15/trigger = false
 shapes/16/shape = SubResource( 148 )
@@ -2259,13 +2213,14 @@ speed = 160.0
 name = "aal"
 description = "Anguilla anguilla\nAal\n\nEin äußerst langer, vom Aussterben bedrohter Fisch. \nGenau wie einige Menschen kann auch dieses Tier sich einfach durch die engsten Pässe drängen, jedoch ist es bei diesem Vertreter hier eher Wortwörtlich gemeint."
 captive_scale = 0.4
+image = "res://fish/aal/aal1.png"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="aal"]
 
 material/material = ExtResource( 3 )
 transform/pos = Vector2( -27.3657, -49.0138 )
 transform/rot = -90.0
-frames = SubResource( 150 )
+frames = SubResource( 357 )
 animation = "default"
 playing = true
 
@@ -2274,7 +2229,7 @@ playing = true
 material/material = ExtResource( 3 )
 transform/pos = Vector2( -2.8532, -49.0384 )
 transform/rot = -73.1344
-frames = SubResource( 150 )
+frames = SubResource( 357 )
 animation = "default"
 playing = true
 
@@ -2283,7 +2238,7 @@ playing = true
 material/material = ExtResource( 3 )
 transform/pos = Vector2( -48.7595, -50.6789 )
 transform/rot = -103.95
-frames = SubResource( 150 )
+frames = SubResource( 357 )
 animation = "default"
 playing = true
 
@@ -2292,7 +2247,7 @@ playing = true
 material/material = ExtResource( 3 )
 transform/pos = Vector2( -47.7713, 14.7375 )
 transform/rot = -95.8988
-frames = SubResource( 150 )
+frames = SubResource( 357 )
 animation = "default"
 frame = 1
 playing = true
@@ -2302,7 +2257,7 @@ playing = true
 material/material = ExtResource( 3 )
 transform/pos = Vector2( -9.09616, 16.1361 )
 transform/rot = -86.8947
-frames = SubResource( 150 )
+frames = SubResource( 357 )
 animation = "default"
 playing = true
 
@@ -2311,7 +2266,7 @@ playing = true
 material/material = ExtResource( 3 )
 transform/pos = Vector2( -27.7216, 44.4333 )
 transform/rot = -89.3608
-frames = SubResource( 150 )
+frames = SubResource( 357 )
 animation = "default"
 playing = true
 
@@ -2377,13 +2332,13 @@ input/pickable = true
 shapes/0/shape = SubResource( 151 )
 shapes/0/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -35.5887, 4.52939 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 152 )
+shapes/1/shape = SubResource( 358 )
 shapes/1/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -35.5887, 4.52939 )
 shapes/1/trigger = false
 shapes/2/shape = SubResource( 153 )
 shapes/2/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -35.5887, 4.52939 )
 shapes/2/trigger = false
-shapes/3/shape = SubResource( 154 )
+shapes/3/shape = SubResource( 359 )
 shapes/3/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -35.5887, 4.52939 )
 shapes/3/trigger = false
 shapes/4/shape = SubResource( 155 )
@@ -2398,7 +2353,7 @@ shapes/6/trigger = false
 shapes/7/shape = SubResource( 158 )
 shapes/7/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -35.5887, 4.52939 )
 shapes/7/trigger = false
-shapes/8/shape = SubResource( 159 )
+shapes/8/shape = SubResource( 360 )
 shapes/8/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -35.5887, 4.52939 )
 shapes/8/trigger = false
 shapes/9/shape = SubResource( 160 )
@@ -2427,14 +2382,16 @@ speed = 110.0
 name = "crab"
 description = "Macrocheira kaempferi\nRiesenkrabbe\n\nOho, ein interessanter Fang! Eigentlich leben diese Tiere nur in den Gewässern von Japan und ich hocke hier an deutscher Küste. Aber bei dem Ganzen, was ich bis jetzt gefangen habe, wundert mich fast gar nichts mehr."
 captive_scale = 0.4
+image = "res://fish/krabbe/doufeelitnowmrkrabs2.png"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="crab"]
 
 material/material = ExtResource( 3 )
 transform/pos = Vector2( -1.50742, -6.58912e-08 )
 transform/rot = -90.0
-frames = SubResource( 165 )
+frames = SubResource( 361 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="crab"]
@@ -2468,12 +2425,13 @@ speed = 80.0
 name = "stiefel"
 description = "Stiefel\n\nEin alter Stiefel, hat bestimmt mal einem anderen Fischer gehört. Ekelhaft, dass Leute so etwas ins Meer schmeißen. Ich finde so etwas ja absolut barbarisch."
 captive_scale = 0.6
+image = "res://things/Stiefel.png"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="stiefel"]
 
 material/material = ExtResource( 3 )
 transform/rot = -90.0
-frames = SubResource( 168 )
+frames = SubResource( 362 )
 animation = "default"
 playing = true
 
@@ -2500,7 +2458,7 @@ shapes/1/trigger = false
 shapes/2/shape = SubResource( 171 )
 shapes/2/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 0, 0 )
 shapes/2/trigger = false
-shapes/3/shape = SubResource( 172 )
+shapes/3/shape = SubResource( 363 )
 shapes/3/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 0, 0 )
 shapes/3/trigger = false
 shapes/4/shape = SubResource( 173 )
@@ -2541,13 +2499,14 @@ speed = 115.0
 name = "algen"
 description = "Algen\n\nDiese komischen Algen haben Wölbungen, welche mich an Augen erinnern, aber sie gehen wohl nur unter Wasser auf also kann ich nicht wirklich etwas bestätigen. Ich weiß nicht warum, aber ich fühle mich als würde ich merkwürdigen Tiefen immer näher kommen."
 captive_scale = 0.6
+image = "res://things/algen.png"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="algen"]
 
 material/material = ExtResource( 3 )
 transform/pos = Vector2( 19.4529, 8.64579 )
 transform/rot = -0.0865118
-frames = SubResource( 182 )
+frames = SubResource( 364 )
 animation = "default"
 playing = true
 
@@ -2578,13 +2537,14 @@ speed = 115.0
 name = "buch"
 description = "Die Innschrift ist kaum noch lesbar, ich erkenne nur:\n„Kartoffeln, Karotten und Paprika ...zen und Schneiden, Lachs fileti ...Blech legen. Mit Salz, pfeffer, thym...osmarin würzen ... 45 Minuten im Ofen erh....“"
 captive_scale = 0.6
+image = "res://things/book.png"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="buch"]
 
 material/material = ExtResource( 3 )
 transform/pos = Vector2( 19.4529, 8.64579 )
 transform/rot = -0.0865118
-frames = SubResource( 184 )
+frames = SubResource( 365 )
 animation = "default"
 playing = true
 
@@ -2599,7 +2559,6 @@ trigger = false
 
 [node name="poster" type="Area2D" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( -654.287, 241.592 )
 input/pickable = true
 shapes/0/shape = SubResource( 185 )
@@ -2619,6 +2578,7 @@ speed = 115.0
 name = "poster"
 description = "Vermissten-Plakat\n\nEin Poster, welches eine Gruppe Jugendlicher zeigt. Das letzte Mal vor ein paar Jahren gesehen...\? Kann es sein, dass jemand die brillante Idee hatte so etwas einzuschweißen\? Ach ich lasse es einfach hier, vielleicht kann ich das Rätsel anders lösen."
 captive_scale = 0.6
+image = "res://things/missing poster1.png"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="poster"]
 
@@ -2643,7 +2603,7 @@ trigger = false
 editor/display_folded = true
 transform/pos = Vector2( -662.942, 531.147 )
 input/pickable = true
-shapes/0/shape = SubResource( 188 )
+shapes/0/shape = SubResource( 366 )
 shapes/0/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 1.79614, 1.19752 )
 shapes/0/trigger = false
 gravity_vec = Vector2( 0, 1 )
@@ -2657,6 +2617,7 @@ speed = 135.0
 name = "kristall"
 description = "blauer Kristall\n\nEin leuchtendes Kleinod, es schimmert in einer merkwürdigen Farbe. Ich frage mich, ob ich den als Köder verwenden könnte, aber mache es lieber nicht. Ich fühle mich wohl wenn ich ihn anschaue."
 captive_scale = 0.4
+image = "res://things/kristall.png"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="kristall"]
 
@@ -2681,7 +2642,7 @@ trigger = false
 editor/display_folded = true
 transform/pos = Vector2( -614.718, 585.696 )
 input/pickable = true
-shapes/0/shape = SubResource( 190 )
+shapes/0/shape = SubResource( 367 )
 shapes/0/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 1.14917, 1.19744 )
 shapes/0/trigger = false
 gravity_vec = Vector2( 0, 1 )
@@ -2695,13 +2656,14 @@ speed = 99.0
 name = "reifen"
 description = "Reifen\n\nEin ganz normaler Reifen, scheint noch nicht sehr alt zu sein. Er ist kaum von Pflanzen überzogen. \nOb sich Fische auch irgendwelche Fortbewegungsmittel wünschen\? Ein bequemes Leben\?"
 captive_scale = 0.8
+image = "res://things/reifen.png"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="reifen"]
 
 material/material = ExtResource( 3 )
 transform/pos = Vector2( 19.4529, 8.64579 )
 transform/rot = -0.0865118
-frames = SubResource( 191 )
+frames = SubResource( 368 )
 animation = "default"
 playing = true
 
@@ -2719,10 +2681,10 @@ trigger = false
 editor/display_folded = true
 transform/pos = Vector2( -744.778, 650.726 )
 input/pickable = true
-shapes/0/shape = SubResource( 192 )
+shapes/0/shape = SubResource( 369 )
 shapes/0/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 2.12451, 1.19746 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 193 )
+shapes/1/shape = SubResource( 370 )
 shapes/1/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 2.12451, 1.19746 )
 shapes/1/trigger = false
 shapes/2/shape = SubResource( 194 )
@@ -2742,13 +2704,14 @@ speed = 175.0
 name = "truhe"
 description = "Schatztruhe\n\nScheint wohl mal einem Piraten gehört zu haben. Oder Kindern, die gerne Piraten spielten\? Es war ziemlich schwer herauszufischen aber mit dem ganzen Geld darin sollte ich mir ein schönes Leben machen können, jedenfalls mit dem, was noch davon übrig ist."
 captive_scale = 0.6
+image = "res://things/treasure.png"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="truhe"]
 
 material/material = ExtResource( 3 )
 transform/pos = Vector2( 19.4529, 8.64579 )
 transform/rot = -0.0865118
-frames = SubResource( 196 )
+frames = SubResource( 371 )
 animation = "default"
 playing = true
 
@@ -2766,13 +2729,13 @@ trigger = false
 editor/display_folded = true
 transform/pos = Vector2( -544.344, 767.768 )
 input/pickable = true
-shapes/0/shape = SubResource( 197 )
+shapes/0/shape = SubResource( 372 )
 shapes/0/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 3.75351, 28.0762 )
 shapes/0/trigger = false
 shapes/1/shape = SubResource( 198 )
 shapes/1/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 3.75351, 28.0762 )
 shapes/1/trigger = false
-shapes/2/shape = SubResource( 199 )
+shapes/2/shape = SubResource( 373 )
 shapes/2/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 3.75351, 28.0762 )
 shapes/2/trigger = false
 shapes/3/shape = SubResource( 200 )
@@ -2784,22 +2747,22 @@ shapes/4/trigger = false
 shapes/5/shape = SubResource( 202 )
 shapes/5/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 3.75351, 28.0762 )
 shapes/5/trigger = false
-shapes/6/shape = SubResource( 203 )
+shapes/6/shape = SubResource( 374 )
 shapes/6/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 3.75351, 28.0762 )
 shapes/6/trigger = false
-shapes/7/shape = SubResource( 204 )
+shapes/7/shape = SubResource( 375 )
 shapes/7/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 3.75351, 28.0762 )
 shapes/7/trigger = false
-shapes/8/shape = SubResource( 205 )
+shapes/8/shape = SubResource( 376 )
 shapes/8/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 3.75351, 28.0762 )
 shapes/8/trigger = false
-shapes/9/shape = SubResource( 206 )
+shapes/9/shape = SubResource( 377 )
 shapes/9/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 3.75351, 28.0762 )
 shapes/9/trigger = false
-shapes/10/shape = SubResource( 207 )
+shapes/10/shape = SubResource( 378 )
 shapes/10/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 3.75351, 28.0762 )
 shapes/10/trigger = false
-shapes/11/shape = SubResource( 208 )
+shapes/11/shape = SubResource( 379 )
 shapes/11/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 3.75351, 28.0762 )
 shapes/11/trigger = false
 gravity_vec = Vector2( 0, 1 )
@@ -2813,13 +2776,14 @@ speed = 250.0
 name = "leiche"
 description = "Wasserleiche\n\nBin...das ich\? Er trägt meine Kleidung, hat das gleiche Gesicht, den gleichen Körperbau. Bin das ich -  aus einer anderen Dimension\? Oder sterbe ich in naher Zukunft...oder bin ich schon tot\?"
 captive_scale = 0.6
+image = "res://things/drownDude.png"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="leiche"]
 
 material/material = ExtResource( 3 )
 transform/pos = Vector2( 19.4529, 8.64579 )
 transform/rot = -0.0865118
-frames = SubResource( 209 )
+frames = SubResource( 380 )
 animation = "default"
 playing = true
 
@@ -2837,46 +2801,46 @@ trigger = false
 editor/display_folded = true
 transform/pos = Vector2( 162.986, 750.58 )
 input/pickable = true
-shapes/0/shape = SubResource( 210 )
+shapes/0/shape = SubResource( 381 )
 shapes/0/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 1.79595, 25.2594 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 211 )
+shapes/1/shape = SubResource( 382 )
 shapes/1/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 1.79595, 25.2594 )
 shapes/1/trigger = false
-shapes/2/shape = SubResource( 212 )
+shapes/2/shape = SubResource( 383 )
 shapes/2/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 1.79595, 25.2594 )
 shapes/2/trigger = false
-shapes/3/shape = SubResource( 213 )
+shapes/3/shape = SubResource( 384 )
 shapes/3/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 1.79595, 25.2594 )
 shapes/3/trigger = false
-shapes/4/shape = SubResource( 214 )
+shapes/4/shape = SubResource( 385 )
 shapes/4/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 1.79595, 25.2594 )
 shapes/4/trigger = false
-shapes/5/shape = SubResource( 215 )
+shapes/5/shape = SubResource( 386 )
 shapes/5/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 1.79595, 25.2594 )
 shapes/5/trigger = false
-shapes/6/shape = SubResource( 216 )
+shapes/6/shape = SubResource( 387 )
 shapes/6/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 1.79595, 25.2594 )
 shapes/6/trigger = false
-shapes/7/shape = SubResource( 217 )
+shapes/7/shape = SubResource( 388 )
 shapes/7/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 1.79595, 25.2594 )
 shapes/7/trigger = false
-shapes/8/shape = SubResource( 218 )
+shapes/8/shape = SubResource( 389 )
 shapes/8/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 1.79595, 25.2594 )
 shapes/8/trigger = false
-shapes/9/shape = SubResource( 219 )
+shapes/9/shape = SubResource( 390 )
 shapes/9/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 1.79595, 25.2594 )
 shapes/9/trigger = false
-shapes/10/shape = SubResource( 220 )
+shapes/10/shape = SubResource( 391 )
 shapes/10/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 1.79595, 25.2594 )
 shapes/10/trigger = false
-shapes/11/shape = SubResource( 221 )
+shapes/11/shape = SubResource( 392 )
 shapes/11/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 1.79595, 25.2594 )
 shapes/11/trigger = false
-shapes/12/shape = SubResource( 222 )
+shapes/12/shape = SubResource( 393 )
 shapes/12/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 1.79595, 25.2594 )
 shapes/12/trigger = false
-shapes/13/shape = SubResource( 223 )
+shapes/13/shape = SubResource( 394 )
 shapes/13/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 1.79595, 25.2594 )
 shapes/13/trigger = false
 gravity_vec = Vector2( 0, 1 )
@@ -2890,13 +2854,14 @@ speed = 190.0
 name = "ulzel"
 description = "Ul\'zel\n\nEin niederes tiefes Wesen. Sie werden geschickt um zu beobachten und zu finden. Ihnen fehlen Gehirn oder ähnliche innere Organe, weshalb davon ausgegangen wird, dass diese Kreaturen von einer höheren Macht erschaffen werden."
 captive_scale = 0.2
+image = "res://eldricht/1/silhoutte12.png"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="ul'zel"]
 
 material/material = ExtResource( 3 )
 transform/pos = Vector2( 19.4529, 8.64579 )
 transform/rot = -0.0865118
-frames = SubResource( 224 )
+frames = SubResource( 395 )
 animation = "default"
 frame = 1
 playing = true
@@ -2916,53 +2881,55 @@ trigger = false
 editor/display_folded = true
 transform/pos = Vector2( 475.362, 900.118 )
 input/pickable = true
-shapes/0/shape = SubResource( 225 )
-shapes/0/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 0.820576, 26.7225 )
+shapes/0/shape = SubResource( 396 )
+shapes/0/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -2.01962, 24.7285 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 226 )
-shapes/1/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 0.820576, 26.7225 )
+shapes/1/shape = SubResource( 397 )
+shapes/1/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -2.01962, 24.7285 )
 shapes/1/trigger = false
-shapes/2/shape = SubResource( 227 )
-shapes/2/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 0.820576, 26.7225 )
+shapes/2/shape = SubResource( 398 )
+shapes/2/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -2.01962, 24.7285 )
 shapes/2/trigger = false
-shapes/3/shape = SubResource( 228 )
-shapes/3/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 0.820576, 26.7225 )
+shapes/3/shape = SubResource( 399 )
+shapes/3/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -2.01962, 24.7285 )
 shapes/3/trigger = false
-shapes/4/shape = SubResource( 229 )
-shapes/4/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 0.820576, 26.7225 )
+shapes/4/shape = SubResource( 400 )
+shapes/4/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -2.01962, 24.7285 )
 shapes/4/trigger = false
-shapes/5/shape = SubResource( 230 )
-shapes/5/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 0.820576, 26.7225 )
+shapes/5/shape = SubResource( 401 )
+shapes/5/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -2.01962, 24.7285 )
 shapes/5/trigger = false
-shapes/6/shape = SubResource( 231 )
-shapes/6/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 0.820576, 26.7225 )
+shapes/6/shape = SubResource( 402 )
+shapes/6/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -2.01962, 24.7285 )
 shapes/6/trigger = false
-shapes/7/shape = SubResource( 232 )
-shapes/7/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 0.820576, 26.7225 )
+shapes/7/shape = SubResource( 403 )
+shapes/7/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -2.01962, 24.7285 )
 shapes/7/trigger = false
-shapes/8/shape = SubResource( 233 )
-shapes/8/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 0.820576, 26.7225 )
+shapes/8/shape = SubResource( 404 )
+shapes/8/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -2.01962, 24.7285 )
 shapes/8/trigger = false
-shapes/9/shape = SubResource( 234 )
-shapes/9/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 0.820576, 26.7225 )
+shapes/9/shape = SubResource( 405 )
+shapes/9/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, -2.01962, 24.7285 )
 shapes/9/trigger = false
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
 linear_damp = 0.1
 angular_damp = 1.0
 script/script = ExtResource( 2 )
+__meta__ = { "_edit_group_":true }
 common_depth = Vector2( 70, 95 )
 speed = 160.0
 name = "karatrik"
 description = "Ul\'zel\n\nEin niederes tiefes Wesen. Sie werden geschickt um zu beobachten und zu finden. Ihnen fehlen Gehirn oder ähnliche innere Organe, weshalb davon ausgegangen wird, dass diese Kreaturen von einer höheren Macht erschaffen werden."
 captive_scale = 0.2
+image = "res://eldricht/3/arms1.png"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="karatrik"]
 
 material/material = ExtResource( 3 )
 transform/pos = Vector2( 19.4529, 8.64579 )
 transform/rot = -0.0865118
-frames = SubResource( 235 )
+frames = SubResource( 406 )
 animation = "default"
 frame = 1
 playing = true
@@ -2970,45 +2937,13 @@ modulate = Color( 0.996094, 0.996094, 0.996094, 1 )
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="karatrik"]
 
-transform/pos = Vector2( 0.820576, 26.7225 )
+editor/display_folded = true
+transform/pos = Vector2( -2.01962, 24.7285 )
 transform/rot = 0.0202374
 build_mode = 0
 polygon = Vector2Array( 1.76871, -110.178, 13.4597, -72.6233, 24.6817, -88.225, 58.3389, -109.671, 73.4506, -92.109, 51.0153, -85.7772, 55.8798, -51.1505, 69.5302, -38.4662, 73.4208, -7.74127, 83.6791, -56.5051, 107.575, -55.0336, 110.492, -29.1859, 103.165, 3.48578, 77.802, 14.2057, 58.2873, 36.1442, 41.7018, 48.8179, 63.1456, 88.3271, 37.2991, 87.3426, 13.9094, 34.6654, -1.22302, 75.6248, -24.1477, 86.8332, -48.0217, 24.4023, -64.1038, -7.30219, -65.0641, -49.7303, -48.9702, -51.6753, -52.3749, -77.0356, -35.2899, -123.359, -14.324, -111.647 )
 shape_range = Vector2( 0, 9 )
 trigger = false
-
-
-editor/display_folded = true
-transform/pos = Vector2( -211.675, 801.268 )
-input/pickable = true
-shapes/0/shape = SubResource( 236 )
-shapes/0/transform = Matrix32( 0.999999, 0.00111984, -0.00111984, 0.999999, 0.820575, 28.7127 )
-shapes/0/trigger = false
-shapes/1/shape = SubResource( 237 )
-shapes/1/transform = Matrix32( 0.999999, 0.00111984, -0.00111984, 0.999999, 0.820575, 28.7127 )
-shapes/1/trigger = false
-shapes/2/shape = SubResource( 238 )
-shapes/2/transform = Matrix32( 0.999999, 0.00111984, -0.00111984, 0.999999, 0.820575, 28.7127 )
-shapes/2/trigger = false
-shapes/3/shape = SubResource( 239 )
-shapes/3/transform = Matrix32( 0.999999, 0.00111984, -0.00111984, 0.999999, 0.820575, 28.7127 )
-shapes/3/trigger = false
-shapes/4/shape = SubResource( 240 )
-shapes/4/transform = Matrix32( 0.999999, 0.00111984, -0.00111984, 0.999999, 0.820575, 28.7127 )
-shapes/4/trigger = false
-shapes/5/shape = SubResource( 241 )
-shapes/5/transform = Matrix32( 0.999999, 0.00111984, -0.00111984, 0.999999, 0.820575, 28.7127 )
-shapes/5/trigger = false
-shapes/6/shape = SubResource( 242 )
-shapes/6/transform = Matrix32( 0.999999, 0.00111984, -0.00111984, 0.999999, 0.820575, 28.7127 )
-shapes/6/trigger = false
-shapes/7/shape = SubResource( 243 )
-shapes/7/transform = Matrix32( 0.999999, 0.00111984, -0.00111984, 0.999999, 0.820575, 28.7127 )
-shapes/7/trigger = false
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
 script/script = ExtResource( 2 )
 common_depth = Vector2( 80, 100 )
 speed = 200.0
@@ -3017,62 +2952,42 @@ description = "Ul\'zel\n\nEin niederes tiefes Wesen. Sie werden geschickt um zu 
 captive_scale = 0.2
 image = "res://eldricht/engelfisch/01.png"
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="kelaktan"]
-
-material/material = ExtResource( 3 )
-transform/pos = Vector2( 19.4529, 8.64579 )
-transform/rot = -90.6621
-frames = SubResource( 244 )
-animation = "default"
-frame = 1
-playing = true
-modulate = Color( 0.996094, 0.996094, 0.996094, 1 )
-
-[node name="CollisionShape2D" type="CollisionPolygon2D" parent="kelaktan"]
-
-transform/pos = Vector2( 0.820575, 28.7127 )
-transform/rot = -0.0641621
-build_mode = 0
-polygon = Vector2Array( -9.45153, -85.9764, 2.48036, -94.6143, 41.0986, -95.9236, 51.0464, -85.9689, 41.0913, -75.3575, 53.0233, -48.1532, 53.6797, -28.2504, 76.2411, -42.8376, 83.6791, -56.5051, 107.575, -55.0336, 110.492, -29.1859, 114.039, 6.93237, 89.4875, 19.5287, 49.0233, 6.90942, 37.1171, 29.4067, 45.7676, 52.6168, 18.5666, 51.9839, -2.00014, 51.3435, 1.29022, 27.4567, -10.6669, 13.5381, -48.0217, 24.4023, -65.0585, 21.5602, -82.3037, 24.8966, -69.0962, -29.5188, -41.919, -50.1152, -19.3404, -30.2379, -2.14056, -74.0431 )
-shape_range = Vector2( 0, 7 )
-trigger = false
-
 [node name="gl'gbub" type="Area2D" parent="."]
 
 editor/display_folded = true
 transform/pos = Vector2( -365.424, 1025.86 )
 input/pickable = true
-shapes/0/shape = SubResource( 245 )
+shapes/0/shape = SubResource( 407 )
 shapes/0/transform = Matrix32( 0.999999, 0.00111984, -0.00111984, 0.999999, -0.0819272, 37.7377 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 246 )
+shapes/1/shape = SubResource( 408 )
 shapes/1/transform = Matrix32( 0.999999, 0.00111984, -0.00111984, 0.999999, -0.0819272, 37.7377 )
 shapes/1/trigger = false
-shapes/2/shape = SubResource( 247 )
+shapes/2/shape = SubResource( 409 )
 shapes/2/transform = Matrix32( 0.999999, 0.00111984, -0.00111984, 0.999999, -0.0819272, 37.7377 )
 shapes/2/trigger = false
-shapes/3/shape = SubResource( 248 )
+shapes/3/shape = SubResource( 410 )
 shapes/3/transform = Matrix32( 0.999999, 0.00111984, -0.00111984, 0.999999, -0.0819272, 37.7377 )
 shapes/3/trigger = false
-shapes/4/shape = SubResource( 249 )
+shapes/4/shape = SubResource( 411 )
 shapes/4/transform = Matrix32( 0.999999, 0.00111984, -0.00111984, 0.999999, -0.0819272, 37.7377 )
 shapes/4/trigger = false
-shapes/5/shape = SubResource( 250 )
+shapes/5/shape = SubResource( 412 )
 shapes/5/transform = Matrix32( 0.999999, 0.00111984, -0.00111984, 0.999999, -0.0819272, 37.7377 )
 shapes/5/trigger = false
-shapes/6/shape = SubResource( 251 )
+shapes/6/shape = SubResource( 413 )
 shapes/6/transform = Matrix32( 0.999999, 0.00111984, -0.00111984, 0.999999, -0.0819272, 37.7377 )
 shapes/6/trigger = false
-shapes/7/shape = SubResource( 252 )
+shapes/7/shape = SubResource( 414 )
 shapes/7/transform = Matrix32( 0.999999, 0.00111984, -0.00111984, 0.999999, -0.0819272, 37.7377 )
 shapes/7/trigger = false
-shapes/8/shape = SubResource( 253 )
+shapes/8/shape = SubResource( 415 )
 shapes/8/transform = Matrix32( 0.999999, 0.00111984, -0.00111984, 0.999999, -0.0819272, 37.7377 )
 shapes/8/trigger = false
-shapes/9/shape = SubResource( 254 )
+shapes/9/shape = SubResource( 416 )
 shapes/9/transform = Matrix32( 0.999999, 0.00111984, -0.00111984, 0.999999, -0.0819272, 37.7377 )
 shapes/9/trigger = false
-shapes/10/shape = SubResource( 255 )
+shapes/10/shape = SubResource( 417 )
 shapes/10/transform = Matrix32( 0.999999, 0.00111984, -0.00111984, 0.999999, -0.0819272, 37.7377 )
 shapes/10/trigger = false
 gravity_vec = Vector2( 0, 1 )
@@ -3080,6 +2995,7 @@ gravity = 98.0
 linear_damp = 0.1
 angular_damp = 1.0
 script/script = ExtResource( 2 )
+__meta__ = { "_edit_group_":true }
 common_depth = Vector2( 55, 75 )
 speed = 180.0
 name = "gl\'gbub"
@@ -3092,7 +3008,7 @@ image = "res://eldricht/tentakelviehMitSchnabel/01.png"
 material/material = ExtResource( 3 )
 transform/pos = Vector2( 19.4529, 8.64579 )
 transform/rot = -90.6621
-frames = SubResource( 256 )
+frames = SubResource( 418 )
 animation = "default"
 playing = true
 modulate = Color( 0.996094, 0.996094, 0.996094, 1 )
@@ -3111,38 +3027,33 @@ trigger = false
 editor/display_folded = true
 transform/pos = Vector2( 24.9971, 1090.93 )
 input/pickable = true
-shapes/0/shape = SubResource( 257 )
-shapes/0/transform = Matrix32( 0.999999, 0.00111984, -0.00111984, 0.999999, 6.56626, 43.2779 )
+shapes/0/shape = SubResource( 258 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 258 )
-shapes/1/transform = Matrix32( 0.999999, 0.00111984, -0.00111984, 0.999999, 6.56626, 43.2779 )
+shapes/1/shape = SubResource( 259 )
+shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
-shapes/2/shape = SubResource( 259 )
-shapes/2/transform = Matrix32( 0.999999, 0.00111984, -0.00111984, 0.999999, 6.56626, 43.2779 )
+shapes/2/shape = SubResource( 260 )
+shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/2/trigger = false
-shapes/3/shape = SubResource( 260 )
-shapes/3/transform = Matrix32( 0.999999, 0.00111984, -0.00111984, 0.999999, 6.56626, 43.2779 )
+shapes/3/shape = SubResource( 261 )
+shapes/3/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/3/trigger = false
-shapes/4/shape = SubResource( 261 )
-shapes/4/transform = Matrix32( 0.999999, 0.00111984, -0.00111984, 0.999999, 6.56626, 43.2779 )
+shapes/4/shape = SubResource( 262 )
+shapes/4/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/4/trigger = false
-shapes/5/shape = SubResource( 262 )
-shapes/5/transform = Matrix32( 0.999999, 0.00111984, -0.00111984, 0.999999, 6.56626, 43.2779 )
+shapes/5/shape = SubResource( 263 )
+shapes/5/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/5/trigger = false
-shapes/6/shape = SubResource( 263 )
-shapes/6/transform = Matrix32( 0.999999, 0.00111984, -0.00111984, 0.999999, 6.56626, 43.2779 )
+shapes/6/shape = SubResource( 265 )
+shapes/6/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/6/trigger = false
-shapes/7/shape = SubResource( 264 )
-shapes/7/transform = Matrix32( 0.999999, 0.00111984, -0.00111984, 0.999999, 6.56626, 43.2779 )
-shapes/7/trigger = false
-shapes/8/shape = SubResource( 265 )
-shapes/8/transform = Matrix32( 0.999999, 0.00111984, -0.00111984, 0.999999, 6.56626, 43.2779 )
-shapes/8/trigger = false
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
 linear_damp = 0.1
 angular_damp = 1.0
 script/script = ExtResource( 2 )
+__meta__ = { "_edit_group_":true }
 common_depth = Vector2( 70, 99 )
 speed = 210.0
 name = "C\'thulu"
@@ -3155,7 +3066,7 @@ image = "res://eldricht/cthulu/cthulhu.png"
 material/material = ExtResource( 3 )
 transform/pos = Vector2( 5.94777, 2.50713 )
 transform/rot = -90.6621
-frames = SubResource( 266 )
+frames = SubResource( 419 )
 animation = "default"
 playing = true
 modulate = Color( 0.996094, 0.996094, 0.996094, 1 )
