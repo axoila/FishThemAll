@@ -175,7 +175,7 @@ script/script = ExtResource( 15 )
 [node name="Book" type="Sprite" parent="Surface"]
 
 material/material = ExtResource( 5 )
-transform/pos = Vector2( 0, 420 )
+transform/pos = Vector2( 0, 70 )
 z/z = 2
 texture = ExtResource( 16 )
 centered = false
@@ -184,8 +184,6 @@ credits = "[center][b][u]Credits[/u][/b][/center]\n\n[color=blue][url=http://www
 
 [node name="seiteNormal" type="Sprite" parent="Surface/Book"]
 
-editor/display_folded = true
-visibility/visible = false
 material/material = ExtResource( 5 )
 texture = ExtResource( 18 )
 centered = false
@@ -202,7 +200,7 @@ size_flags/vertical = 2
 margin/left = 82.0
 margin/top = 44.0
 margin/right = 95.0
-margin/bottom = 44.0
+margin/bottom = 72.0
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 custom_colors/selection_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_selected = Color( 0, 0, 0, 1 )
