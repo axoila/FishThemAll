@@ -1,4 +1,4 @@
-[gd_scene load_steps=274 format=1]
+[gd_scene load_steps=285 format=1]
 
 [ext_resource path="res://FishPool.gd" type="Script" id=1]
 [ext_resource path="res://Fish.gd" type="Script" id=2]
@@ -38,6 +38,8 @@
 [ext_resource path="res://eldricht/1/silhoutte12.png" type="Texture" id=36]
 [ext_resource path="res://eldricht/3/arms1.png" type="Texture" id=37]
 [ext_resource path="res://eldricht/3/arms2.png" type="Texture" id=38]
+[ext_resource path="res://eldricht/engelfisch/01.png" type="Texture" id=39]
+[ext_resource path="res://eldricht/engelfisch/02.png" type="Texture" id=40]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 
@@ -1192,6 +1194,50 @@ points = Vector2Array( 73.4208, -7.74127, 55.8798, -51.1505, 69.5302, -38.4662 )
 
 animations = [ { "frames":[ ExtResource( 37 ), ExtResource( 38 ) ], "loop":true, "name":"default", "speed":1.75 } ]
 
+[sub_resource type="ConvexPolygonShape2D" id=236]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -19.3404, -30.2379, -65.0585, 21.5602, -82.3037, 24.8966, -69.0962, -29.5188, -41.919, -50.1152 )
+
+[sub_resource type="ConvexPolygonShape2D" id=237]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 1.29022, 27.4567, 37.1171, 29.4067, 45.7676, 52.6168, 18.5666, 51.9839, -2.00014, 51.3435 )
+
+[sub_resource type="ConvexPolygonShape2D" id=238]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 2.48036, -94.6143, 41.0986, -95.9236, 51.0464, -85.9689, 41.0913, -75.3575, -2.14056, -74.0431, -9.45153, -85.9764 )
+
+[sub_resource type="ConvexPolygonShape2D" id=239]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 89.4875, 19.5287, 76.2411, -42.8376, 83.6791, -56.5051, 107.575, -55.0336, 110.492, -29.1859, 114.039, 6.93237 )
+
+[sub_resource type="ConvexPolygonShape2D" id=240]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 53.6797, -28.2504, -10.6669, 13.5381, -48.0217, 24.4023, -65.0585, 21.5602, -19.3404, -30.2379, 53.0233, -48.1532 )
+
+[sub_resource type="ConvexPolygonShape2D" id=241]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 76.2411, -42.8376, 89.4875, 19.5287, 49.0233, 6.90942, 53.6797, -28.2504 )
+
+[sub_resource type="ConvexPolygonShape2D" id=242]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -2.14056, -74.0431, 41.0913, -75.3575, 53.0233, -48.1532, -19.3404, -30.2379 )
+
+[sub_resource type="ConvexPolygonShape2D" id=243]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 1.29022, 27.4567, -10.6669, 13.5381, 53.6797, -28.2504, 49.0233, 6.90942, 37.1171, 29.4067 )
+
+[sub_resource type="SpriteFrames" id=244]
+
+animations = [ { "frames":[ ExtResource( 39 ), ExtResource( 40 ) ], "loop":true, "name":"default", "speed":1.75 } ]
+
 [node name="FishPool" type="Node"]
 
 script/script = ExtResource( 1 )
@@ -1230,6 +1276,7 @@ speed = 70.0
 name = "blobfisch"
 description = "Psychrolutes marcidus\nBlobfisch\n\nIgitt, als ich diese Monstrosität aus dem Wasser fischte, dachte ich es wäre ein toter Mensch, aber als ich dann den Fisch ins Wasser tauchte, sah er komplett anders aus. Bringt man diese Wesen aus ihrem natürlichen Lebensraum, ändert sich die Betrachtung anderer auf sie extrem. Interessant."
 captive_scale = 0.6
+image = null
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="blobfisch"]
 
@@ -1237,7 +1284,6 @@ material/material = ExtResource( 3 )
 transform/rot = -90.0
 frames = SubResource( 7 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="blobfisch"]
@@ -1306,6 +1352,7 @@ speed = 70.0
 name = "ningen"
 description = "Ningen\n\nEin merkwürdiges Menschenähnliches Wesen, es hatte keinen Eintrag in diesem Lexikon also hab ich selbst einen geschrieben. Ich habe das Gefühl diese Dinger werden eigentlich größer, aber der hier scheint recht klein zu sein. Ich habe auch mal gehört, dass sie eigentlich in kalten Gebieten leben. Ich habe mich langsam mit meinen merkwürdigen Fängen abgefunden."
 captive_scale = 0.4
+image = null
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="ningen"]
 
@@ -1313,7 +1360,6 @@ material/material = ExtResource( 3 )
 transform/rot = -90.0
 frames = SubResource( 22 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="ningen"]
@@ -1382,6 +1428,7 @@ speed = 70.0
 name = "ningen"
 description = "Tati\'meiw-Nesdttu\n\nKreaturen auf einer höheren Existenzstufe. Sie projizieren ihre Seele in andere Galaxien und Universen um ihrem Leben auf der Erde zu entfliehen. Dabei hinterlassen sie kaum antwortende Hüllen, welche nur durch höchste Dringlichkeit bewegt werden können.\n\n\n\n"
 captive_scale = 0.4
+image = null
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="tati"]
 
@@ -1389,6 +1436,7 @@ material/material = ExtResource( 3 )
 transform/rot = -90.0
 frames = SubResource( 37 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="tati"]
@@ -1427,6 +1475,7 @@ speed = 85.0
 name = "barsch"
 description = "Dicentrarchus labrax\nSeebarsch\n\nEin äußerst häufiger Salzwasserfisch. So mancher Bürger idyllischer Kleinstädte ist beim Hobbyangeln von ihrer Häufigkeit genervt.\nEs sind räuberische Tiere, welche nur zum Jagen ins Flache Wasser kommen."
 captive_scale = 0.5
+image = null
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="barsch"]
 
@@ -1434,7 +1483,6 @@ material/material = ExtResource( 3 )
 transform/rot = -90.0
 frames = SubResource( 42 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="barsch"]
@@ -1470,6 +1518,7 @@ speed = 120.0
 name = "anglerfisch"
 description = "Melanocetus johnsonii\nAnglerfisch\n\nIch habe gehört dass sich diese Tiere in der Regel äußerst gut tarnen sollen. Sie sind auch eher Jäger, oder nicht\? Viel weiter unten am Meeresboden sollen sie auch leben. Sie fangen sich die Schwachen, welche auf ihren Köder reagieren und fressen sie, so wie ich es mache."
 captive_scale = 0.6
+image = null
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="anglerfisch"]
 
@@ -1477,6 +1526,7 @@ material/material = ExtResource( 3 )
 transform/rot = -90.0
 frames = SubResource( 46 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="anglerfisch"]
@@ -1512,6 +1562,7 @@ speed = 190.0
 name = "rochen"
 description = "Gattung Rajidae\nRochen\n\nDa bist du platt, oder\? Ich habe vor meinem Fischerdasein versucht, Witze zu schreiben, aber alles was ich hinbekommen habe waren schlechte Wortspiele die flacher waren als solche Fische, gefühlt genau so giftig wie einige Exemplare ihrer Art."
 captive_scale = 0.2
+image = null
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="rochen"]
 
@@ -1573,6 +1624,7 @@ speed = 99.0
 name = "qualle"
 description = "Aurelia Aurita\nQualle\n\nEin äußerst leichtes Tier, es besteht größtenteils aus Wasser, so wie wir Menschen, nur noch...naja, eben viel mehr.\nKomisch dass diese Wesen so leblos wirken, sie treiben nur dorthin, wo die Strömung sie hinträgt... ist vielleicht doch gar nicht so anders wie Menschen."
 captive_scale = 0.5
+image = null
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="qualle"]
 
@@ -1580,6 +1632,7 @@ material/material = ExtResource( 3 )
 transform/rot = -90.0
 frames = SubResource( 60 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="qualle"]
@@ -1625,6 +1678,7 @@ speed = 160.0
 name = "hai"
 description = "Carcharodon carcharias\nHai\n\nAls einziger Mann einen solchen herauszufischen ist ein schon ziemlicher Akt, aber eigentlich sollte meine Angel auch nicht so weit nach unten reichen - was zum Teufel wurde mir hier verkauft\?\nHaie sind übrigens harmloser als einige Leute denken, aber den hier behalte ich als Trophäe."
 captive_scale = 0.6
+image = null
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="hai"]
 
@@ -1678,6 +1732,7 @@ speed = 160.0
 name = "sternengezücht"
 description = "Sternengezücht\n\nWesen aus einer anderen Welt. Ob sie Cthulus nachkommen, oder seine innigen Anhänger sind, ist unklar. Obwohl sie nach dem Fall Ry\'lehs gestorben sind, flüstern sie noch immer den Sterblichen der Erde  Prophezeiungen zu, welche zu Wahnvorstellungen führen."
 captive_scale = 0.6
+image = null
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="sternengezücht"]
 
@@ -1881,6 +1936,7 @@ speed = 170.0
 name = "clownfisch"
 description = "Premnas biaculeatus\nClownisch\n\nEin kleiner Niemand. Ist es eigentlich nicht Wert dass aus dem Meer geholt zu werden, ich hab auch ziemliche Angst, dass ich meinen Vater mit diesem Fang verärgere. Sie leben normalerweise in Gruppen zwischen Anemonen."
 captive_scale = 0.6
+image = null
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="clownfisch"]
 
@@ -2101,6 +2157,7 @@ speed = 160.0
 name = "aal"
 description = "Anguilla anguilla\nAal\n\nEin äußerst langer, vom Aussterben bedrohter Fisch. \nGenau wie einige Menschen kann auch dieses Tier sich einfach durch die engsten Pässe drängen, jedoch ist es bei diesem Vertreter hier eher Wortwörtlich gemeint."
 captive_scale = 0.4
+image = null
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="aal"]
 
@@ -2109,6 +2166,7 @@ transform/pos = Vector2( -27.3657, -49.0138 )
 transform/rot = -90.0
 frames = SubResource( 150 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="AnimatedSprite 2" type="AnimatedSprite" parent="aal"]
@@ -2118,6 +2176,7 @@ transform/pos = Vector2( -2.8532, -49.0384 )
 transform/rot = -73.1344
 frames = SubResource( 150 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="AnimatedSprite 3" type="AnimatedSprite" parent="aal"]
@@ -2127,6 +2186,7 @@ transform/pos = Vector2( -48.7595, -50.6789 )
 transform/rot = -103.95
 frames = SubResource( 150 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="AnimatedSprite 4" type="AnimatedSprite" parent="aal"]
@@ -2136,7 +2196,6 @@ transform/pos = Vector2( -47.7713, 14.7375 )
 transform/rot = -95.8988
 frames = SubResource( 150 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="AnimatedSprite 5" type="AnimatedSprite" parent="aal"]
@@ -2146,6 +2205,7 @@ transform/pos = Vector2( -9.09616, 16.1361 )
 transform/rot = -86.8947
 frames = SubResource( 150 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="AnimatedSprite 6" type="AnimatedSprite" parent="aal"]
@@ -2155,6 +2215,7 @@ transform/pos = Vector2( -27.7216, 44.4333 )
 transform/rot = -89.3608
 frames = SubResource( 150 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="aal"]
@@ -2269,6 +2330,7 @@ speed = 110.0
 name = "crab"
 description = "Macrocheira kaempferi\nRiesenkrabbe\n\nOho, ein interessanter Fang! Eigentlich leben diese Tiere nur in den Gewässern von Japan und ich hocke hier an deutscher Küste. Aber bei dem Ganzen, was ich bis jetzt gefangen habe, wundert mich fast gar nichts mehr."
 captive_scale = 0.4
+image = null
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="crab"]
 
@@ -2277,6 +2339,7 @@ transform/pos = Vector2( -1.50742, -6.58912e-08 )
 transform/rot = -90.0
 frames = SubResource( 165 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="crab"]
@@ -2310,6 +2373,7 @@ speed = 80.0
 name = "stiefel"
 description = "Stiefel\n\nEin alter Stiefel, hat bestimmt mal einem anderen Fischer gehört. Ekelhaft, dass Leute so etwas ins Meer schmeißen. Ich finde so etwas ja absolut barbarisch."
 captive_scale = 0.6
+image = null
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="stiefel"]
 
@@ -2383,6 +2447,7 @@ speed = 115.0
 name = "algen"
 description = "Algen\n\nDiese komischen Algen haben Wölbungen, welche mich an Augen erinnern, aber sie gehen wohl nur unter Wasser auf also kann ich nicht wirklich etwas bestätigen. Ich weiß nicht warum, aber ich fühle mich als würde ich merkwürdigen Tiefen immer näher kommen."
 captive_scale = 0.6
+image = null
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="algen"]
 
@@ -2420,6 +2485,7 @@ speed = 115.0
 name = "buch"
 description = "Die Innschrift ist kaum noch lesbar, ich erkenne nur:\n„Kartoffeln, Karotten und Paprika ...zen und Schneiden, Lachs fileti ...Blech legen. Mit Salz, pfeffer, thym...osmarin würzen ... 45 Minuten im Ofen erh....“"
 captive_scale = 0.6
+image = null
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="buch"]
 
@@ -2461,6 +2527,7 @@ speed = 115.0
 name = "poster"
 description = "Vermissten-Plakat\n\nEin Poster, welches eine Gruppe Jugendlicher zeigt. Das letzte Mal vor ein paar Jahren gesehen...\? Kann es sein, dass jemand die brillante Idee hatte so etwas einzuschweißen\? Ach ich lasse es einfach hier, vielleicht kann ich das Rätsel anders lösen."
 captive_scale = 0.6
+image = null
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="poster"]
 
@@ -2499,6 +2566,7 @@ speed = 135.0
 name = "kristall"
 description = "blauer Kristall\n\nEin leuchtendes Kleinod, es schimmert in einer merkwürdigen Farbe. Ich frage mich, ob ich den als Köder verwenden könnte, aber mache es lieber nicht. Ich fühle mich wohl wenn ich ihn anschaue."
 captive_scale = 0.4
+image = null
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="kristall"]
 
@@ -2537,6 +2605,7 @@ speed = 99.0
 name = "reifen"
 description = "Reifen\n\nEin ganz normaler Reifen, scheint noch nicht sehr alt zu sein. Er ist kaum von Pflanzen überzogen. \nOb sich Fische auch irgendwelche Fortbewegungsmittel wünschen\? Ein bequemes Leben\?"
 captive_scale = 0.8
+image = null
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="reifen"]
 
@@ -2584,6 +2653,7 @@ speed = 175.0
 name = "truhe"
 description = "Schatztruhe\n\nScheint wohl mal einem Piraten gehört zu haben. Oder Kindern, die gerne Piraten spielten\? Es war ziemlich schwer herauszufischen aber mit dem ganzen Geld darin sollte ich mir ein schönes Leben machen können, jedenfalls mit dem, was noch davon übrig ist."
 captive_scale = 0.6
+image = null
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="truhe"]
 
@@ -2655,6 +2725,7 @@ speed = 250.0
 name = "leiche"
 description = "Wasserleiche\n\nBin...das ich\? Er trägt meine Kleidung, hat das gleiche Gesicht, den gleichen Körperbau. Bin das ich -  aus einer anderen Dimension\? Oder sterbe ich in naher Zukunft...oder bin ich schon tot\?"
 captive_scale = 0.6
+image = null
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="leiche"]
 
@@ -2677,7 +2748,7 @@ trigger = false
 [node name="ulzel" type="Area2D" parent="."]
 
 editor/display_folded = true
-transform/pos = Vector2( 162.986, 750.58 )
+transform/pos = Vector2( 158.885, 803.894 )
 input/pickable = true
 shapes/0/shape = SubResource( 210 )
 shapes/0/transform = Matrix32( 1, -0.000353209, 0.000353209, 1, 1.79595, 25.2594 )
@@ -2728,10 +2799,11 @@ angular_damp = 1.0
 script/script = ExtResource( 2 )
 __meta__ = { "_edit_group_":true }
 common_depth = Vector2( 60, 90 )
-speed = 190.0
+speed = 195.0
 name = "ulzel"
 description = "Ul\'zel\n\nEin niederes tiefes Wesen. Sie werden geschickt um zu beobachten und zu finden. Ihnen fehlen Gehirn oder ähnliche innere Organe, weshalb davon ausgegangen wird, dass diese Kreaturen von einer höheren Macht erschaffen werden."
 captive_scale = 0.2
+image = null
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="ulzel"]
 
@@ -2793,10 +2865,11 @@ linear_damp = 0.1
 angular_damp = 1.0
 script/script = ExtResource( 2 )
 common_depth = Vector2( 70, 95 )
-speed = 190.0
+speed = 160.0
 name = "ulzel"
 description = "Ul\'zel\n\nEin niederes tiefes Wesen. Sie werden geschickt um zu beobachten und zu finden. Ihnen fehlen Gehirn oder ähnliche innere Organe, weshalb davon ausgegangen wird, dass diese Kreaturen von einer höheren Macht erschaffen werden."
 captive_scale = 0.2
+image = "res://eldricht/3/arms1.png"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="karatrik"]
 
@@ -2805,7 +2878,6 @@ transform/pos = Vector2( 19.4529, 8.64579 )
 transform/rot = -0.0865118
 frames = SubResource( 235 )
 animation = "default"
-frame = 1
 playing = true
 modulate = Color( 0.996094, 0.996094, 0.996094, 1 )
 
@@ -2816,6 +2888,66 @@ transform/rot = 0.0202374
 build_mode = 0
 polygon = Vector2Array( 1.76871, -110.178, 13.4597, -72.6233, 24.6817, -88.225, 58.3389, -109.671, 73.4506, -92.109, 51.0153, -85.7772, 55.8798, -51.1505, 69.5302, -38.4662, 73.4208, -7.74127, 83.6791, -56.5051, 107.575, -55.0336, 110.492, -29.1859, 103.165, 3.48578, 77.802, 14.2057, 58.2873, 36.1442, 41.7018, 48.8179, 63.1456, 88.3271, 37.2991, 87.3426, 13.9094, 34.6654, -1.22302, 75.6248, -24.1477, 86.8332, -48.0217, 24.4023, -64.1038, -7.30219, -65.0641, -49.7303, -48.9702, -51.6753, -52.3749, -77.0356, -35.2899, -123.359, -14.324, -111.647 )
 shape_range = Vector2( 0, 9 )
+trigger = false
+
+[node name="kelaktan" type="Area2D" parent="."]
+
+transform/pos = Vector2( -211.675, 801.268 )
+input/pickable = true
+shapes/0/shape = SubResource( 236 )
+shapes/0/transform = Matrix32( 0.999999, 0.00111984, -0.00111984, 0.999999, 0.820575, 28.7127 )
+shapes/0/trigger = false
+shapes/1/shape = SubResource( 237 )
+shapes/1/transform = Matrix32( 0.999999, 0.00111984, -0.00111984, 0.999999, 0.820575, 28.7127 )
+shapes/1/trigger = false
+shapes/2/shape = SubResource( 238 )
+shapes/2/transform = Matrix32( 0.999999, 0.00111984, -0.00111984, 0.999999, 0.820575, 28.7127 )
+shapes/2/trigger = false
+shapes/3/shape = SubResource( 239 )
+shapes/3/transform = Matrix32( 0.999999, 0.00111984, -0.00111984, 0.999999, 0.820575, 28.7127 )
+shapes/3/trigger = false
+shapes/4/shape = SubResource( 240 )
+shapes/4/transform = Matrix32( 0.999999, 0.00111984, -0.00111984, 0.999999, 0.820575, 28.7127 )
+shapes/4/trigger = false
+shapes/5/shape = SubResource( 241 )
+shapes/5/transform = Matrix32( 0.999999, 0.00111984, -0.00111984, 0.999999, 0.820575, 28.7127 )
+shapes/5/trigger = false
+shapes/6/shape = SubResource( 242 )
+shapes/6/transform = Matrix32( 0.999999, 0.00111984, -0.00111984, 0.999999, 0.820575, 28.7127 )
+shapes/6/trigger = false
+shapes/7/shape = SubResource( 243 )
+shapes/7/transform = Matrix32( 0.999999, 0.00111984, -0.00111984, 0.999999, 0.820575, 28.7127 )
+shapes/7/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 2 )
+common_depth = Vector2( 80, 100 )
+speed = 200.0
+name = "ulzel"
+description = "Ul\'zel\n\nEin niederes tiefes Wesen. Sie werden geschickt um zu beobachten und zu finden. Ihnen fehlen Gehirn oder ähnliche innere Organe, weshalb davon ausgegangen wird, dass diese Kreaturen von einer höheren Macht erschaffen werden."
+captive_scale = 0.2
+image = "res://eldricht/engelfisch/01.png"
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="kelaktan"]
+
+material/material = ExtResource( 3 )
+transform/pos = Vector2( 19.4529, 8.64579 )
+transform/rot = -90.6621
+frames = SubResource( 244 )
+animation = "default"
+frame = 1
+playing = true
+modulate = Color( 0.996094, 0.996094, 0.996094, 1 )
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="kelaktan"]
+
+transform/pos = Vector2( 0.820575, 28.7127 )
+transform/rot = -0.0641621
+build_mode = 0
+polygon = Vector2Array( -9.45153, -85.9764, 2.48036, -94.6143, 41.0986, -95.9236, 51.0464, -85.9689, 41.0913, -75.3575, 53.0233, -48.1532, 53.6797, -28.2504, 76.2411, -42.8376, 83.6791, -56.5051, 107.575, -55.0336, 110.492, -29.1859, 114.039, 6.93237, 89.4875, 19.5287, 49.0233, 6.90942, 37.1171, 29.4067, 45.7676, 52.6168, 18.5666, 51.9839, -2.00014, 51.3435, 1.29022, 27.4567, -10.6669, 13.5381, -48.0217, 24.4023, -65.0585, 21.5602, -82.3037, 24.8966, -69.0962, -29.5188, -41.919, -50.1152, -19.3404, -30.2379, -2.14056, -74.0431 )
+shape_range = Vector2( 0, 7 )
 trigger = false
 
 
