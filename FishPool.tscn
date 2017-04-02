@@ -998,7 +998,6 @@ material/material = ExtResource( 3 )
 transform/rot = -90.0
 frames = SubResource( 7 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="blobfisch"]
@@ -1087,7 +1086,6 @@ material/material = ExtResource( 3 )
 transform/rot = -90.0
 frames = SubResource( 16 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="anglerfisch"]
@@ -1190,6 +1188,7 @@ material/material = ExtResource( 3 )
 transform/rot = -90.0
 frames = SubResource( 30 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="qualle"]
@@ -1848,6 +1847,7 @@ transform/pos = Vector2( -1.50742, -6.58912e-08 )
 transform/rot = -90.0
 frames = SubResource( 128 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="crab"]
@@ -2106,7 +2106,7 @@ __meta__ = { "_edit_group_":true }
 common_depth = Vector2( 40, 60 )
 speed = 99.0
 name = "reifen"
-description = ""
+description = "Reifen\n\nEin ganz normaler Reifen, scheint noch nicht sehr alt zu sein. Er ist kaum von Pflanzen überzogen. \nOb sich Fische auch irgendwelche Fortbewegungsmittel wünschen\? Ein bequemes Leben\?"
 captive_scale = 1
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="reifen"]
@@ -2302,8 +2302,8 @@ script/script = ExtResource( 2 )
 __meta__ = { "_edit_group_":true }
 common_depth = Vector2( 60, 90 )
 speed = 190.0
-name = "eldritch"
-description = "Eldritch\n\n"
+name = "ulzel"
+description = "Ul\'zel\n\nEin niederes tiefes Wesen. Sie werden geschickt um zu beobachten und zu finden. Ihnen fehlen Gehirn oder ähnliche innere Organe, weshalb davon ausgegangen wird, dass diese Kreaturen von einer höheren Macht erschaffen werden."
 captive_scale = 1
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="eldritch thing"]
